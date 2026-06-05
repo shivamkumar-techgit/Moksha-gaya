@@ -1,0 +1,11 @@
+{
+  "name": "moksha-gaya-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix moksha-gaya",
+    "build": "npm run build --prefix moksha-gaya",
+    "start": "npm run start --prefix moksha-gaya",
+    "lint": "npm run lint --prefix moksha-gaya"
+  }
+}

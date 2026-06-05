@@ -1,0 +1,4158 @@
+# MOKSHA GAYA
+
+# Product Architecture Document
+
+Version: 1.0
+
+Prepared By: Shivam Kumar
+
+Date: 30 May 2026
+
+--- Page 1 
+
+# 1. Product Overview
+
+## Introduction
+
+Moksha Gaya is a premium spiritual services platform designed to simplify the process of arranging ancestral rituals, pilgrimage assistance, and spiritual consultations in Gaya.
+
+The platform combines traditional religious practices with modern digital experiences, allowing devotees to discover services, submit booking requests, communicate with coordinators, and receive end-to-end support throughout their spiritual journey.
+
+The objective of the platform is not only to provide ritual services but also to create a complete ecosystem that connects devotees with verified pandits, accommodation providers, transportation partners, and spiritual consultants through a centralized digital platform.
+
+---
+
+## Product Vision
+
+To build India's most trusted and professionally managed spiritual services platform, delivering authentic rituals, premium customer experiences, and technology-enabled convenience.
+
+---
+
+## Product Objectives
+
+The platform aims to:
+
+* Simplify ritual booking processes.
+* Increase customer trust and transparency.
+* Provide verified service providers.
+* Improve communication and coordination.
+* Support both domestic and international devotees.
+* Deliver premium customer experiences.
+* Create a scalable foundation for future expansion.
+
+---
+
+## Platform Components
+
+The Moksha Gaya platform will consist of:
+
+### Public Website
+
+Customer-facing website containing:
+
+* Services
+* Packages
+* Sacred Places
+* Blogs
+* Testimonials
+* Booking Forms
+
+---
+
+### Admin Dashboard
+
+Internal management system for:
+
+* Leads
+* Bookings
+* Services
+* Customers
+* Content
+* Reports
+
+---
+
+### Customer Communication System
+
+Used for:
+
+* Inquiry management
+* Follow-ups
+* Booking confirmations
+* Service coordination
+
+---
+
+## Product Scope (Version 1)
+
+### Included
+
+* Public Website
+* Booking Request Forms
+* Admin Dashboard
+* Service Management
+* Lead Management
+* Customer Management
+* Blog System
+* Testimonial Management
+
+### Future Versions
+
+* Customer Dashboard
+* Mobile Application
+* Online Payments
+* Live Ritual Streaming
+* Loyalty Program
+* AI Assistant
+
+---
+
+## Success Criteria
+
+The platform will be considered successful if it:
+
+* Generates qualified leads consistently.
+* Improves customer booking experience.
+* Reduces operational complexity.
+* Increases customer satisfaction.
+* Supports future business growth.
+
+---
+
+## Conclusion
+
+The Moksha Gaya platform serves as the digital foundation of the company's long-term vision. By combining spiritual authenticity with modern technology, the platform seeks to deliver trusted, transparent, and premium spiritual services to devotees worldwide.
+
+
+
+Page 2 
+
+# 2. Platform Objectives
+
+## Introduction
+
+The Moksha Gaya platform is being developed as a digital ecosystem that connects devotees with trusted spiritual services, pilgrimage assistance, and ritual coordination through a centralized and professionally managed system.
+
+The platform's objectives are designed to align with the company's long-term vision of becoming India's most trusted spiritual services brand.
+
+---
+
+# Primary Objectives
+
+## Objective 1: Simplify Ritual Booking
+
+The platform should eliminate the complexity associated with arranging spiritual rituals and pilgrimage services.
+
+### Goals
+
+* Provide clear service information.
+* Simplify customer enquiries.
+* Reduce confusion regarding ritual processes.
+* Offer guided booking experiences.
+
+### Expected Outcome
+
+A faster and more convenient customer journey.
+
+---
+
+## Objective 2: Build Trust Through Transparency
+
+Trust is the foundation of spiritual services.
+
+### Goals
+
+* Display clear service details.
+* Provide transparent pricing structures.
+* Showcase verified service providers.
+* Maintain open communication.
+
+### Expected Outcome
+
+Higher customer confidence and improved conversion rates.
+
+---
+
+## Objective 3: Improve Customer Experience
+
+The platform should deliver a premium customer experience from enquiry to service completion.
+
+### Goals
+
+* Easy navigation.
+* Mobile-friendly experience.
+* Responsive communication.
+* Professional support.
+
+### Expected Outcome
+
+Higher satisfaction and increased referrals.
+
+---
+
+## Objective 4: Centralize Service Management
+
+The platform should provide administrators with a single system for managing operations.
+
+### Goals
+
+* Manage leads.
+* Track bookings.
+* Monitor services.
+* Maintain customer records.
+* Generate reports.
+
+### Expected Outcome
+
+Improved operational efficiency and scalability.
+
+---
+
+## Objective 5: Support Business Growth
+
+The platform should serve as the foundation for future expansion.
+
+### Goals
+
+* Add new services easily.
+* Support additional locations.
+* Integrate new technologies.
+* Expand operational capabilities.
+
+### Expected Outcome
+
+Long-term business scalability.
+
+---
+
+# Customer Objectives
+
+The platform should help customers:
+
+### Discover Services
+
+Learn about rituals, packages, and pilgrimage assistance.
+
+---
+
+### Submit Enquiries
+
+Contact Moksha Gaya easily through forms and communication channels.
+
+---
+
+### Receive Guidance
+
+Understand rituals and service processes.
+
+---
+
+### Coordinate Services
+
+Work with coordinators to finalize arrangements.
+
+---
+
+### Access Information
+
+View service details, FAQs, testimonials, and educational content.
+
+---
+
+# Business Objectives
+
+The platform should help Moksha Gaya:
+
+### Generate Qualified Leads
+
+Capture potential customers through enquiry and booking forms.
+
+---
+
+### Increase Conversions
+
+Convert enquiries into confirmed bookings.
+
+---
+
+### Improve Brand Authority
+
+Establish Moksha Gaya as a trusted spiritual services provider.
+
+---
+
+### Enhance Customer Retention
+
+Encourage repeat bookings and referrals.
+
+---
+
+### Support Expansion
+
+Create systems capable of supporting future growth.
+
+---
+
+# Operational Objectives
+
+The platform should improve internal operations by:
+
+### Streamlining Lead Management
+
+Track and manage customer enquiries effectively.
+
+---
+
+### Organizing Service Requests
+
+Maintain structured booking workflows.
+
+---
+
+### Improving Communication
+
+Facilitate efficient customer interactions.
+
+---
+
+### Monitoring Performance
+
+Provide insights into bookings, leads, and service demand.
+
+---
+
+# Technology Objectives
+
+The technology stack should support:
+
+### Reliability
+
+Stable and secure operations.
+
+---
+
+### Performance
+
+Fast loading speeds and smooth user experiences.
+
+---
+
+### Security
+
+Protection of customer information and business data.
+
+---
+
+### Scalability
+
+Ability to handle future growth.
+
+---
+
+### Maintainability
+
+Easy updates and long-term sustainability.
+
+---
+
+# Key Success Indicators
+
+The platform will be considered successful when:
+
+* Customer enquiries increase consistently.
+* Conversion rates improve.
+* Customer satisfaction remains high.
+* Administrative workload decreases.
+* Service quality remains consistent.
+* Business growth objectives are achieved.
+
+---
+
+# Conclusion
+
+The Moksha Gaya platform is designed to support customers, administrators, and business operations through a unified digital ecosystem. By focusing on trust, transparency, operational efficiency, and customer experience, the platform will provide the foundation for sustainable growth and long-term success.
+
+
+-- Page 3 
+
+# 3. Complete Website Sitemap
+
+## Introduction
+
+The Moksha Gaya website has been designed as a premium spiritual services platform focused on simplicity, trust, education, and conversion. The sitemap defines the complete structure of the public-facing website and serves as the foundation for design, content development, SEO planning, and technical implementation.
+
+The primary goals of the website are:
+
+* Educate visitors
+* Build trust
+* Generate enquiries
+* Convert visitors into customers
+* Support long-term SEO growth
+
+---
+
+# Primary Navigation Structure
+
+## Home
+
+Purpose:
+
+The main landing page introducing the Moksha Gaya brand, services, trust factors, and booking options.
+
+Key Sections:
+
+* Hero Section
+* Why Moksha Gaya
+* Services Overview
+* Sacred Places
+* How It Works
+* Packages
+* Testimonials
+* FAQ
+* Contact CTA
+
+---
+
+## About Us
+
+Purpose:
+
+Introduce the company, mission, values, and service philosophy.
+
+Subsections:
+
+* Company Overview
+* Vision & Mission
+* Core Values
+* Why Choose Us
+* Team Information
+
+---
+
+## Services
+
+Purpose:
+
+Central hub for all ritual and spiritual services.
+
+### Service Pages
+
+#### Pind Daan
+
+URL:
+
+/services/pind-daan
+
+---
+
+#### Shraddh Karma
+
+URL:
+
+/services/shraddh-karma
+
+---
+
+#### Tarpan
+
+URL:
+
+/services/tarpan
+
+---
+
+#### Narayan Bali
+
+URL:
+
+/services/narayan-bali
+
+---
+
+#### Tripindi Shraddh
+
+URL:
+
+/services/tripindi-shraddh
+
+---
+
+#### Pitru Dosha Nivaran
+
+URL:
+
+/services/pitru-dosha-nivaran
+
+---
+
+#### Asthi Visarjan
+
+URL:
+
+/services/asthi-visarjan
+
+---
+
+#### Online Pind Daan
+
+URL:
+
+/services/online-pind-daan
+
+---
+
+## Packages
+
+Purpose:
+
+Present service bundles and package comparisons.
+
+Subsections:
+
+### Basic Package
+
+### Premium Package
+
+### VIP Package
+
+---
+
+## Sacred Places
+
+Purpose:
+
+Educational content and pilgrimage guidance.
+
+### Individual Pages
+
+#### Vishnupad Temple
+
+#### Falgu River
+
+#### Akshay Vat
+
+#### Pretshila
+
+#### Ramshila
+
+Each page should include:
+
+* Historical significance
+* Spiritual importance
+* Visitor information
+* Related rituals
+
+---
+
+## How It Works
+
+Purpose:
+
+Explain the complete customer journey.
+
+Sections:
+
+1. Submit Enquiry
+2. Coordinator Contact
+3. Requirement Discussion
+4. Booking Confirmation
+5. Ritual Completion
+
+---
+
+## Testimonials
+
+Purpose:
+
+Build trust through customer experiences.
+
+Sections:
+
+* Written Reviews
+* Video Testimonials
+* Customer Stories
+
+---
+
+## Gallery
+
+Purpose:
+
+Showcase real rituals, sacred locations, and customer experiences.
+
+Categories:
+
+* Rituals
+* Temples
+* Pilgrims
+* Events
+
+---
+
+## Blog
+
+Purpose:
+
+SEO growth and educational content.
+
+Categories:
+
+### Ritual Guides
+
+### Spiritual Knowledge
+
+### Temple Information
+
+### Pilgrimage Planning
+
+### Pitru Paksha Updates
+
+---
+
+## FAQ
+
+Purpose:
+
+Answer common customer questions.
+
+Categories:
+
+* Ritual Questions
+* Travel Questions
+* Booking Questions
+* Online Service Questions
+
+---
+
+## Contact Us
+
+Purpose:
+
+Enable direct communication.
+
+Sections:
+
+* Contact Form
+* Phone Numbers
+* WhatsApp
+* Email
+* Office Address
+* Map Location
+
+---
+
+## Book Now
+
+Purpose:
+
+Primary lead generation page.
+
+Booking Form Fields:
+
+* Full Name
+* Mobile Number
+* Email Address
+* Service Required
+* Preferred Date
+* City
+* Additional Requirements
+
+---
+
+# Utility Pages
+
+## Privacy Policy
+
+URL:
+
+/privacy-policy
+
+---
+
+## Terms & Conditions
+
+URL:
+
+/terms-and-conditions
+
+---
+
+## Refund Policy
+
+URL:
+
+/refund-policy
+
+---
+
+## Disclaimer
+
+URL:
+
+/disclaimer
+
+---
+
+# SEO Landing Pages (Phase 2)
+
+These pages will be developed to increase organic search traffic.
+
+### Pind Daan in Gaya
+
+### Online Pind Daan
+
+### Best Pandit for Pind Daan in Gaya
+
+### Shraddh Karma in Gaya
+
+### Pitru Paksha Gaya Guide
+
+### Vishnupad Temple Guide
+
+### Falgu River Ritual Guide
+
+### Gaya Pilgrimage Guide
+
+---
+
+# Navigation Menu Structure
+
+Home
+
+About Us
+
+Services
+
+Packages
+
+Sacred Places
+
+Blog
+
+Testimonials
+
+FAQ
+
+Contact
+
+Book Now
+
+---
+
+# Footer Structure
+
+Company
+
+* About Us
+* Contact Us
+* Privacy Policy
+* Terms & Conditions
+
+Services
+
+* Pind Daan
+* Shraddh Karma
+* Tarpan
+* Narayan Bali
+
+Resources
+
+* Blog
+* FAQ
+* Sacred Places
+
+Contact Information
+
+* Phone
+* Email
+* Address
+* WhatsApp
+
+---
+
+# Future Expansion Pages
+
+These pages are reserved for future versions.
+
+### Customer Dashboard
+
+### Mobile App
+
+### Online Payment Portal
+
+### Live Ritual Streaming
+
+### Customer Login
+
+### NRI Services Portal
+
+---
+
+# Conclusion
+
+The Moksha Gaya sitemap has been designed to balance customer experience, business goals, and long-term scalability. The structure supports service discovery, trust building, lead generation, SEO growth, and future expansion while maintaining a simple and intuitive navigation experience.
+
+
+-- Page 4 
+
+# 4. Public Website Architecture
+
+## Introduction
+
+The Moksha Gaya website is designed as a luxury spiritual experience that combines traditional religious values with modern user experience principles.
+
+The primary objectives of the public website are:
+
+* Build trust
+* Educate visitors
+* Showcase services
+* Generate enquiries
+* Convert visitors into customers
+
+Every page and section must reinforce the brand's positioning as a premium and professionally managed spiritual services platform.
+
+---
+
+# Homepage Architecture
+
+The homepage serves as the primary entry point for most visitors and must communicate trust, authenticity, and professionalism within the first few seconds.
+
+---
+
+## Section 1: Hero Section
+
+### Objective
+
+Create an immediate emotional connection and communicate the core value proposition.
+
+### Content
+
+Headline:
+
+"Moksha Begins With Sacred Remembrance"
+
+Supporting Text:
+
+Authentic ancestral rituals, pilgrimage assistance, and spiritual guidance in the sacred city of Gaya.
+
+Primary CTA:
+
+Book a Ritual
+
+Secondary CTA:
+
+Speak With a Coordinator
+
+### Visual Direction
+
+* Sacred temple imagery
+* Golden sunrise atmosphere
+* Elegant typography
+* Minimal distractions
+
+---
+
+## Section 2: Why Moksha Gaya
+
+### Objective
+
+Establish trust and differentiate the platform.
+
+### Key Points
+
+* Verified Pandits
+* Transparent Pricing
+* End-to-End Assistance
+* Dedicated Support
+* Authentic Ritual Practices
+* Premium Customer Experience
+
+### Layout
+
+Six premium feature cards.
+
+---
+
+## Section 3: Services Overview
+
+### Objective
+
+Introduce all primary services.
+
+### Featured Services
+
+* Pind Daan
+* Shraddh Karma
+* Tarpan
+* Narayan Bali
+* Tripindi Shraddh
+* Online Pind Daan
+
+Each card should contain:
+
+* Service Image
+* Short Description
+* Learn More Button
+
+---
+
+## Section 4: Sacred Journey Process
+
+### Objective
+
+Explain how the service works.
+
+### Steps
+
+1. Submit Enquiry
+2. Speak With Coordinator
+3. Finalize Requirements
+4. Booking Confirmation
+5. Ritual Performance
+6. Completion Support
+
+### Design
+
+Horizontal timeline on desktop.
+
+Vertical timeline on mobile.
+
+---
+
+## Section 5: Sacred Places of Gaya
+
+### Objective
+
+Educate visitors and strengthen trust.
+
+### Featured Locations
+
+* Vishnupad Temple
+* Falgu River
+* Akshay Vat
+* Pretshila
+* Ramshila
+
+Each location should link to a dedicated page.
+
+---
+
+## Section 6: Packages
+
+### Objective
+
+Present service options clearly.
+
+### Packages
+
+Basic
+
+Premium
+
+VIP
+
+Display:
+
+* Inclusions
+* Key Benefits
+* CTA Button
+
+---
+
+## Section 7: Testimonials
+
+### Objective
+
+Provide social proof.
+
+### Content
+
+* Customer reviews
+* Video testimonials
+* Ratings
+* Customer stories
+
+### Layout
+
+Carousel or grid layout.
+
+---
+
+## Section 8: Gallery
+
+### Objective
+
+Show authenticity through real experiences.
+
+### Categories
+
+* Rituals
+* Temples
+* Pilgrims
+* Sacred Locations
+
+Only real photographs should be used.
+
+---
+
+## Section 9: Frequently Asked Questions
+
+### Objective
+
+Reduce customer uncertainty.
+
+### Categories
+
+* Ritual Questions
+* Travel Questions
+* Booking Questions
+* Online Service Questions
+
+---
+
+## Section 10: Final Call to Action
+
+### Objective
+
+Encourage enquiry submission.
+
+Headline:
+
+Begin Your Sacred Journey Today
+
+Supporting Text:
+
+Connect with our team and receive guidance for your spiritual requirements.
+
+CTA:
+
+Book Now
+
+---
+
+## Section 11: Footer
+
+### Components
+
+Company Information
+
+Services
+
+Useful Links
+
+Contact Information
+
+Social Media Links
+
+Legal Pages
+
+---
+
+# Service Page Architecture
+
+Every service page should follow a standardized structure.
+
+---
+
+## Hero Section
+
+Service Name
+
+Short Description
+
+Book Now CTA
+
+---
+
+## About the Service
+
+Detailed explanation.
+
+---
+
+## Spiritual Significance
+
+Importance and traditional relevance.
+
+---
+
+## Process Overview
+
+Step-by-step explanation.
+
+---
+
+## Included Services
+
+Detailed inclusions.
+
+---
+
+## Frequently Asked Questions
+
+Service-specific questions.
+
+---
+
+## Testimonial Section
+
+Relevant customer experiences.
+
+---
+
+## Final CTA
+
+Book Service
+
+Contact Coordinator
+
+---
+
+# About Us Page Architecture
+
+Sections:
+
+* Company Introduction
+* Vision & Mission
+* Core Values
+* Why Choose Us
+* Team Information
+* Final CTA
+
+---
+
+# Contact Page Architecture
+
+Sections:
+
+* Contact Form
+* WhatsApp
+* Phone
+* Email
+* Address
+* Map
+
+---
+
+# Blog Architecture
+
+Every blog article should contain:
+
+* Featured Image
+* Introduction
+* Main Content
+* FAQ
+* Related Articles
+* CTA
+
+---
+
+# Conversion Strategy
+
+The website should encourage visitors to:
+
+1. Read about services.
+2. Build trust through testimonials and educational content.
+3. Submit enquiries.
+4. Speak with coordinators.
+5. Complete bookings.
+
+Every page should contain at least one clear Call-To-Action.
+
+---
+
+# Design Principles
+
+The website design should consistently communicate:
+
+### Trust
+
+### Spirituality
+
+### Luxury
+
+### Authenticity
+
+### Simplicity
+
+### Professionalism
+
+The experience should feel calm, premium, sacred, and timeless rather than overly commercial or flashy.
+
+---
+
+# Conclusion
+
+The public website architecture has been designed to maximize trust, user engagement, and enquiry generation while reflecting the luxury spiritual identity of Moksha Gaya. Every page and section contributes to creating a meaningful customer experience and supporting long-term business growth.
+
+
+-- Page 5
+
+# 5. Booking System Architecture
+
+## Introduction
+
+The Moksha Gaya booking system is designed to prioritize customer trust, personalized consultation, and operational control. Rather than fully automated bookings, the platform follows a lead-based workflow where customers submit service requests and coordinators guide them through the booking process.
+
+This approach allows the company to understand customer requirements, provide personalized assistance, and maintain high service quality standards.
+
+---
+
+# Booking Philosophy
+
+The booking process should be:
+
+### Simple
+
+Customers should be able to submit requests quickly.
+
+---
+
+### Guided
+
+Customers receive support from coordinators.
+
+---
+
+### Transparent
+
+Requirements, pricing, and expectations are clearly communicated.
+
+---
+
+### Flexible
+
+The system should accommodate different ritual requirements and customer preferences.
+
+---
+
+# Customer Booking Journey
+
+## Step 1: Service Discovery
+
+Customer visits the website and explores:
+
+* Services
+* Packages
+* FAQs
+* Sacred Places
+* Testimonials
+
+### Objective
+
+Build trust and educate the customer.
+
+---
+
+## Step 2: Booking Form Submission
+
+Customer submits a booking enquiry.
+
+### Required Fields
+
+Full Name
+
+Mobile Number
+
+Email Address
+
+City
+
+State
+
+Country
+
+Service Required
+
+Preferred Ritual Date
+
+Number of Participants
+
+Additional Requirements
+
+Preferred Communication Method
+
+---
+
+### Optional Fields
+
+Gotra
+
+Special Requests
+
+Hotel Assistance Required
+
+Transportation Required
+
+Preferred Language
+
+---
+
+## Step 3: Lead Creation
+
+Upon form submission:
+
+### System Actions
+
+* Generate Lead ID
+* Store customer information
+* Notify administrators
+* Notify coordinators
+* Send acknowledgement message to customer
+
+### Lead Status
+
+New Lead
+
+---
+
+## Step 4: Coordinator Review
+
+Coordinator reviews:
+
+* Customer details
+* Service requirements
+* Preferred dates
+* Additional requests
+
+### Objective
+
+Prepare for customer communication.
+
+---
+
+## Step 5: Customer Consultation
+
+Coordinator contacts the customer.
+
+### Discussion Topics
+
+* Ritual requirements
+* Package options
+* Accommodation needs
+* Transportation requirements
+* Scheduling preferences
+
+### Outcome
+
+Determine the most suitable service plan.
+
+---
+
+## Step 6: Booking Confirmation
+
+Once requirements are finalized:
+
+### Coordinator Actions
+
+* Confirm service details
+* Confirm pricing
+* Confirm schedule
+* Assign service providers
+
+### Lead Status
+
+Confirmed Booking
+
+---
+
+## Step 7: Service Coordination
+
+Operations team prepares:
+
+* Pandit assignment
+* Accommodation arrangements
+* Transportation arrangements
+* Customer instructions
+
+### Lead Status
+
+Scheduled
+
+---
+
+## Step 8: Ritual Completion
+
+Services are successfully delivered.
+
+### Coordinator Actions
+
+* Collect feedback
+* Upload documentation
+* Update records
+
+### Lead Status
+
+Completed
+
+---
+
+# Lead Lifecycle
+
+Every enquiry will move through the following stages.
+
+### New Lead
+
+Booking request submitted.
+
+---
+
+### Contact Attempted
+
+Coordinator initiated communication.
+
+---
+
+### Consultation Completed
+
+Customer requirements discussed.
+
+---
+
+### Quotation Shared
+
+Service details and pricing shared.
+
+---
+
+### Confirmed
+
+Customer confirmed booking.
+
+---
+
+### Scheduled
+
+Services assigned and prepared.
+
+---
+
+### In Progress
+
+Services currently being delivered.
+
+---
+
+### Completed
+
+Services successfully completed.
+
+---
+
+### Closed
+
+Process finalized and archived.
+
+---
+
+# Booking Form Architecture
+
+## Core Information
+
+* Full Name
+* Mobile Number
+* Email Address
+
+---
+
+## Service Information
+
+* Service Type
+* Preferred Date
+* Number of Participants
+
+---
+
+## Travel Information
+
+* Arrival Location
+* Accommodation Requirements
+* Transportation Requirements
+
+---
+
+## Additional Information
+
+* Special Requests
+* Preferred Communication Method
+* Notes
+
+---
+
+# Notification System
+
+## Customer Notifications
+
+### Form Submitted
+
+Confirmation message.
+
+---
+
+### Coordinator Assigned
+
+Contact information shared.
+
+---
+
+### Booking Confirmed
+
+Booking details provided.
+
+---
+
+### Service Reminder
+
+Reminder before scheduled ritual.
+
+---
+
+### Completion Message
+
+Thank-you message and feedback request.
+
+---
+
+# Internal Notification System
+
+Administrators should receive notifications when:
+
+### New Lead Submitted
+
+Immediate notification.
+
+---
+
+### Booking Confirmed
+
+Operational preparation begins.
+
+---
+
+### Service Completed
+
+Records updated.
+
+---
+
+# Lead Assignment System
+
+Administrators may assign leads to coordinators.
+
+### Assignment Factors
+
+* Service type
+* Language preference
+* Customer requirements
+* Availability
+
+---
+
+# Booking Dashboard Requirements
+
+The admin dashboard should display:
+
+### Lead ID
+
+### Customer Name
+
+### Service Requested
+
+### Contact Number
+
+### Lead Status
+
+### Coordinator Assigned
+
+### Preferred Date
+
+### Date Created
+
+### Last Updated
+
+---
+
+# Business Rules
+
+### Rule 1
+
+Every booking request must receive a coordinator response.
+
+---
+
+### Rule 2
+
+No lead should remain unattended beyond the defined response period.
+
+---
+
+### Rule 3
+
+Customer communication must be documented.
+
+---
+
+### Rule 4
+
+Booking statuses must remain updated.
+
+---
+
+### Rule 5
+
+Service completion must be verified before closure.
+
+---
+
+# Future Enhancements
+
+Future versions may include:
+
+* Online payments
+* Customer dashboards
+* Automated reminders
+* Live ritual tracking
+* Digital document delivery
+* Mobile app integration
+
+---
+
+# Conclusion
+
+The Moksha Gaya booking system is designed to balance operational control with customer convenience. By combining digital lead capture with personalized consultation, the platform creates a premium customer experience while ensuring high service quality and efficient business operations.
+
+
+-- Page 6 
+
+
+# 6. Admin Dashboard Architecture
+
+## Introduction
+
+The Admin Dashboard serves as the central management system for Moksha Gaya. It enables administrators, coordinators, and operational staff to manage customer enquiries, bookings, services, content, and business operations from a single platform.
+
+The dashboard is designed to improve efficiency, increase visibility into business operations, and support future growth.
+
+---
+
+# Dashboard Objectives
+
+The Admin Dashboard should:
+
+### Centralize Operations
+
+Provide a single interface for managing all business activities.
+
+---
+
+### Improve Efficiency
+
+Reduce manual work and simplify workflows.
+
+---
+
+### Increase Visibility
+
+Provide real-time insights into bookings, leads, and operations.
+
+---
+
+### Support Growth
+
+Allow new services, locations, and team members to be added easily.
+
+---
+
+# Dashboard Homepage
+
+The main dashboard should provide a quick overview of business activity.
+
+---
+
+## Key Metrics
+
+### Total Leads
+
+Number of enquiries received.
+
+---
+
+### Active Bookings
+
+Current confirmed bookings.
+
+---
+
+### Completed Services
+
+Successfully completed rituals.
+
+---
+
+### Pending Follow-Ups
+
+Leads requiring coordinator action.
+
+---
+
+### Monthly Enquiries
+
+Total enquiries received during the month.
+
+---
+
+### Conversion Rate
+
+Percentage of enquiries converted into bookings.
+
+---
+
+# Lead Management Module
+
+## Purpose
+
+Manage customer enquiries and booking requests.
+
+---
+
+## Features
+
+### View Leads
+
+List all customer enquiries.
+
+---
+
+### Lead Details
+
+Display:
+
+* Lead ID
+* Customer Name
+* Contact Information
+* Service Requested
+* Preferred Date
+* Notes
+
+---
+
+### Update Status
+
+Statuses include:
+
+* New Lead
+* Contact Attempted
+* Consultation Completed
+* Quotation Shared
+* Confirmed
+* Scheduled
+* Completed
+* Closed
+
+---
+
+### Assign Coordinator
+
+Assign responsibility to a specific coordinator.
+
+---
+
+# Booking Management Module
+
+## Purpose
+
+Manage confirmed bookings and service schedules.
+
+---
+
+## Features
+
+### View Bookings
+
+Display all active bookings.
+
+---
+
+### Booking Details
+
+Show:
+
+* Booking ID
+* Customer Information
+* Service Type
+* Schedule
+* Assigned Coordinator
+* Status
+
+---
+
+### Update Booking Status
+
+Statuses include:
+
+* Confirmed
+* Scheduled
+* In Progress
+* Completed
+* Cancelled
+
+---
+
+# Customer Management Module
+
+## Purpose
+
+Maintain customer records.
+
+---
+
+## Customer Profile
+
+Display:
+
+* Name
+* Phone Number
+* Email
+* Location
+* Service History
+* Notes
+
+---
+
+## Customer History
+
+Track:
+
+* Previous Enquiries
+* Previous Bookings
+* Communication Records
+
+---
+
+# Services Management Module
+
+## Purpose
+
+Manage all available services.
+
+---
+
+## Features
+
+### Add Service
+
+Create new service offerings.
+
+---
+
+### Edit Service
+
+Update content and details.
+
+---
+
+### Disable Service
+
+Temporarily hide services.
+
+---
+
+## Service Fields
+
+* Name
+* Description
+* Duration
+* Status
+* Display Order
+
+---
+
+# Package Management Module
+
+## Purpose
+
+Manage service packages.
+
+---
+
+## Package Types
+
+### Basic
+
+### Premium
+
+### VIP
+
+---
+
+## Package Fields
+
+* Package Name
+* Description
+* Included Services
+* Benefits
+* Status
+
+---
+
+# Content Management Module
+
+## Purpose
+
+Manage website content.
+
+---
+
+## Blog Management
+
+### Create Articles
+
+### Edit Articles
+
+### Publish Articles
+
+### Archive Articles
+
+---
+
+## SEO Management
+
+Fields:
+
+* Meta Title
+* Meta Description
+* Keywords
+* URL Slug
+
+---
+
+# Testimonials Management
+
+## Purpose
+
+Manage customer reviews.
+
+---
+
+## Features
+
+### Add Testimonial
+
+### Edit Testimonial
+
+### Approve Testimonial
+
+### Archive Testimonial
+
+---
+
+## Fields
+
+* Customer Name
+* Rating
+* Review
+* Service Type
+* Media
+
+---
+
+# Gallery Management
+
+## Purpose
+
+Manage website images and videos.
+
+---
+
+## Categories
+
+* Rituals
+* Temples
+* Pilgrims
+* Events
+
+---
+
+# Sacred Places Module
+
+## Purpose
+
+Manage informational pages.
+
+---
+
+## Locations
+
+* Vishnupad Temple
+* Falgu River
+* Akshay Vat
+* Pretshila
+* Ramshila
+
+---
+
+# Notification Management
+
+## Purpose
+
+Track and manage notifications.
+
+---
+
+## Types
+
+### New Lead
+
+### Booking Confirmation
+
+### Reminder Notifications
+
+### Service Completion
+
+---
+
+# Reports & Analytics Module
+
+## Purpose
+
+Provide business insights.
+
+---
+
+## Reports
+
+### Lead Report
+
+### Booking Report
+
+### Service Performance Report
+
+### Coordinator Performance Report
+
+### Monthly Growth Report
+
+---
+
+# User Management Module
+
+## Purpose
+
+Manage platform users.
+
+---
+
+## Roles
+
+### Super Admin
+
+Full platform access.
+
+---
+
+### Admin
+
+Operational management access.
+
+---
+
+### Coordinator
+
+Lead and booking management.
+
+---
+
+### Content Manager
+
+Blogs, SEO, and content management.
+
+---
+
+# Audit & Activity Logs
+
+## Purpose
+
+Track system activity.
+
+---
+
+## Record
+
+* User actions
+* Updates
+* Status changes
+* Content changes
+
+---
+
+# Dashboard Navigation Structure
+
+Dashboard
+
+├── Overview
+
+├── Leads
+
+├── Bookings
+
+├── Customers
+
+├── Services
+
+├── Packages
+
+├── Testimonials
+
+├── Gallery
+
+├── Sacred Places
+
+├── Blog
+
+├── Reports
+
+├── Users
+
+├── Settings
+
+---
+
+# Future Dashboard Modules
+
+Future versions may include:
+
+### Customer Portal
+
+### Payment Management
+
+### Mobile Application Integration
+
+### Live Ritual Streaming
+
+### CRM Automation
+
+### AI Assistant
+
+### Multi-City Operations
+
+---
+
+# Conclusion
+
+The Admin Dashboard acts as the operational backbone of Moksha Gaya. By centralizing customer management, booking workflows, content administration, and reporting, the dashboard ensures efficient business operations while supporting future growth and expansion.
+
+
+-- Page 7 
+
+
+# 7. Lead Management & CRM Workflow
+
+## Introduction
+
+The Lead Management and CRM Workflow defines how customer enquiries are captured, managed, tracked, and converted into confirmed bookings.
+
+The objective is to ensure that every lead receives timely attention, structured follow-up, and professional communication throughout the customer journey.
+
+A well-defined CRM process helps improve conversion rates, customer satisfaction, operational efficiency, and long-term business growth.
+
+---
+
+# CRM Objectives
+
+The CRM system should:
+
+### Capture Every Enquiry
+
+No customer enquiry should be lost.
+
+---
+
+### Improve Follow-Ups
+
+Ensure consistent communication.
+
+---
+
+### Increase Conversions
+
+Convert more enquiries into confirmed bookings.
+
+---
+
+### Maintain Customer History
+
+Store complete customer interaction records.
+
+---
+
+### Support Long-Term Relationships
+
+Encourage repeat bookings and referrals.
+
+---
+
+# Lead Sources
+
+Leads may originate from multiple channels.
+
+### Website Enquiry Forms
+
+Primary source of leads.
+
+---
+
+### WhatsApp
+
+Direct customer enquiries.
+
+---
+
+### Phone Calls
+
+Inbound customer calls.
+
+---
+
+### Email Enquiries
+
+Customer communication via email.
+
+---
+
+### Social Media
+
+Facebook, Instagram, YouTube, etc.
+
+---
+
+### Referral Sources
+
+Existing customers and partner referrals.
+
+---
+
+# Lead Lifecycle
+
+Every lead should move through a structured workflow.
+
+---
+
+## Stage 1: New Lead
+
+### Description
+
+Customer submits an enquiry.
+
+### System Actions
+
+* Generate Lead ID
+* Store customer information
+* Notify administrator
+* Notify assigned coordinator
+
+### Status
+
+New Lead
+
+---
+
+## Stage 2: Contact Attempted
+
+### Description
+
+Coordinator initiates communication.
+
+### Actions
+
+* Phone call
+* WhatsApp message
+* Email communication
+
+### Status
+
+Contact Attempted
+
+---
+
+## Stage 3: Consultation Completed
+
+### Description
+
+Customer requirements have been discussed.
+
+### Information Collected
+
+* Ritual requirements
+* Travel requirements
+* Package preference
+* Scheduling preferences
+
+### Status
+
+Consultation Completed
+
+---
+
+## Stage 4: Quotation Shared
+
+### Description
+
+Service proposal and pricing have been communicated.
+
+### Information Shared
+
+* Recommended package
+* Pricing
+* Inclusions
+* Service schedule
+
+### Status
+
+Quotation Shared
+
+---
+
+## Stage 5: Follow-Up
+
+### Description
+
+Coordinator follows up regarding the proposal.
+
+### Objective
+
+Address questions and encourage booking confirmation.
+
+### Status
+
+Follow-Up
+
+---
+
+## Stage 6: Booking Confirmed
+
+### Description
+
+Customer agrees to proceed.
+
+### Actions
+
+* Finalize arrangements
+* Assign resources
+* Schedule services
+
+### Status
+
+Confirmed
+
+---
+
+## Stage 7: Service Delivery
+
+### Description
+
+Services are actively being delivered.
+
+### Status
+
+In Progress
+
+---
+
+## Stage 8: Service Completed
+
+### Description
+
+Rituals and related services have been completed.
+
+### Actions
+
+* Collect feedback
+* Request testimonial
+* Archive records
+
+### Status
+
+Completed
+
+---
+
+## Stage 9: Closed
+
+### Description
+
+Customer journey completed.
+
+### Status
+
+Closed
+
+---
+
+# Follow-Up Strategy
+
+Effective follow-up significantly improves conversion rates.
+
+---
+
+## First Follow-Up
+
+Timing:
+
+Within 24 hours of enquiry submission.
+
+Objective:
+
+Establish contact and understand requirements.
+
+---
+
+## Second Follow-Up
+
+Timing:
+
+1–2 days after consultation.
+
+Objective:
+
+Address customer concerns.
+
+---
+
+## Third Follow-Up
+
+Timing:
+
+2–3 days after quotation.
+
+Objective:
+
+Encourage booking decision.
+
+---
+
+## Final Follow-Up
+
+Timing:
+
+Before lead closure.
+
+Objective:
+
+Confirm customer decision.
+
+---
+
+# Customer Communication Standards
+
+Every interaction should be:
+
+### Professional
+
+Maintain respectful communication.
+
+---
+
+### Transparent
+
+Provide accurate information.
+
+---
+
+### Compassionate
+
+Recognize the emotional nature of spiritual services.
+
+---
+
+### Responsive
+
+Respond promptly to enquiries.
+
+---
+
+### Consistent
+
+Ensure communication quality across all channels.
+
+---
+
+# CRM Customer Profile
+
+Each customer profile should contain:
+
+### Personal Information
+
+* Name
+* Mobile Number
+* Email Address
+* City
+* State
+* Country
+
+---
+
+### Service Information
+
+* Service Requested
+* Preferred Date
+* Package Preference
+
+---
+
+### Communication History
+
+* Calls
+* WhatsApp Messages
+* Emails
+* Notes
+
+---
+
+### Booking History
+
+* Previous Services
+* Previous Enquiries
+* Previous Payments
+
+---
+
+# Lead Scoring System
+
+Future versions may prioritize leads based on:
+
+### Service Type
+
+High-value services receive higher priority.
+
+---
+
+### Urgency
+
+Near-term requirements receive higher priority.
+
+---
+
+### Customer Profile
+
+Premium and repeat customers may receive priority handling.
+
+---
+
+# Coordinator Responsibilities
+
+Coordinators should:
+
+### Review New Leads
+
+Daily.
+
+---
+
+### Maintain Accurate Records
+
+Update CRM notes regularly.
+
+---
+
+### Conduct Follow-Ups
+
+According to defined schedules.
+
+---
+
+### Update Lead Statuses
+
+Maintain accurate pipeline visibility.
+
+---
+
+### Escalate Special Cases
+
+When required.
+
+---
+
+# CRM Reports
+
+The CRM should generate:
+
+### Lead Source Report
+
+Track lead origins.
+
+---
+
+### Conversion Report
+
+Track enquiry-to-booking performance.
+
+---
+
+### Follow-Up Report
+
+Monitor coordinator activity.
+
+---
+
+### Customer Retention Report
+
+Track repeat customers.
+
+---
+
+### Monthly CRM Performance Report
+
+Evaluate overall CRM effectiveness.
+
+---
+
+# Key CRM Metrics
+
+### Lead Volume
+
+Total enquiries received.
+
+---
+
+### Conversion Rate
+
+Percentage of leads converted into bookings.
+
+---
+
+### Average Response Time
+
+Time taken to contact new leads.
+
+---
+
+### Follow-Up Completion Rate
+
+Percentage of scheduled follow-ups completed.
+
+---
+
+### Customer Satisfaction
+
+Post-service feedback score.
+
+---
+
+# Future CRM Enhancements
+
+Future versions may include:
+
+### Automated Follow-Ups
+
+### WhatsApp Integration
+
+### Email Automation
+
+### AI Lead Prioritization
+
+### Customer Dashboard Integration
+
+### Loyalty Program Management
+
+---
+
+# Conclusion
+
+The CRM workflow serves as the operational engine of Moksha Gaya. By implementing structured lead management, timely communication, and consistent follow-up processes, the company can improve customer satisfaction, increase booking conversions, and build long-term relationships with devotees.
+
+
+--page 8 
+
+# 8. User Journey Mapping
+
+## Introduction
+
+User Journey Mapping defines how different users interact with the Moksha Gaya platform from their first interaction through service completion and post-service engagement.
+
+The objective is to understand customer behavior, identify critical touchpoints, reduce friction, improve conversion rates, and deliver a premium customer experience.
+
+This document maps the journey of all primary stakeholders within the Moksha Gaya ecosystem.
+
+---
+
+# User Types
+
+The platform primarily serves four categories of users:
+
+### Visitor
+
+Website visitor exploring services and information.
+
+---
+
+### Customer
+
+Individual seeking spiritual services.
+
+---
+
+### Coordinator
+
+Team member managing enquiries and bookings.
+
+---
+
+### Administrator
+
+Platform manager responsible for operations and oversight.
+
+---
+
+# Visitor Journey
+
+## Stage 1: Awareness
+
+### Entry Sources
+
+* Google Search
+* Social Media
+* WhatsApp Referral
+* Family Recommendation
+* Blog Content
+* Direct Website Visit
+
+### Visitor Goals
+
+* Learn about services
+* Understand rituals
+* Find trustworthy providers
+
+### Platform Objectives
+
+* Build trust
+* Provide information
+* Encourage engagement
+
+---
+
+## Stage 2: Exploration
+
+Visitor explores:
+
+* Homepage
+* Services
+* Sacred Places
+* Testimonials
+* FAQs
+* Blog Articles
+
+### Visitor Questions
+
+* Is this trustworthy?
+* What services are available?
+* What will the process be?
+
+### Platform Objectives
+
+* Reduce uncertainty
+* Establish credibility
+* Showcase expertise
+
+---
+
+## Stage 3: Consideration
+
+Visitor evaluates:
+
+* Service options
+* Packages
+* Customer reviews
+* Contact methods
+
+### Platform Objectives
+
+* Encourage enquiry submission
+* Increase confidence
+* Highlight unique value proposition
+
+---
+
+## Stage 4: Conversion
+
+Visitor submits:
+
+* Booking enquiry
+* Contact form
+* WhatsApp message
+* Phone enquiry
+
+### Result
+
+Visitor becomes a Lead.
+
+---
+
+# Customer Journey
+
+## Stage 1: Lead Submission
+
+Customer submits booking request.
+
+### Customer Expectations
+
+* Quick response
+* Clear communication
+* Professional guidance
+
+### Platform Actions
+
+* Generate Lead ID
+* Send confirmation
+* Notify coordinator
+
+---
+
+## Stage 2: Consultation
+
+Customer speaks with coordinator.
+
+### Discussion Areas
+
+* Ritual requirements
+* Preferred dates
+* Package selection
+* Travel arrangements
+
+### Goal
+
+Finalize service requirements.
+
+---
+
+## Stage 3: Booking Confirmation
+
+Customer agrees to proceed.
+
+### Outcomes
+
+* Service schedule confirmed
+* Requirements finalized
+* Resources assigned
+
+---
+
+## Stage 4: Service Preparation
+
+Customer receives:
+
+* Instructions
+* Schedule details
+* Coordinator support
+
+### Goal
+
+Ensure readiness before service delivery.
+
+---
+
+## Stage 5: Service Delivery
+
+Customer participates in:
+
+* Ritual services
+* Travel arrangements
+* Pilgrimage support
+
+### Goal
+
+Deliver a seamless spiritual experience.
+
+---
+
+## Stage 6: Post-Service Engagement
+
+Customer receives:
+
+* Follow-up communication
+* Feedback requests
+* Future service recommendations
+
+### Goal
+
+Improve retention and referrals.
+
+---
+
+# Coordinator Journey
+
+## Stage 1: Lead Assignment
+
+Coordinator receives new lead.
+
+### Actions
+
+* Review details
+* Prepare consultation
+
+---
+
+## Stage 2: Initial Contact
+
+Coordinator reaches out.
+
+### Channels
+
+* Phone
+* WhatsApp
+* Email
+
+---
+
+## Stage 3: Consultation
+
+Coordinator gathers information.
+
+### Responsibilities
+
+* Understand customer requirements
+* Recommend services
+* Address concerns
+
+---
+
+## Stage 4: Booking Management
+
+Coordinator updates:
+
+* Lead status
+* Booking details
+* Customer notes
+
+---
+
+## Stage 5: Service Coordination
+
+Coordinator ensures:
+
+* Resource allocation
+* Schedule management
+* Customer communication
+
+---
+
+## Stage 6: Completion & Feedback
+
+Coordinator:
+
+* Confirms completion
+* Collects feedback
+* Requests testimonials
+
+---
+
+# Administrator Journey
+
+## Stage 1: Dashboard Monitoring
+
+Administrator reviews:
+
+* Leads
+* Bookings
+* Operations
+* Reports
+
+---
+
+## Stage 2: Resource Management
+
+Administrator manages:
+
+* Services
+* Coordinators
+* Content
+* Partners
+
+---
+
+## Stage 3: Performance Monitoring
+
+Administrator tracks:
+
+* Conversion rates
+* Customer satisfaction
+* Operational efficiency
+
+---
+
+## Stage 4: Business Growth
+
+Administrator plans:
+
+* Expansion
+* Partnerships
+* Marketing
+* Technology improvements
+
+---
+
+# Conversion Funnel
+
+The Moksha Gaya conversion funnel follows the following structure:
+
+### Visitors
+
+↓
+
+### Service Exploration
+
+↓
+
+### Enquiry Submission
+
+↓
+
+### Consultation
+
+↓
+
+### Booking Confirmation
+
+↓
+
+### Service Delivery
+
+↓
+
+### Customer Satisfaction
+
+↓
+
+### Referral & Repeat Business
+
+---
+
+# Critical Customer Touchpoints
+
+The following touchpoints have the greatest impact on customer satisfaction:
+
+### Website Experience
+
+First impression.
+
+---
+
+### Initial Response Time
+
+Builds trust.
+
+---
+
+### Consultation Quality
+
+Determines conversion likelihood.
+
+---
+
+### Service Delivery
+
+Core customer experience.
+
+---
+
+### Post-Service Follow-Up
+
+Influences referrals and reviews.
+
+---
+
+# Customer Pain Points
+
+Potential challenges include:
+
+### Lack of Information
+
+Solution:
+
+Educational content.
+
+---
+
+### Booking Uncertainty
+
+Solution:
+
+Dedicated coordinators.
+
+---
+
+### Travel Coordination
+
+Solution:
+
+End-to-end support.
+
+---
+
+### Service Trust
+
+Solution:
+
+Verified providers and testimonials.
+
+---
+
+# Success Indicators
+
+The user journey will be considered successful when:
+
+### Visitors become enquiries.
+
+### Enquiries become bookings.
+
+### Bookings become satisfied customers.
+
+### Customers become repeat customers.
+
+### Customers generate referrals.
+
+---
+
+# Future Journey Enhancements
+
+Future platform versions may include:
+
+### Customer Dashboard
+
+### Online Payments
+
+### Mobile Application
+
+### Live Service Tracking
+
+### Loyalty Programs
+
+### AI Assistance
+
+---
+
+# Conclusion
+
+The Moksha Gaya User Journey has been designed to create a seamless, trustworthy, and premium customer experience. By carefully managing every interaction from discovery to post-service engagement, the platform can maximize customer satisfaction, conversion rates, and long-term business growth.
+
+
+
+-- page 9
+
+
+# 9. Database Architecture & Data Model
+
+## Introduction
+
+The Moksha Gaya platform requires a scalable, secure, and maintainable database architecture capable of supporting customer enquiries, bookings, services, content management, reporting, and future expansion.
+
+The database design should follow a modular structure that allows additional services, locations, and features to be added without major architectural changes.
+
+The proposed database will use PostgreSQL as the primary database engine and Prisma ORM as the data access layer.
+
+---
+
+# Database Design Principles
+
+The database architecture should be:
+
+### Scalable
+
+Support future business growth.
+
+---
+
+### Secure
+
+Protect customer and operational data.
+
+---
+
+### Maintainable
+
+Allow easy updates and modifications.
+
+---
+
+### Performant
+
+Provide fast response times.
+
+---
+
+### Extensible
+
+Support future features and integrations.
+
+---
+
+# Core Entities
+
+The platform consists of the following primary entities:
+
+### Users
+
+### Customers
+
+### Leads
+
+### Bookings
+
+### Services
+
+### Packages
+
+### Testimonials
+
+### Blog Articles
+
+### Gallery Items
+
+### Sacred Places
+
+### Notifications
+
+### Activity Logs
+
+---
+
+# Users Table
+
+Purpose:
+
+Manage system users.
+
+### Fields
+
+User ID
+
+Full Name
+
+Email
+
+Phone Number
+
+Password Hash
+
+Role
+
+Status
+
+Created At
+
+Updated At
+
+---
+
+### User Roles
+
+Super Admin
+
+Admin
+
+Coordinator
+
+Content Manager
+
+---
+
+# Customers Table
+
+Purpose:
+
+Store customer information.
+
+### Fields
+
+Customer ID
+
+Full Name
+
+Phone Number
+
+Email Address
+
+City
+
+State
+
+Country
+
+Notes
+
+Created At
+
+Updated At
+
+---
+
+# Leads Table
+
+Purpose:
+
+Store customer enquiries.
+
+### Fields
+
+Lead ID
+
+Customer ID
+
+Service ID
+
+Lead Status
+
+Preferred Date
+
+Additional Requirements
+
+Assigned Coordinator
+
+Source
+
+Created At
+
+Updated At
+
+---
+
+# Lead Status Values
+
+New Lead
+
+Contact Attempted
+
+Consultation Completed
+
+Quotation Shared
+
+Follow-Up
+
+Confirmed
+
+Scheduled
+
+Completed
+
+Closed
+
+---
+
+# Services Table
+
+Purpose:
+
+Store available services.
+
+### Fields
+
+Service ID
+
+Service Name
+
+Slug
+
+Short Description
+
+Full Description
+
+Duration
+
+Display Order
+
+Status
+
+Created At
+
+Updated At
+
+---
+
+# Packages Table
+
+Purpose:
+
+Store package information.
+
+### Fields
+
+Package ID
+
+Package Name
+
+Description
+
+Benefits
+
+Status
+
+Created At
+
+Updated At
+
+---
+
+# Package Services Table
+
+Purpose:
+
+Map services to packages.
+
+### Fields
+
+Package Service ID
+
+Package ID
+
+Service ID
+
+Created At
+
+---
+
+# Bookings Table
+
+Purpose:
+
+Store confirmed bookings.
+
+### Fields
+
+Booking ID
+
+Customer ID
+
+Lead ID
+
+Service ID
+
+Package ID
+
+Coordinator ID
+
+Booking Status
+
+Scheduled Date
+
+Notes
+
+Created At
+
+Updated At
+
+---
+
+# Booking Status Values
+
+Confirmed
+
+Scheduled
+
+In Progress
+
+Completed
+
+Cancelled
+
+---
+
+# Testimonials Table
+
+Purpose:
+
+Store customer reviews.
+
+### Fields
+
+Testimonial ID
+
+Customer Name
+
+Service ID
+
+Rating
+
+Review
+
+Media URL
+
+Status
+
+Created At
+
+---
+
+# Blog Articles Table
+
+Purpose:
+
+Manage website content.
+
+### Fields
+
+Article ID
+
+Title
+
+Slug
+
+Summary
+
+Content
+
+Meta Title
+
+Meta Description
+
+Status
+
+Author ID
+
+Published Date
+
+Created At
+
+Updated At
+
+---
+
+# Gallery Table
+
+Purpose:
+
+Manage website media.
+
+### Fields
+
+Gallery Item ID
+
+Title
+
+Category
+
+Media Type
+
+Media URL
+
+Description
+
+Created At
+
+---
+
+# Sacred Places Table
+
+Purpose:
+
+Manage informational pages.
+
+### Fields
+
+Place ID
+
+Place Name
+
+Slug
+
+Description
+
+Content
+
+Image URL
+
+Display Order
+
+Status
+
+Created At
+
+---
+
+# Notifications Table
+
+Purpose:
+
+Track system notifications.
+
+### Fields
+
+Notification ID
+
+User ID
+
+Type
+
+Title
+
+Message
+
+Read Status
+
+Created At
+
+---
+
+# Activity Logs Table
+
+Purpose:
+
+Track system activities.
+
+### Fields
+
+Log ID
+
+User ID
+
+Action
+
+Entity Type
+
+Entity ID
+
+Description
+
+Created At
+
+---
+
+# Relationships
+
+## Customer → Leads
+
+One customer can create multiple leads.
+
+Relationship:
+
+One-to-Many
+
+---
+
+## Customer → Bookings
+
+One customer can have multiple bookings.
+
+Relationship:
+
+One-to-Many
+
+---
+
+## Service → Leads
+
+One service can be associated with many leads.
+
+Relationship:
+
+One-to-Many
+
+---
+
+## Service → Bookings
+
+One service can have many bookings.
+
+Relationship:
+
+One-to-Many
+
+---
+
+## Package → Services
+
+Packages can contain multiple services.
+
+Relationship:
+
+Many-to-Many
+
+---
+
+## User → Leads
+
+Coordinators can manage multiple leads.
+
+Relationship:
+
+One-to-Many
+
+---
+
+## User → Bookings
+
+Coordinators can manage multiple bookings.
+
+Relationship:
+
+One-to-Many
+
+---
+
+# Reporting Requirements
+
+The database should support:
+
+### Lead Reports
+
+### Booking Reports
+
+### Service Reports
+
+### Coordinator Reports
+
+### Customer Reports
+
+### Growth Reports
+
+---
+
+# Security Requirements
+
+The system should support:
+
+### Password Encryption
+
+### Role-Based Access Control
+
+### Audit Logging
+
+### Secure Data Storage
+
+### Activity Tracking
+
+---
+
+# Future Database Extensions
+
+Future versions may include:
+
+### Payment Management
+
+### Customer Dashboard
+
+### Loyalty Program
+
+### Mobile Application
+
+### Live Streaming
+
+### CRM Automation
+
+### AI Features
+
+---
+
+# Conclusion
+
+The Moksha Gaya database architecture has been designed to support current operational requirements while providing a scalable foundation for future growth. The modular structure ensures maintainability, security, and flexibility as the platform expands into additional services and locations.
+
+
+-- page 10 
+
+
+# 10. Future Expansion Modules & Product Roadmap
+
+## Introduction
+
+The Moksha Gaya platform has been designed with long-term scalability in mind. While Version 1 focuses on lead generation, service management, and operational efficiency, the platform architecture should support future enhancements without requiring major redesigns.
+
+This roadmap outlines the planned evolution of the platform over multiple development phases.
+
+---
+
+# Product Evolution Strategy
+
+The platform will evolve through a phased development approach.
+
+### Phase 1
+
+Business Foundation
+
+### Phase 2
+
+Digital Operations
+
+### Phase 3
+
+Customer Self-Service
+
+### Phase 4
+
+Multi-City Expansion
+
+### Phase 5
+
+Global Spiritual Ecosystem
+
+---
+
+# Phase 1: Initial Launch (Version 1)
+
+## Objectives
+
+Establish a strong digital foundation.
+
+### Features Included
+
+* Public Website
+* Service Pages
+* Booking Forms
+* Admin Dashboard
+* Lead Management
+* CRM Workflow
+* Blog System
+* Gallery
+* Testimonials
+* Reports
+
+### Primary Goal
+
+Generate qualified enquiries and streamline operations.
+
+---
+
+# Phase 2: Enhanced Customer Experience
+
+## Objectives
+
+Improve customer convenience and engagement.
+
+### Planned Features
+
+#### Customer Dashboard
+
+Customers can:
+
+* View booking history
+* Access service information
+* Track enquiries
+* Download documents
+
+---
+
+#### Online Payments
+
+Support:
+
+* UPI
+* Debit Cards
+* Credit Cards
+* Net Banking
+
+---
+
+#### Automated Notifications
+
+Channels:
+
+* SMS
+* WhatsApp
+* Email
+
+---
+
+#### Digital Document Delivery
+
+Provide:
+
+* Booking confirmations
+* Ritual documentation
+* Service summaries
+
+---
+
+# Phase 3: Mobile Ecosystem
+
+## Objectives
+
+Expand accessibility through mobile platforms.
+
+### Planned Features
+
+#### Android Application
+
+#### iOS Application
+
+#### Push Notifications
+
+#### Mobile Booking Management
+
+#### Mobile Customer Support
+
+---
+
+## Benefits
+
+* Improved accessibility
+* Higher engagement
+* Faster communication
+
+---
+
+# Phase 4: Premium Spiritual Services
+
+## Objectives
+
+Expand service offerings and premium experiences.
+
+### Planned Features
+
+#### Live Ritual Streaming
+
+Family members can participate remotely.
+
+---
+
+#### HD Ritual Recordings
+
+Customers receive professionally recorded ceremonies.
+
+---
+
+#### Video Consultations
+
+Virtual sessions with pandits and coordinators.
+
+---
+
+#### Premium Concierge Services
+
+Dedicated assistance for VIP customers.
+
+---
+
+# Phase 5: NRI Services Platform
+
+## Objectives
+
+Serve devotees living outside India.
+
+### Planned Features
+
+#### NRI Portal
+
+Specialized services for international customers.
+
+---
+
+#### Multi-Currency Support
+
+Support global transactions.
+
+---
+
+#### International Consultation Scheduling
+
+Time-zone aware scheduling.
+
+---
+
+#### Global Communication Support
+
+Email and video communication.
+
+---
+
+# Phase 6: Multi-City Expansion
+
+## Objectives
+
+Expand beyond Gaya.
+
+### Target Locations
+
+* Varanasi
+* Haridwar
+* Prayagraj
+* Rameswaram
+* Ujjain
+* Ayodhya
+
+---
+
+### Platform Enhancements
+
+#### Location Management
+
+#### Regional Service Providers
+
+#### Multi-City Operations Dashboard
+
+#### Localized Content
+
+---
+
+# Phase 7: Advanced CRM & Automation
+
+## Objectives
+
+Improve operational efficiency.
+
+### Planned Features
+
+#### Automated Lead Assignment
+
+#### Follow-Up Automation
+
+#### Reminder Systems
+
+#### Customer Segmentation
+
+#### Marketing Automation
+
+---
+
+## Benefits
+
+* Reduced manual effort
+* Improved conversion rates
+* Better customer engagement
+
+---
+
+# Phase 8: AI & Intelligent Assistance
+
+## Objectives
+
+Leverage modern technology to improve customer support.
+
+### Planned Features
+
+#### AI Assistant
+
+Help customers understand:
+
+* Rituals
+* Services
+* Processes
+
+---
+
+#### Smart Recommendations
+
+Suggest:
+
+* Services
+* Packages
+* Sacred Places
+
+---
+
+#### Automated FAQ Responses
+
+Improve support availability.
+
+---
+
+# Phase 9: Loyalty & Membership Programs
+
+## Objectives
+
+Increase customer retention.
+
+### Planned Features
+
+#### Loyalty Program
+
+Reward repeat customers.
+
+---
+
+#### Family Accounts
+
+Manage multiple family bookings.
+
+---
+
+#### Annual Ritual Reminders
+
+Automated reminders for recurring services.
+
+---
+
+#### Membership Benefits
+
+Exclusive support and offers.
+
+---
+
+# Phase 10: National Spiritual Services Network
+
+## Objectives
+
+Become a leading spiritual services platform.
+
+### Long-Term Vision
+
+Provide a unified platform for:
+
+* Ritual Services
+* Pilgrimage Assistance
+* Religious Tourism
+* Spiritual Education
+* Digital Spiritual Services
+
+---
+
+# Technology Roadmap
+
+## Current Technology
+
+* Next.js
+* PostgreSQL
+* Prisma
+* Admin Dashboard
+
+---
+
+## Future Technology
+
+* Mobile Applications
+* Advanced CRM
+* AI Systems
+* Analytics Platform
+* Automation Engine
+
+---
+
+# Strategic Expansion Principles
+
+All future development must align with:
+
+### Authenticity
+
+Maintain traditional spiritual values.
+
+---
+
+### Trust
+
+Protect customer confidence.
+
+---
+
+### Simplicity
+
+Keep experiences intuitive.
+
+---
+
+### Scalability
+
+Support future growth.
+
+---
+
+### Innovation
+
+Leverage technology responsibly.
+
+---
+
+# Product Vision
+
+The long-term vision is to transform Moksha Gaya from a local spiritual services provider into a trusted national and international platform that connects devotees with authentic rituals, pilgrimage experiences, and spiritual guidance through a seamless digital ecosystem.
+
+---
+
+# Conclusion
+
+The future roadmap ensures that Moksha Gaya remains adaptable, scalable, and prepared for long-term growth. By following a phased development strategy, the platform can continuously evolve while preserving the core values of trust, authenticity, and service excellence that define the brand.
