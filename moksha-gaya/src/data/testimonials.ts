@@ -31,5 +31,13 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     service: "Shraddh Karma",
     photo: "/images/testimonials/suresh_kumar.png"
+  },
+  {
+    name: "Mishra Family",
+    location: "Patna",
+    quote: "Everything was arranged professionally. The Pandit Ji guided us throughout the process and made the entire ritual seamless and peaceful for our elders.",
+    rating: 5,
+    service: "Pind Daan",
+    photo: "/images/testimonials/rajesh_sharma.png"
   }
 ];

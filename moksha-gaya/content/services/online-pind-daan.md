@@ -29,6 +29,15 @@ Once the Sankalp is made, the physical offerings (Pind and Tarpan) performed by 
 
 ---
 
+## Remote Participation Key Features
+* **Live Video Call**: Connect in real-time with our verified Pandit Ji in Gaya via high-definition Zoom or WhatsApp Video streams directly from the holy banks.
+* **Real-time Ritual Participation**: Take your virtual Sankalp (vow) and recite traditional mantras in real-time under the direct guidance of the priest.
+* **Recorded Video Available**: Receive a complete high-definition video recording of the entire ancestral ceremony for your family's archive and peace of mind.
+* **Pandit Ji Assistance**: Benefit from the guidance of certified local Gayawal priests who are scripturally trained to execute all physical offerings correctly on your behalf.
+* **Suitable for NRI Families**: A convenient and spiritually authentic alternative for NRI families, senior citizens, and those unable to travel to Gaya due to health issues.
+
+---
+
 ## Process Overview
 1. **Details Submission**: Book the service online and submit the names, gotras, photos (optional), and relationships of the departed ancestors.
 2. **Scheduling**: Choose an auspicious date and receive your live-stream video link (Zoom/WhatsApp video).

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Footer() {
   const quickLinks = [
@@ -31,7 +32,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 mb-16">
           {/* Brand Col */}
           <div className="lg:col-span-1 md:col-span-3">
-            <a href="/" className="flex items-center gap-3 group mb-6 inline-flex animate-fade-in">
+            <Link href="/" className="flex items-center gap-3 group mb-6 inline-flex animate-fade-in">
               <div className="relative w-12 h-12 flex items-center justify-center shrink-0">
                 {/* Rotating gold dashed outer border */}
                 <div className="absolute inset-0 rounded-full border border-dashed border-[#b17a20] opacity-70 animate-slow-spin" />
@@ -47,9 +48,9 @@ export default function Footer() {
               <span className="font-serif text-lg font-bold tracking-widest text-white group-hover:text-[#b17a20] transition-colors leading-none">
                 MOKSHA GAYA
               </span>
-            </a>
+            </Link>
             <p className="text-sm text-[#a39785] leading-relaxed mb-6">
-              "Moksha Begins With Sacred Remembrance"<br/>
+              &quot;Moksha Begins With Sacred Remembrance&quot;<br/>
               A premium spiritual concierge platform delivering authentic Vedic rituals and pilgrimage assistance in Gaya, Bihar.
             </p>
             <div className="flex gap-4">
@@ -72,9 +73,9 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               {quickLinks.map((link, idx) => (
                 <li key={idx}>
-                  <a href={link.href} className="hover:text-white hover:underline transition-all">
+                  <Link href={link.href} className="hover:text-white hover:underline transition-all">
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -86,9 +87,9 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               {serviceLinks.map((link, idx) => (
                 <li key={idx}>
-                  <a href={link.href} className="hover:text-white hover:underline transition-all">
+                  <Link href={link.href} className="hover:text-white hover:underline transition-all">
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -125,21 +126,35 @@ export default function Footer() {
                 <span className="text-[#b17a20] mt-0.5">📞</span>
                 <div>
                   <p className="text-[#d6cdb8] font-medium">Phone Support</p>
-                  <p className="text-xs">+91 7782099739</p>
+                  <a href="tel:+917070719993" className="block text-xs hover:text-white hover:underline transition-colors">+91 70707 19993</a>
+                  <a href="tel:+919905852715" className="block text-xs hover:text-white hover:underline transition-colors">+91 99058 52715</a>
+                  <a href="tel:+917277948658" className="block text-xs hover:text-white hover:underline transition-colors">+91 72779 48658</a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-[#b17a20] mt-0.5">💬</span>
+                <div>
+                  <p className="text-[#d6cdb8] font-medium">WhatsApp Support</p>
+                  <a href="https://wa.me/917070719993" target="_blank" rel="noopener noreferrer" className="block text-xs hover:text-white hover:underline transition-colors">+91 70707 19993</a>
+                  <a href="https://wa.me/919905852715" target="_blank" rel="noopener noreferrer" className="block text-xs hover:text-white hover:underline transition-colors">+91 99058 52715</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#b17a20] mt-0.5">📧</span>
                 <div>
                   <p className="text-[#d6cdb8] font-medium">Email Address</p>
-                  <p className="text-xs">shkshvm@gmail.com</p>
+                  <a href="mailto:mokshagaya@gmail.com" className="block text-xs hover:text-white hover:underline transition-colors">
+                    mokshagaya@gmail.com
+                  </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#b17a20] mt-0.5">📍</span>
                 <div>
                   <p className="text-[#d6cdb8] font-medium">Office Location</p>
-                  <p className="text-xs">Vishnupad Road, Gaya, Bihar - 823001</p>
+                  <p className="text-xs">
+                    {"Nawagarhi, {Anpurna Niwas - Pd. Sidhnath ji Dubhaliya}, Gaya ji, Bihar - 823001"}
+                  </p>
                 </div>
               </li>
             </ul>
@@ -149,11 +164,11 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#322d29] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-[#827563]">
           <p>© {new Date().getFullYear()} Moksha Gaya. All Rights Reserved.</p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center sm:justify-end">
             {bottomLinks.map((link, idx) => (
-              <a key={idx} href={link.href} className="hover:text-white transition-colors">
+              <Link key={idx} href={link.href} className="hover:text-white transition-colors">
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

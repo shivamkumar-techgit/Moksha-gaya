@@ -158,7 +158,7 @@ export default function CTA() {
                       type="tel" 
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="e.g. 7782099739" 
+                      placeholder="e.g. 7070719993" 
                       className="w-full px-4 py-3 rounded-lg border border-[#efe9de] focus:outline-hidden focus:border-[#b17a20] text-sm text-[#2c1a04] bg-[#faf8f5]/50 focus:bg-white transition-all"
                       required
                     />

@@ -79,7 +79,7 @@ export function getLeads(): Lead[] {
   }
   try {
     return JSON.parse(stored);
-  } catch (e) {
+  } catch {
     return MOCK_LEADS;
   }
 }
@@ -140,7 +140,7 @@ export function saveLead(leadData: Omit<Lead, "id" | "status" | "notes" | "creat
     id: `WA_A_${Date.now()}`,
     refId,
     recipient: "Admin",
-    phone: "7782099739", // Main admin phone
+    phone: "7070719993", // Main admin phone
     message: adminMsg,
     timestamp: new Date().toISOString()
   });
@@ -167,7 +167,7 @@ export function cleanPhone(phone: string): string {
 }
 
 export function getEnquiryWhatsAppUrl(refId: string, name: string, ritual: string): string {
-  const adminPhone = "917782099739";
+  const adminPhone = "917070719993";
   const text = `Pranam, I have submitted an enquiry on Moksha Gaya.\n\n*Reference ID:* ${refId}\n*Name:* ${name}\n*Service:* ${ritual}\n\nPlease confirm my details.`;
   return `https://wa.me/${adminPhone}?text=${encodeURIComponent(text)}`;
 }

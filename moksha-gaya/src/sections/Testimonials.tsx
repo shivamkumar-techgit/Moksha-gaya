@@ -37,7 +37,7 @@ export default function Testimonials() {
 
                 {/* Quote */}
                 <p className="text-sm text-[#7c6954] leading-relaxed italic mb-6">
-                  "{review.quote}"
+                  &quot;{review.quote}&quot;
                 </p>
               </div>
 

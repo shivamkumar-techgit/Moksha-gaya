@@ -58,20 +58,39 @@ export default function ContactPage() {
   const contactInfo = [
     {
       title: "Phone Support",
-      value: "+91 7782099739",
-      desc: "Call or WhatsApp us to speak with a verified coordinator immediately.",
+      value: (
+        <span className="block space-y-1">
+          <a href="tel:+917070719993" className="hover:text-[#2c1a04] hover:underline transition-all block">+91 70707 19993</a>
+          <a href="tel:+919905852715" className="hover:text-[#2c1a04] hover:underline transition-all block">+91 99058 52715</a>
+          <a href="tel:+917277948658" className="hover:text-[#2c1a04] hover:underline transition-all block">+91 72779 48658</a>
+        </span>
+      ),
+      desc: "Call us to speak with a verified coordinator immediately.",
       icon: "📞"
     },
     {
+      title: "WhatsApp Support",
+      value: (
+        <span className="block space-y-1">
+          <a href="https://wa.me/917070719993" target="_blank" rel="noopener noreferrer" className="hover:text-[#2c1a04] hover:underline transition-all block">+91 70707 19993</a>
+          <a href="https://wa.me/919905852715" target="_blank" rel="noopener noreferrer" className="hover:text-[#2c1a04] hover:underline transition-all block">+91 99058 52715</a>
+        </span>
+      ),
+      desc: "Message us for quick assistance and ritual booking details.",
+      icon: "💬"
+    },
+    {
       title: "Email Address",
-      value: "shkshvm@gmail.com",
+      value: (
+        <a href="mailto:mokshagaya@gmail.com" className="hover:text-[#2c1a04] hover:underline transition-all block">mokshagaya@gmail.com</a>
+      ),
       desc: "For NRIs, corporate queries, or documentation uploads.",
       icon: "📧"
     },
     {
       title: "Main Office",
-      value: "Vishnupad Road, Gaya, Bihar",
-      desc: "Located near the entrance gates of the Vishnupad Temple complex.",
+      value: "Nawagarhi, {Anpurna Niwas - Pd. Sidhnath ji Dubhaliya}, Gaya ji, Bihar - 823001",
+      desc: "Our primary physical coordination office in Gaya.",
       icon: "📍"
     }
   ];
@@ -250,7 +269,7 @@ export default function ContactPage() {
         >
           <div className="mb-4 pl-2">
             <h3 className="font-serif text-xl font-bold text-[#2c1a04] mb-1">Our Location in Gaya</h3>
-            <p className="text-xs text-[#7c6954]">Located on Vishnupad Road, adjacent to the entry of the sacred Vishnupad Temple complex, Gaya, Bihar.</p>
+            <p className="text-xs text-[#7c6954]">{"Office: Nawagarhi, {Anpurna Niwas - Pd. Sidhnath ji Dubhaliya}, Gaya ji, Bihar - 823001"}</p>
           </div>
           <div className="relative w-full h-[400px] rounded-xl overflow-hidden border border-[#efe9de]">
             <iframe 

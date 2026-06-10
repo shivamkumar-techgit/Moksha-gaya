@@ -3,7 +3,7 @@ import React from "react";
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/917782099739?text=Pranam%2C%20I%20would%20like%20to%20enquire%20about%20performing%20rituals%20in%20Gaya."
+      href="https://wa.me/917070719993?text=Pranam%2C%20I%20would%20like%20to%20enquire%20about%20performing%20rituals%20in%20Gaya."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 flex items-center gap-3 pl-3 pr-5 py-2.5 rounded-full bg-[#2c1a04]/95 backdrop-blur-md border border-[#b17a20]/40 text-white shadow-xl hover:shadow-2xl hover:border-[#b17a20] hover:scale-105 active:scale-98 transition-all duration-300 group"

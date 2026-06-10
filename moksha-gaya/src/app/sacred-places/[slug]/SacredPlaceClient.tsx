@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { saveLead, getEnquiryWhatsAppUrl } from "@/utils/leads";
+import Link from "next/link";
 
 interface Section {
   title: string;
@@ -63,7 +64,6 @@ function renderTextWithMarkdown(text: string) {
 }
 
 export default function SacredPlaceClient({
-  slug,
   metadata,
   sections,
   image,
@@ -156,9 +156,9 @@ export default function SacredPlaceClient({
         <div className="container mx-auto px-6 max-w-6xl pb-12 relative z-20">
           {/* Breadcrumb */}
           <div className="text-xs text-[#a39785] mb-6 flex items-center gap-2">
-            <a href="/" className="hover:text-white transition-colors">Home</a>
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
-            <a href="/sacred-places" className="hover:text-white transition-colors">Sacred Places</a>
+            <Link href="/sacred-places" className="hover:text-white transition-colors">Sacred Places</Link>
             <span>/</span>
             <span className="text-white font-medium">{metadata.place_name || metadata.title}</span>
           </div>
@@ -175,7 +175,7 @@ export default function SacredPlaceClient({
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#2c1a04] mb-4 leading-tight"
+              className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight"
             >
               {metadata.title}
             </motion.h1>
@@ -183,7 +183,7 @@ export default function SacredPlaceClient({
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-sm md:text-base text-[#5c4a37] max-w-2xl leading-relaxed"
+              className="text-sm md:text-base text-[#d6cdb8] max-w-2xl leading-relaxed"
             >
               {metadata.short_description}
             </motion.p>
@@ -457,7 +457,7 @@ export default function SacredPlaceClient({
               <h4 className="font-serif text-lg font-bold text-[#2c1a04] pl-1">Other Holy Spots</h4>
               <div className="space-y-3">
                 {otherItems.map((item, index) => (
-                  <a 
+                  <Link 
                     key={index} 
                     href={`/sacred-places/${item.slug}`}
                     className="flex items-center gap-3 p-3 bg-white hover:bg-[#faf8f5] border border-[#efe9de] rounded-xl transition-all group"
@@ -469,7 +469,7 @@ export default function SacredPlaceClient({
                       <p className="font-serif text-sm font-bold text-[#2c1a04] truncate group-hover:text-[#b17a20] transition-colors">{item.title}</p>
                       <p className="text-[10px] text-[#7c6954]">View Details</p>
                     </div>
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

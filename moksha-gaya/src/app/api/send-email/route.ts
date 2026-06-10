@@ -27,8 +27,8 @@ function getHtmlWrapper(title: string, bodyContent: string): string {
           
           <!-- Footer -->
           <div style="background-color: #faf8f5; padding: 25px 30px; text-align: center; border-top: 1px solid #efe9de; font-size: 11px; color: #7c6954;">
-            <p style="margin: 0 0 8px 0;">Moksha Gaya • Vishnupad Road, Gaya, Bihar</p>
-            <p style="margin: 0;">Support: +91 7782099739 | <a href="mailto:shkshvm@gmail.com" style="color: #b17a20; text-decoration: none; font-weight: bold;">shkshvm@gmail.com</a></p>
+            <p style="margin: 0 0 8px 0;">Moksha Gaya • Nawagarhi, {Anpurna Niwas - Pd. Sidhnath ji Dubhaliya}, Gaya ji, Bihar - 823001</p>
+            <p style="margin: 0;">Support: +91 7070719993, +91 9905852715, +91 7277948658 | <a href="mailto:mokshagaya@gmail.com" style="color: #b17a20; text-decoration: none; font-weight: bold;">mokshagaya@gmail.com</a></p>
           </div>
         </div>
       </body>
@@ -122,7 +122,7 @@ export async function POST(req: Request) {
     `;
     const adminHtml = getHtmlWrapper("New Lead Received - Moksha Gaya", adminHtmlBody);
 
-    const adminRecipient = process.env.ADMIN_EMAIL || "shkshvm@gmail.com";
+    const adminRecipient = process.env.ADMIN_EMAIL || "mokshagaya@gmail.com";
 
     // 1. Resend Config
     const resendApiKey = process.env.RESEND_API_KEY;
@@ -218,10 +218,11 @@ export async function POST(req: Request) {
       sentToDevotee,
       mode: (resendApiKey) ? "Resend" : (smtpHost) ? "SMTP" : "Mock"
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Email handler error:", error);
+    const errorMessage = error instanceof Error ? error.message : "Internal Server Error";
     return NextResponse.json(
-      { success: false, error: error.message || "Internal Server Error" },
+      { success: false, error: errorMessage },
       { status: 500 }
     );
   }

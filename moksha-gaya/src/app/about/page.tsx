@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function AboutPage() {
   const values = [
@@ -166,18 +167,18 @@ export default function AboutPage() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <a 
+          <Link 
             href="/services" 
             className="px-8 py-4 bg-[#b17a20] hover:bg-[#2c1a04] border border-transparent hover:border-[#b17a20]/30 text-white text-xs font-bold uppercase tracking-widest rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-center"
           >
             Explore Rituals
-          </a>
-          <a 
+          </Link>
+          <Link 
             href="/contact" 
             className="px-8 py-4 bg-transparent hover:bg-[#2c1a04] text-[#2c1a04] hover:text-white border border-[#2c1a04] hover:border-transparent text-xs font-bold uppercase tracking-widest rounded-full transition-all duration-300 text-center"
           >
             Consult a coordinator
-          </a>
+          </Link>
         </motion.div>
       </section>
     </div>

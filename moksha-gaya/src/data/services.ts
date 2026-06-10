@@ -33,20 +33,20 @@ export const services: Service[] = [
     slug: "narayan-bali",
     desc: "A highly specialized two-day ritual performed to resolve severe Pitru Dosha and liberate souls that met untimely deaths.",
     icon: "🔱",
-    image: "/images/rituals/pinddan-image16.jpg"
+    image: "/images/gallery/ritual-ai6.png"
   },
   {
     title: "Tripindi Shraddh",
     slug: "tripindi-shraddh",
     desc: "Special ritual performed to satisfy ancestors from three different lineages and remove deep-seated family obstacles.",
     icon: "🔥",
-    image: "/images/rituals/pinddan-image17.webp"
+    image: "/images/gallery/ritual-ai1.png"
   },
   {
     title: "Online Pind Daan",
     slug: "online-pind-daan",
     desc: "Premium remote digital service enabling NRI and distant families to participate in rituals via high-definition live video.",
     icon: "💻",
-    image: "/images/gallery/ritual-ai6.png"
+    image: "/images/gallery/ritual-ai5.png"
   }
 ];

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { saveLead, getEnquiryWhatsAppUrl } from "@/utils/leads";
+import Link from "next/link";
 
 interface Section {
   title: string;
@@ -64,7 +65,6 @@ function renderTextWithMarkdown(text: string) {
 }
 
 export default function ServiceDetailClient({
-  slug,
   metadata,
   sections,
   image,
@@ -157,9 +157,9 @@ export default function ServiceDetailClient({
         <div className="container mx-auto px-6 max-w-6xl pb-12 relative z-20">
           {/* Breadcrumb */}
           <div className="text-xs text-[#a39785] mb-6 flex items-center gap-2">
-            <a href="/" className="hover:text-white transition-colors">Home</a>
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
-            <a href="/services" className="hover:text-white transition-colors">Services</a>
+            <Link href="/services" className="hover:text-white transition-colors">Services</Link>
             <span>/</span>
             <span className="text-white font-medium">{metadata.service_name || metadata.title}</span>
           </div>
@@ -176,7 +176,7 @@ export default function ServiceDetailClient({
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#2c1a04] mb-4 leading-tight"
+              className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight"
             >
               {metadata.title}
             </motion.h1>
@@ -184,7 +184,7 @@ export default function ServiceDetailClient({
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-sm md:text-base text-[#5c4a37] max-w-2xl leading-relaxed"
+              className="text-sm md:text-base text-[#d6cdb8] max-w-2xl leading-relaxed"
             >
               {metadata.short_description}
             </motion.p>
@@ -204,9 +204,9 @@ export default function ServiceDetailClient({
               const isAbout = sec.title.toLowerCase().includes("about");
               const isSignificance = sec.title.toLowerCase().includes("significance");
               const isProcess = sec.title.toLowerCase().includes("process");
-              const isFAQ = sec.title.toLowerCase().includes("question") || sec.title.toLowerCase().includes("faq");
               const isTestimonial = sec.title.toLowerCase().includes("testimonial");
               const isInclusions = sec.title.toLowerCase().includes("included") || sec.title.toLowerCase().includes("inclusion");
+              const isFeatures = sec.title.toLowerCase().includes("key features") || sec.title.toLowerCase().includes("remote participation") || sec.title.toLowerCase().includes("benefit");
 
               // 1. About / Spiritual Significance Block
               if (isAbout || isSignificance) {
@@ -269,7 +269,58 @@ export default function ServiceDetailClient({
                 );
               }
 
-              // 3. Inclusions Grid Block
+              // 3. Remote Features / Benefits Grid Block
+              if (isFeatures) {
+                return (
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    key={idx} 
+                    className="bg-white rounded-2xl border border-[#efe9de] p-8 md:p-10 shadow-xs"
+                  >
+                    <h2 className="font-serif text-2xl font-bold text-[#2c1a04] mb-6">
+                      {sec.title}
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {sec.bodyLines.map((line, lIdx) => {
+                        const isBullet = line.startsWith("*") || line.startsWith("-");
+                        const cleanLine = isBullet ? line.substring(1).trim() : line;
+                        
+                        const titleMatch = cleanLine.match(/^\*\*(.*?)\*\*(.*)/);
+                        const title = titleMatch ? titleMatch[1] : "";
+                        const description = titleMatch ? titleMatch[2].replace(/^:\s*/, "") : cleanLine;
+
+                        let emoji = "✨";
+                        const lowerTitle = title.toLowerCase();
+                        if (lowerTitle.includes("video call")) emoji = "📹";
+                        else if (lowerTitle.includes("real-time") || lowerTitle.includes("participation")) emoji = "🤝";
+                        else if (lowerTitle.includes("recorded") || lowerTitle.includes("recording")) emoji = "💾";
+                        else if (lowerTitle.includes("pandit") || lowerTitle.includes("priest")) emoji = "🕉️";
+                        else if (lowerTitle.includes("nri")) emoji = "🌍";
+
+                        return (
+                          <div key={lIdx} className="p-6 rounded-xl border border-[#efe9de] bg-[#faf8f5]/40 hover:bg-[#faf8f5] hover:border-[#b17a20]/30 transition-all duration-300 group/feat flex gap-4">
+                            <span className="text-3xl shrink-0 select-none group-hover/feat:scale-105 transition-transform duration-300">
+                              {emoji}
+                            </span>
+                            <div>
+                              <h3 className="font-serif font-bold text-base text-[#2c1a04] mb-1 group-hover/feat:text-[#b17a20] transition-colors">
+                                {title || "Feature"}
+                              </h3>
+                              <p className="text-xs text-[#7c6954] leading-relaxed">
+                                {renderTextWithMarkdown(description)}
+                              </p>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </motion.div>
+                );
+              }
+
+              // 4. Inclusions Grid Block
               if (isInclusions) {
                 return (
                   <motion.div 
@@ -459,7 +510,7 @@ export default function ServiceDetailClient({
               <h4 className="font-serif text-lg font-bold text-[#2c1a04] pl-1">Other Rites</h4>
               <div className="space-y-3">
                 {otherItems.map((item, index) => (
-                  <a 
+                  <Link 
                     key={index} 
                     href={`/services/${item.slug}`}
                     className="flex items-center gap-3 p-3 bg-white hover:bg-[#faf8f5] border border-[#efe9de] rounded-xl transition-all group"
@@ -471,7 +522,7 @@ export default function ServiceDetailClient({
                       <p className="font-serif text-sm font-bold text-[#2c1a04] truncate group-hover:text-[#b17a20] transition-colors">{item.title}</p>
                       <p className="text-[10px] text-[#7c6954]">View Details</p>
                     </div>
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

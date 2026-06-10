@@ -31,12 +31,13 @@ export default function AdminPanel() {
     if (typeof window !== "undefined") {
       const logged = sessionStorage.getItem("moksha_gaya_logged_in") === "true";
       if (logged) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setIsLoggedIn(true);
       }
       setLeads(getLeads());
       setWhatsappLogs(getWhatsAppLogs());
     }
-  }, [isLoggedIn]);
+  }, []);
 
   // Handle Login
   const handleLogin = (e: React.FormEvent) => {
@@ -46,6 +47,8 @@ export default function AdminPanel() {
         sessionStorage.setItem("moksha_gaya_logged_in", "true");
       }
       setIsLoggedIn(true);
+      setLeads(getLeads());
+      setWhatsappLogs(getWhatsAppLogs());
       setLoginError("");
     } else {
       setLoginError("Invalid credentials. Try again.");
@@ -480,7 +483,7 @@ export default function AdminPanel() {
                 {selectedLead.additionalInfo && (
                   <div className="p-4 bg-amber-50/50 border border-amber-200/50 rounded-xl">
                     <p className="text-[10px] text-amber-800 font-bold uppercase mb-1">Enquiry Requirements &amp; gotra Details</p>
-                    <p className="text-stone-700 leading-relaxed font-serif italic">"{selectedLead.additionalInfo}"</p>
+                    <p className="text-stone-700 leading-relaxed font-serif italic">&quot;{selectedLead.additionalInfo}&quot;</p>
                   </div>
                 )}
 

@@ -1,16 +1,39 @@
 "use client";
 
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, Suspense } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
 import { saveLead, getEnquiryWhatsAppUrl } from "@/utils/leads";
+import Link from "next/link";
 
 function BookNowWizard() {
   const searchParams = useSearchParams();
+  const serviceParam = searchParams.get("service");
+  const placeParam = searchParams.get("place");
+
+  const ritualMap: Record<string, string> = {
+    "pind-daan": "Pind Daan Puja",
+    "shraddh-karma": "Shraddh Karma",
+    "tarpan": "Tarpan Ritual",
+    "narayan-bali": "Narayan Bali Ritual",
+    "tripindi-shraddh": "Tripindi Shraddh",
+    "online-pind-daan": "Online Pind Daan"
+  };
+  const matchedRitual = serviceParam ? ritualMap[serviceParam] : undefined;
+
+  const placeMap: Record<string, string> = {
+    "vishnupad-temple": "Vishnupad Temple",
+    "falgu-river": "Falgu River",
+    "akshay-vat": "Akshay Vat",
+    "pretshila": "Pretshila Hill",
+    "ramshila": "Ramshila Hill"
+  };
+  const matchedPlace = placeParam ? placeMap[placeParam] : undefined;
+
   const [step, setStep] = useState(1);
   const [refId, setRefId] = useState("");
   const [formData, setFormData] = useState({
-    ritual: "Pind Daan Puja",
+    ritual: matchedRitual || "Pind Daan Puja",
     devoteeName: "",
     phone: "",
     email: "",
@@ -18,45 +41,8 @@ function BookNowWizard() {
     ancestorName: "",
     package: "Traditional",
     date: "",
-    additionalInfo: ""
+    additionalInfo: matchedPlace ? `Planned at: ${matchedPlace}. ` : ""
   });
-
-  useEffect(() => {
-    const serviceParam = searchParams.get("service");
-    const placeParam = searchParams.get("place");
-
-    if (serviceParam) {
-      const ritualMap: Record<string, string> = {
-        "pind-daan": "Pind Daan Puja",
-        "shraddh-karma": "Shraddh Karma",
-        "tarpan": "Tarpan Ritual",
-        "narayan-bali": "Narayan Bali Ritual",
-        "tripindi-shraddh": "Tripindi Shraddh",
-        "online-pind-daan": "Online Pind Daan"
-      };
-      const matchedRitual = ritualMap[serviceParam];
-      if (matchedRitual) {
-        setFormData((prev) => ({ ...prev, ritual: matchedRitual }));
-      }
-    }
-
-    if (placeParam) {
-      const placeMap: Record<string, string> = {
-        "vishnupad-temple": "Vishnupad Temple",
-        "falgu-river": "Falgu River",
-        "akshay-vat": "Akshay Vat",
-        "pretshila": "Pretshila Hill",
-        "ramshila": "Ramshila Hill"
-      };
-      const matchedPlace = placeMap[placeParam];
-      if (matchedPlace) {
-        setFormData((prev) => ({
-          ...prev,
-          additionalInfo: `Planned at: ${matchedPlace}. `
-        }));
-      }
-    }
-  }, [searchParams]);
 
   const nextStep = () => setStep((s) => s + 1);
   const prevStep = () => setStep((s) => s - 1);
@@ -205,7 +191,7 @@ function BookNowWizard() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-bold text-[#2c1a04] uppercase tracking-wider mb-2">Email Address</label>
+                    <label className="block text-xs font-bold text-[#2c1a04] uppercase tracking-wider mb-2">Email Address (Optional)</label>
                       <input
                         type="email"
                         value={formData.email}
@@ -374,12 +360,12 @@ function BookNowWizard() {
                   >
                     💬 Send to WhatsApp
                   </a>
-                  <a 
+                  <Link 
                     href="/" 
                     className="px-8 py-3.5 bg-transparent hover:bg-stone-100 border border-[#e2d6c3] text-[#2c1a04] text-xs font-bold uppercase tracking-widest rounded-full transition-all duration-300"
                   >
                     Return to Home Page
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             )}
