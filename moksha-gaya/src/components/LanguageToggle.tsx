@@ -54,18 +54,39 @@ export default function LanguageToggle() {
     const nextLang = currentLang === "en" ? "hi" : "en";
     const selectEl = document.querySelector(".goog-te-combo") as HTMLSelectElement | null;
 
+    if (nextLang === "en") {
+      // Clear Google Translate cookies
+      const domain = window.location.hostname;
+      document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.${domain}`;
+      document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=${domain}`;
+      document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+      
+      if (selectEl) {
+        try {
+          selectEl.value = "";
+          selectEl.dispatchEvent(new Event("change"));
+        } catch (err) {
+          console.error("Error setting combo value:", err);
+        }
+      }
+      
+      // Force reload to completely clean up translated DOM and reset language state
+      window.location.reload();
+      return;
+    }
+
     if (selectEl) {
-      // Set value: Google combo uses empty string or 'en' for English, 'hi' for Hindi
-      selectEl.value = nextLang === "en" ? "" : "hi";
+      // Set value: Google combo uses 'hi' for Hindi
+      selectEl.value = "hi";
       selectEl.dispatchEvent(new Event("change"));
-      setCurrentLang(nextLang);
+      setCurrentLang("hi");
     } else {
       console.warn("Google Translate widget not ready in DOM yet, falling back to cookie override.");
       // Fallback: Set cookie directly and reload
       const domain = window.location.hostname;
-      document.cookie = `googtrans=/en/${nextLang}; path=/; domain=.${domain}`;
-      document.cookie = `googtrans=/en/${nextLang}; path=/; domain=${domain}`;
-      document.cookie = `googtrans=/en/${nextLang}; path=/;`;
+      document.cookie = `googtrans=/en/hi; path=/; domain=.${domain}`;
+      document.cookie = `googtrans=/en/hi; path=/; domain=${domain}`;
+      document.cookie = `googtrans=/en/hi; path=/;`;
       window.location.reload();
     }
   };
