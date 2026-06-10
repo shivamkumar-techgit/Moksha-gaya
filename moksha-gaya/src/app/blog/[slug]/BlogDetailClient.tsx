@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { saveLead, getEnquiryWhatsAppUrl } from "@/utils/leads";
+import { saveLead, getEnquiryWhatsAppUrl, openWhatsApp } from "@/utils/leads";
 import { Calendar, Clock, ChevronRight, HelpCircle, Send } from "lucide-react";
 
 interface Section {
@@ -85,10 +85,8 @@ export default function BlogDetailClient({
     }).catch(err => console.error("Error triggering email dispatch:", err));
 
     // Open WhatsApp link automatically
-    if (typeof window !== "undefined") {
-      const whatsappUrl = getEnquiryWhatsAppUrl(newLead.id, newLead.name, metadata.title || "Ritual");
-      window.open(whatsappUrl, "_blank");
-    }
+    const whatsappUrl = getEnquiryWhatsAppUrl(newLead.id, newLead.name, metadata.title || "Ritual");
+    openWhatsApp(whatsappUrl);
   };
 
   return (

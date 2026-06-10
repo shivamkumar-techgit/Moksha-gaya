@@ -3,7 +3,7 @@
 import React, { useState, Suspense } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
-import { saveLead, getEnquiryWhatsAppUrl } from "@/utils/leads";
+import { saveLead, getEnquiryWhatsAppUrl, openWhatsApp } from "@/utils/leads";
 import Link from "next/link";
 
 function BookNowWizard() {
@@ -78,10 +78,8 @@ function BookNowWizard() {
     }).catch(err => console.error("Error triggering email dispatch:", err));
 
     // Open WhatsApp link in a new tab automatically
-    if (typeof window !== "undefined") {
-      const whatsappUrl = getEnquiryWhatsAppUrl(newLead.id, formData.devoteeName, formData.ritual);
-      window.open(whatsappUrl, "_blank");
-    }
+    const whatsappUrl = getEnquiryWhatsAppUrl(newLead.id, formData.devoteeName, formData.ritual);
+    openWhatsApp(whatsappUrl);
   };
 
   const slideVariants = {

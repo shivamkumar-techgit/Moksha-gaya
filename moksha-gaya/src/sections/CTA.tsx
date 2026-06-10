@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { saveLead, getEnquiryWhatsAppUrl } from "@/utils/leads";
+import { saveLead, getEnquiryWhatsAppUrl, openWhatsApp } from "@/utils/leads";
 
 export default function CTA() {
   const [formData, setFormData] = useState({
@@ -49,10 +49,8 @@ export default function CTA() {
     }).catch(err => console.error("Error triggering email dispatch:", err));
 
     // Open WhatsApp link in a new tab automatically
-    if (typeof window !== "undefined") {
-      const whatsappUrl = getEnquiryWhatsAppUrl(newLead.id, newLead.name, newLead.ritual);
-      window.open(whatsappUrl, "_blank");
-    }
+    const whatsappUrl = getEnquiryWhatsAppUrl(newLead.id, newLead.name, newLead.ritual);
+    openWhatsApp(whatsappUrl);
   };
 
   return (

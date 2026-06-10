@@ -14,7 +14,7 @@ import {
   ChevronRight, 
   Send 
 } from "lucide-react";
-import { saveLead, getEnquiryWhatsAppUrl } from "@/utils/leads";
+import { saveLead, getEnquiryWhatsAppUrl, openWhatsApp } from "@/utils/leads";
 
 export default function RitualEncyclopediaPage() {
   const [activeTab, setActiveTab] = useState(0);
@@ -59,10 +59,8 @@ export default function RitualEncyclopediaPage() {
     }).catch(err => console.error("Error triggering email dispatch:", err));
 
     // Open WhatsApp link in new tab automatically
-    if (typeof window !== "undefined") {
-      const whatsappUrl = getEnquiryWhatsAppUrl(newLead.id, newLead.name, currentGuide.title);
-      window.open(whatsappUrl, "_blank");
-    }
+    const whatsappUrl = getEnquiryWhatsAppUrl(newLead.id, formData.name, currentGuide.title);
+    openWhatsApp(whatsappUrl);
   };
 
   return (

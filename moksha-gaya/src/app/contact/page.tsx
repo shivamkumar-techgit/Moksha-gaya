@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { saveLead, getEnquiryWhatsAppUrl } from "@/utils/leads";
+import { saveLead, getEnquiryWhatsAppUrl, openWhatsApp } from "@/utils/leads";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -49,10 +49,8 @@ export default function ContactPage() {
     }).catch(err => console.error("Error triggering email dispatch:", err));
 
     // Open WhatsApp link in a new tab automatically
-    if (typeof window !== "undefined") {
-      const whatsappUrl = getEnquiryWhatsAppUrl(newLead.id, formData.name, formData.ritual);
-      window.open(whatsappUrl, "_blank");
-    }
+    const whatsappUrl = getEnquiryWhatsAppUrl(newLead.id, formData.name, formData.ritual);
+    openWhatsApp(whatsappUrl);
   };
 
   const contactInfo = [

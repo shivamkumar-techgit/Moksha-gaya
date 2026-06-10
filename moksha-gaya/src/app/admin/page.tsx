@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { getLeads, getWhatsAppLogs, updateLead, getStatusWhatsAppUrl, Lead, WhatsAppLog } from "@/utils/leads";
+import { getLeads, getWhatsAppLogs, updateLead, getStatusWhatsAppUrl, openWhatsApp, Lead, WhatsAppLog } from "@/utils/leads";
 
 export default function AdminPanel() {
   // Login Guard State
@@ -65,25 +65,39 @@ export default function AdminPanel() {
 
   // Status Change Handler
   const handleStatusChange = (leadId: string, newStatus: Lead["status"]) => {
-    let updatedLead: Lead | null = null;
-    const updated = leads.map(l => {
-      if (l.id === leadId) {
-        const u = { ...l, status: newStatus };
-        updateLead(u);
-        updatedLead = u;
-        return u;
-      }
-      return l;
-    });
+    const leadToUpdate = leads.find(l => l.id === leadId);
+    if (!leadToUpdate) return;
+
+    const updatedLead: Lead = { ...leadToUpdate, status: newStatus };
+    updateLead(updatedLead);
+
+    const updated = leads.map(l => l.id === leadId ? updatedLead : l);
     setLeads(updated);
+
     if (selectedLead && selectedLead.id === leadId) {
-      setSelectedLead({ ...selectedLead, status: newStatus });
+      setSelectedLead(updatedLead);
     }
 
     // Automatically open WhatsApp with updated template
-    if (updatedLead && typeof window !== "undefined") {
-      const whatsappUrl = getStatusWhatsAppUrl(updatedLead);
-      window.open(whatsappUrl, "_blank");
+    const whatsappUrl = getStatusWhatsAppUrl(updatedLead);
+    openWhatsApp(whatsappUrl);
+
+    // Trigger Email notification for Confirmed or Cancelled status changes if email exists
+    if ((newStatus === "Confirmed" || newStatus === "Cancelled") && updatedLead.email) {
+      fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          leadId: updatedLead.id,
+          name: updatedLead.name,
+          phone: updatedLead.phone,
+          email: updatedLead.email,
+          ritual: updatedLead.ritual,
+          package: updatedLead.package,
+          date: updatedLead.date,
+          status: newStatus
+        })
+      }).catch(err => console.error("Error triggering status change email:", err));
     }
   };
 

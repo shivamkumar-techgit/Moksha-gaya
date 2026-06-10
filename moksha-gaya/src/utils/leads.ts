@@ -169,6 +169,13 @@ export function cleanPhone(phone: string): string {
 export function getEnquiryWhatsAppUrl(refId: string, name: string, ritual: string): string {
   const adminPhone = "917070719993";
   const text = `Pranam, I have submitted an enquiry on Moksha Gaya.\n\n*Reference ID:* ${refId}\n*Name:* ${name}\n*Service:* ${ritual}\n\nPlease confirm my details.`;
+  
+  if (typeof window !== "undefined" && typeof navigator !== "undefined") {
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (!isMobile) {
+      return `https://web.whatsapp.com/send?phone=${adminPhone}&text=${encodeURIComponent(text)}`;
+    }
+  }
   return `https://wa.me/${adminPhone}?text=${encodeURIComponent(text)}`;
 }
 
@@ -194,6 +201,20 @@ export function getStatusWhatsAppUrl(lead: Lead): string {
       break;
   }
   
+  if (typeof window !== "undefined" && typeof navigator !== "undefined") {
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (!isMobile) {
+      return `https://web.whatsapp.com/send?phone=${clientPhone}&text=${encodeURIComponent(text)}`;
+    }
+  }
   return `https://wa.me/${clientPhone}?text=${encodeURIComponent(text)}`;
+}
+
+export function openWhatsApp(url: string): void {
+  if (typeof window === "undefined") return;
+  const newWindow = window.open(url, "_blank");
+  if (!newWindow || newWindow.closed || typeof newWindow.closed === "undefined") {
+    window.location.href = url;
+  }
 }
 

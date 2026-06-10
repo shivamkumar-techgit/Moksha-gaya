@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { saveLead, getEnquiryWhatsAppUrl } from "@/utils/leads";
+import { saveLead, getEnquiryWhatsAppUrl, openWhatsApp } from "@/utils/leads";
 import Link from "next/link";
 
 interface Section {
@@ -107,10 +107,8 @@ export default function SacredPlaceClient({
     }).catch(err => console.error("Error triggering email dispatch:", err));
 
     // Open WhatsApp link in a new tab automatically
-    if (typeof window !== "undefined") {
-      const whatsappUrl = getEnquiryWhatsAppUrl(newLead.id, newLead.name, `Ritual at ${metadata.place_name || "Gaya"}`);
-      window.open(whatsappUrl, "_blank");
-    }
+    const whatsappUrl = getEnquiryWhatsAppUrl(newLead.id, newLead.name, `Ritual at ${metadata.place_name || "Gaya"}`);
+    openWhatsApp(whatsappUrl);
   };
 
   return (
