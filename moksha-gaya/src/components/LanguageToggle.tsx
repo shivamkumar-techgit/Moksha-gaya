@@ -34,10 +34,18 @@ export default function LanguageToggle() {
       }
     };
 
-    // Check language from cookies periodically
+    // Check language from cookies & DOM periodically
     const checkLang = () => {
-      const transCookie = getCookie("googtrans");
-      if (transCookie && transCookie.includes("/hi")) {
+      if (typeof document === "undefined") return;
+      const htmlEl = document.documentElement;
+      const htmlLang = htmlEl.lang || htmlEl.getAttribute("lang") || "";
+      const transCookie = getCookie("googtrans") || "";
+      
+      const isHindi = htmlLang.toLowerCase().startsWith("hi") || 
+                      transCookie.includes("/hi") ||
+                      htmlEl.classList.contains("translated-ltr");
+                      
+      if (isHindi) {
         setCurrentLang("hi");
       } else {
         setCurrentLang("en");
@@ -51,16 +59,45 @@ export default function LanguageToggle() {
   }, []);
 
   const toggleLanguage = () => {
-    const nextLang = currentLang === "en" ? "hi" : "en";
+    if (typeof document === "undefined") return;
+    
+    // Determine current language state dynamically from DOM & cookies
+    const htmlEl = document.documentElement;
+    const htmlLang = htmlEl.lang || htmlEl.getAttribute("lang") || "";
+    const transCookie = getCookie("googtrans") || "";
+    const isCurrentlyHindi = htmlLang.toLowerCase().startsWith("hi") || 
+                            transCookie.includes("/hi") ||
+                            htmlEl.classList.contains("translated-ltr");
+
+    const nextLang = isCurrentlyHindi ? "en" : "hi";
     const selectEl = document.querySelector(".goog-te-combo") as HTMLSelectElement | null;
 
     if (nextLang === "en") {
-      // Clear Google Translate cookies
-      const domain = window.location.hostname;
-      document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.${domain}`;
-      document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=${domain}`;
-      document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+      // Clear Google Translate cookies at all domain levels
+      const hostname = window.location.hostname;
+      const parts = hostname.split('.');
+      const domains = [hostname, `.${hostname}`, ""];
       
+      if (parts.length >= 2) {
+        const rootDomain = parts.slice(-2).join('.');
+        domains.push(rootDomain);
+        domains.push(`.${rootDomain}`);
+      }
+
+      domains.forEach(d => {
+        const domainStr = d ? `; domain=${d}` : "";
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/${domainStr}`;
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC${domainStr}`;
+      });
+      
+      // Clear session/local storage
+      try {
+        sessionStorage.removeItem("googtrans");
+        localStorage.removeItem("googtrans");
+      } catch (e) {
+        console.error(e);
+      }
+
       if (selectEl) {
         try {
           selectEl.value = "";
