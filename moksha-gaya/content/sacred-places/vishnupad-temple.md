@@ -47,5 +47,5 @@ A pilgrim can perform several sacred actions inside the temple complex:
 ---
 
 ## Testimonial Section
-> "Standing before the Vishnupad Temple, performing the Sankalp for my late father, was an emotionally overwhelming experience. The coordination by Moksha Gaya allowed us to perform our offerings with peace, without being rushed by crowds."  
+> "Standing before the Vishnupad Temple, performing the Sankalp for my late father, was an emotionally overwhelming experience. The coordination by Moksha Dham Gayaji allowed us to perform our offerings with peace, without being rushed by crowds."  
 > — **Sunita Deshmukh, Mumbai**

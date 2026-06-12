@@ -98,13 +98,13 @@ export default function Navbar() {
             <div className="w-7 h-7 lg:w-9 lg:h-9 rounded-full overflow-hidden bg-white border border-[#efe9de] flex items-center justify-center relative z-10 group-hover:scale-105 transition-transform duration-300">
               <img 
                 src="/images/hero/moksha_gayalogo2.png" 
-                alt="Moksha Gaya Logo" 
+                alt="Moksha Dham Gayaji Logo" 
                 className="w-full h-full object-cover scale-110 animate-slow-spin-reverse"
               />
             </div>
           </div>
           <span className="font-serif text-sm xl:text-lg font-bold tracking-widest text-[#2c1a04] group-hover:text-[#b17a20] transition-colors leading-none whitespace-nowrap">
-            MOKSHA GAYA
+            MOKSHA DHAM GAYAJI
           </span>
         </Link>
 

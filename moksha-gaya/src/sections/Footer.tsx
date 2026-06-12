@@ -40,13 +40,13 @@ export default function Footer() {
                 <div className="w-9 h-9 rounded-full overflow-hidden bg-white border border-[#322d29] flex items-center justify-center relative z-10 group-hover:scale-105 transition-transform duration-300">
                   <img 
                     src="/images/hero/moksha_gayalogo2.png" 
-                    alt="Moksha Gaya Logo" 
+                    alt="Moksha Dham Gayaji Logo" 
                     className="w-full h-full object-cover scale-110 animate-slow-spin-reverse"
                   />
                 </div>
               </div>
               <span className="font-serif text-lg font-bold tracking-widest text-white group-hover:text-[#b17a20] transition-colors leading-none">
-                MOKSHA GAYA
+                MOKSHA DHAM GAYAJI
               </span>
             </Link>
             <p className="text-sm text-[#a39785] leading-relaxed mb-6">
@@ -163,7 +163,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#322d29] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-[#827563]">
-          <p>© {new Date().getFullYear()} Moksha Gaya. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Moksha Dham Gayaji. All Rights Reserved.</p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center sm:justify-end">
             {bottomLinks.map((link, idx) => (
               <Link key={idx} href={link.href} className="hover:text-white transition-colors">

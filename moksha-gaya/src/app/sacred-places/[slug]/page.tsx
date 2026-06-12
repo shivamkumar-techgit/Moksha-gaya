@@ -2,11 +2,45 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import React from "react";
+import { Metadata } from "next";
 import SacredPlaceClient from "./SacredPlaceClient";
 import { sacredPlaces } from "@/data/sacredPlaces";
 
 interface SacredPlacePageProps {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: SacredPlacePageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const filePath = path.join(process.cwd(), "content", "sacred-places", `${slug}.md`);
+
+  if (!fs.existsSync(filePath)) {
+    return {
+      title: "Sacred Place Not Found",
+    };
+  }
+
+  const rawContent = fs.readFileSync(filePath, "utf8");
+  const { metadata } = parseMarkdown(rawContent);
+  const placeObj = sacredPlaces.find((p) => p.slug === slug);
+  const image = placeObj?.image || metadata.image || "/images/gallery/local-gaya.jpg";
+
+  return {
+    title: metadata.title || slug.replace(/-/g, " "),
+    description: metadata.excerpt || `Explore the significance and history of ${metadata.title || slug.replace(/-/g, " ")} in the holy dham of Gaya.`,
+    alternates: {
+      canonical: `/sacred-places/${slug}`,
+    },
+    openGraph: {
+      title: metadata.title || slug.replace(/-/g, " "),
+      description: metadata.excerpt,
+      images: [
+        {
+          url: image,
+        }
+      ]
+    }
+  };
 }
 
 export async function generateStaticParams() {

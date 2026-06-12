@@ -29,7 +29,7 @@ export default function Packages() {
       basic: "Verified",
       economy: "Verified",
       standard: "Verified",
-      premium: "Senior Acharya"
+      premium: "Verified"
     },
     {
       name: "Puja Materials",
@@ -55,7 +55,7 @@ export default function Packages() {
     {
       name: "Duration",
       basic: "1 Hour",
-      economy: "1 Hour",
+      economy: "2.5 Hours",
       standard: "3 Hours",
       premium: "2-3 Days"
     },
@@ -70,14 +70,14 @@ export default function Packages() {
       name: "Local Transport",
       basic: "—",
       economy: "—",
-      standard: "AC Sedan",
-      premium: "AC SUV"
+      standard: "Provided",
+      premium: "Provided"
     },
     {
       name: "Accommodation Support",
-      basic: "—",
-      economy: "—",
-      standard: "Coordination",
+      basic: "Available",
+      economy: "Available",
+      standard: "Available",
       premium: "Stay Included"
     }
   ];

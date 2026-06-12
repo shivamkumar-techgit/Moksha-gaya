@@ -1,7 +1,16 @@
 import fs from "fs";
 import path from "path";
 import React from "react";
+import { Metadata } from "next";
 import BlogClient from "./BlogClient";
+
+export const metadata: Metadata = {
+  title: "Ancestral Rituals Blog & Guides",
+  description: "Read helpful guides, scriptural studies, and step-by-step procedures on Pind Daan, Tarpan, Narayan Bali, and Gaya pilgrimage.",
+  alternates: {
+    canonical: "/blog",
+  },
+};
 
 function parseMarkdown(fileContent: string) {
   const match = fileContent.match(/^---\r?\n([\s\S]+?)\r?\n---\r?\n([\s\S]*)$/);

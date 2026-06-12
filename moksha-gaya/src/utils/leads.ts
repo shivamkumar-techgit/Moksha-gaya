@@ -63,7 +63,7 @@ const MOCK_LEADS: Lead[] = [
     ritual: "Shraddh Karma",
     package: "Complete Family",
     date: "2026-06-22",
-    additionalInfo: "Bringing family of 6. Requires AC SUV transfer and premium Brahmin Bhoj.",
+    additionalInfo: "Bringing family of 6. Requires transport facility and premium Brahmin Bhoj.",
     status: "Pending",
     notes: [],
     createdAt: "2026-06-05T02:10:00.000Z"
@@ -124,7 +124,7 @@ export function saveLead(leadData: Omit<Lead, "id" | "status" | "notes" | "creat
   // Trigger simulated WhatsApp Notifications
   
   // 1. User Notification
-  const userMsg = `Pranam. Thank you for contacting Moksha Gaya. Our coordinator will contact you shortly. Reference ID: ${refId}`;
+  const userMsg = `Pranam. Thank you for contacting Moksha Dham Gayaji. Our coordinator will contact you shortly. Reference ID: ${refId}`;
   saveWhatsAppLog({
     id: `WA_U_${Date.now()}`,
     refId,
@@ -168,7 +168,7 @@ export function cleanPhone(phone: string): string {
 
 export function getEnquiryWhatsAppUrl(refId: string, name: string, ritual: string): string {
   const adminPhone = "917070719993";
-  const text = `Pranam, I have submitted an enquiry on Moksha Gaya.\n\n*Reference ID:* ${refId}\n*Name:* ${name}\n*Service:* ${ritual}\n\nPlease confirm my details.`;
+  const text = `Pranam, I have submitted an enquiry on Moksha Dham Gayaji.\n\n*Reference ID:* ${refId}\n*Name:* ${name}\n*Service:* ${ritual}\n\nPlease confirm my details.`;
   
   if (typeof window !== "undefined" && typeof navigator !== "undefined") {
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -185,19 +185,19 @@ export function getStatusWhatsAppUrl(lead: Lead): string {
   
   switch(lead.status) {
     case "Pending":
-      text = `Pranam ${lead.name}, this is Moksha Gaya. We received your enquiry (Ref: ${lead.id}) for ${lead.ritual}. Let us know a convenient time to connect and explain the procedure.`;
+      text = `Pranam ${lead.name}, this is Moksha Dham Gayaji. We received your enquiry (Ref: ${lead.id}) for ${lead.ritual}. Let us know a convenient time to connect and explain the procedure.`;
       break;
     case "Called":
-      text = `Pranam ${lead.name}, this is Moksha Gaya. Following up on our call regarding your enquiry (Ref: ${lead.id}). Let us know if you have any questions.`;
+      text = `Pranam ${lead.name}, this is Moksha Dham Gayaji. Following up on our call regarding your enquiry (Ref: ${lead.id}). Let us know if you have any questions.`;
       break;
     case "Confirmed":
-      text = `Pranam ${lead.name}, this is Moksha Gaya. We are pleased to confirm your ritual booking for ${lead.ritual} on ${lead.date}. Reference ID: ${lead.id}. Our coordinator will assist you in Gaya.`;
+      text = `Pranam ${lead.name}, this is Moksha Dham Gayaji. We are pleased to confirm your ritual booking for ${lead.ritual} on ${lead.date}. Reference ID: ${lead.id}. Our coordinator will assist you in Gaya.`;
       break;
     case "Completed":
-      text = `Pranam ${lead.name}, this is Moksha Gaya. The ancestral rites for ${lead.ritual} (Ref: ${lead.id}) have been successfully completed. May your ancestors find eternal peace (Moksha).`;
+      text = `Pranam ${lead.name}, this is Moksha Dham Gayaji. The ancestral rites for ${lead.ritual} (Ref: ${lead.id}) have been successfully completed. May your ancestors find eternal peace (Moksha).`;
       break;
     case "Cancelled":
-      text = `Pranam ${lead.name}, this is Moksha Gaya. Your enquiry (Ref: ${lead.id}) has been marked as cancelled/postponed. Please contact us if you wish to reschedule.`;
+      text = `Pranam ${lead.name}, this is Moksha Dham Gayaji. Your enquiry (Ref: ${lead.id}) has been marked as cancelled/postponed. Please contact us if you wish to reschedule.`;
       break;
   }
   

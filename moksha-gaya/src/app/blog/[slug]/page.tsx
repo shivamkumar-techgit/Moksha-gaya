@@ -2,10 +2,42 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import React from "react";
+import { Metadata } from "next";
 import BlogDetailClient from "./BlogDetailClient";
 
 interface BlogPageProps {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const filePath = path.join(process.cwd(), "content", "blog", `${slug}.md`);
+
+  if (!fs.existsSync(filePath)) {
+    return {
+      title: "Blog Post Not Found",
+    };
+  }
+
+  const rawContent = fs.readFileSync(filePath, "utf8");
+  const { metadata } = parseMarkdown(rawContent);
+
+  return {
+    title: metadata.title || slug.replace(/-/g, " "),
+    description: metadata.excerpt || `Read our guide on ${metadata.title || slug.replace(/-/g, " ")} on Moksha Dham Gayaji.`,
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
+    openGraph: {
+      title: metadata.title || slug.replace(/-/g, " "),
+      description: metadata.excerpt,
+      images: [
+        {
+          url: metadata.image || "/images/gallery/ritual-ai2.png",
+        }
+      ]
+    }
+  };
 }
 
 export async function generateStaticParams() {

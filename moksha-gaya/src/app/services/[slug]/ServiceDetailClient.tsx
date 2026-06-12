@@ -485,7 +485,7 @@ export default function ServiceDetailClient({
             {/* Promises Box */}
             <div className="bg-[#faf8f5] rounded-2xl border border-[#efe9de] p-8">
               <h4 className="font-serif text-base font-bold text-[#2c1a04] mb-4 pb-2 border-b border-[#efe9de]">
-                Moksha Gaya Promise
+                Moksha Dham Gayaji Promise
               </h4>
               <ul className="space-y-4 text-xs text-[#5c4a37]">
                 <li className="flex items-start gap-3">

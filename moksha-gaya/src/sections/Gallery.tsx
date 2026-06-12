@@ -777,7 +777,7 @@ export default function Gallery() {
 
                 <div className="mt-8 pt-6 border-t border-[#efe9de]/50 flex justify-between items-center text-xs text-[#7c6954]">
                   <span>Item {selectedItemIndex + 1} of {filteredMedia.length}</span>
-                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#b17a20]">Moksha Gaya</span>
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#b17a20]">Moksha Dham Gayaji</span>
                 </div>
               </div>
             </motion.div>

@@ -445,7 +445,7 @@ export default function BlogDetailClient({
             {/* Promise Box */}
             <div className="bg-[#faf8f5] rounded-2xl border border-[#efe9de] p-6">
               <h4 className="font-serif text-xs font-bold text-[#2c1a04] uppercase tracking-wider mb-3 pb-2 border-b border-[#efe9de]">
-                Moksha Gaya Promise
+                Moksha Dham Gayaji Promise
               </h4>
               <ul className="space-y-3 text-[11px] text-[#7c6954]">
                 <li className="flex items-start gap-2">

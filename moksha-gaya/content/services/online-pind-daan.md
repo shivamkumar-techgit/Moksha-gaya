@@ -16,7 +16,7 @@ image: /images/services/online-pind-daan.jpg
 ---
 
 ## About the Service
-Many devotees residing abroad (NRIs) or facing physical, health, or travel constraints are unable to visit the sacred city of Gaya in person. However, performing ancestral rites is a non-negotiable spiritual duty. To bridge this gap, Moksha Gaya offers a premium **Online Pind Daan Service**.
+Many devotees residing abroad (NRIs) or facing physical, health, or travel constraints are unable to visit the sacred city of Gaya in person. However, performing ancestral rites is a non-negotiable spiritual duty. To bridge this gap, Moksha Dham Gayaji offers a premium **Online Pind Daan Service**.
 
 This service allows you to participate in the entire ritual remotely via high-definition live video. A verified, experienced Pandit in Gaya performs the physical offerings on your behalf at the sacred spots, while you take the vows (Sankalp) virtually from your home.
 
@@ -72,7 +72,7 @@ A: We pack the sacred dry Prasad (non-perishable) securely and ship it via inter
 ---
 
 ## Testimonial Section
-> "Living in the US, I was worried about not being able to perform Pind Daan for my parents. Moksha Gaya organized the online ceremony flawlessly. We joined via video, took the Sankalp, and watched the pandit perform the rites at Vishnupad. It was a comforting experience."  
+> "Living in the US, I was worried about not being able to perform Pind Daan for my parents. Moksha Dham Gayaji organized the online ceremony flawlessly. We joined via video, took the Sankalp, and watched the pandit perform the rites at Vishnupad. It was a comforting experience."  
 > — **Amit Verma, United States**
 
 ---

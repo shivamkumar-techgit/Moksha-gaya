@@ -2,11 +2,45 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import React from "react";
+import { Metadata } from "next";
 import ServiceDetailClient from "./ServiceDetailClient";
 import { services } from "@/data/services";
 
 interface ServicePageProps {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const filePath = path.join(process.cwd(), "content", "services", `${slug}.md`);
+
+  if (!fs.existsSync(filePath)) {
+    return {
+      title: "Service Not Found",
+    };
+  }
+
+  const rawContent = fs.readFileSync(filePath, "utf8");
+  const { metadata } = parseMarkdown(rawContent);
+  const serviceObj = services.find((s) => s.slug === slug);
+  const image = serviceObj?.image || metadata.image || "/images/gallery/ritual-ai1.png";
+
+  return {
+    title: metadata.title || slug.replace(/-/g, " "),
+    description: metadata.excerpt || `Authentic Vedic ${metadata.title || slug.replace(/-/g, " ")} ritual services in Gaya coordinated by Moksha Dham Gayaji.`,
+    alternates: {
+      canonical: `/services/${slug}`,
+    },
+    openGraph: {
+      title: metadata.title || slug.replace(/-/g, " "),
+      description: metadata.excerpt,
+      images: [
+        {
+          url: image,
+        }
+      ]
+    }
+  };
 }
 
 export async function generateStaticParams() {

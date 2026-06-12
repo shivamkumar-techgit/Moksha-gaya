@@ -18,7 +18,8 @@ export const packages: Package[] = [
       "Sankalp & offering guidance",
       "3 Sacred Places covered",
       "1 Hour ritual duration",
-      "Online participation option"
+      "Online participation option",
+      "Accommodation support available"
     ],
     popular: false,
     cta: "Enquire Now"
@@ -32,9 +33,10 @@ export const packages: Package[] = [
       "Complete Puja materials included",
       "Brahmin Bhoj (2 Brahmins)",
       "5 Sacred Places covered",
-      "1 Hour ritual duration",
+      "2.5 Hours ritual duration",
       "Online participation option",
-      "Dedicated coordinator support"
+      "Dedicated coordinator support",
+      "Accommodation support available"
     ],
     popular: false,
     cta: "Select Economy"
@@ -50,8 +52,9 @@ export const packages: Package[] = [
       "7-9 Sacred Places covered",
       "3 Hours ritual duration",
       "Online participation option",
-      "AC Sedan vehicle local transport",
-      "Priority queue at Vishnupad Temple"
+      "Transport facility provided",
+      "Priority queue at Vishnupad Temple",
+      "Accommodation support available"
     ],
     popular: true,
     cta: "Select Standard"
@@ -59,15 +62,15 @@ export const packages: Package[] = [
   {
     name: "Premium Package",
     desc: "The ultimate 17 or 45-point traditional ritual journey with luxury transfers & stay.",
-    price: "₹ 21,500 onwards",
+    price: "₹ 25,000 onwards",
     features: [
-      "Senior Vedic Acharya selection",
+      "Pandit Ji assistance",
       "Complete premium Puja materials",
       "Brahmin Bhoj (11 Brahmins)",
       "45+ Sacred Places (Complete Vedis)",
       "2-3 Days comprehensive duration",
       "Online participation option",
-      "Private AC SUV transportation",
+      "Transport facility provided",
       "Dedicated personal coordinator 24/7",
       "Quality hotel stay coordination"
     ],

@@ -7,8 +7,16 @@ import LanguageToggle from "@/components/LanguageToggle";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
-  title: "Moksha Gaya - Authentic Ancestral Rituals",
-  description: "Authentic ancestral rituals (Pind Daan, Shraddh, Tarpan) and pilgrimage coordination in Gaya, Bihar.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://mokshadamgayaji.com"),
+  title: {
+    default: "Moksha Dham Gayaji - Authentic Ancestral Rituals in Gaya",
+    template: "%s | Moksha Dham Gayaji",
+  },
+  description: "Authentic ancestral rituals (Pind Daan, Shraddh, Tarpan, Narayan Bali) and complete pilgrimage coordination in Gaya, Bihar by verified Vedic Pandits.",
+  keywords: ["Pind Daan Gaya", "Moksha Dham Gayaji", "Tarpan Falgu River", "Shraddh Karma Gaya", "Narayan Bali Puja", "Gaya Pilgrimage Stay"],
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({

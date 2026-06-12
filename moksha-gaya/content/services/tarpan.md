@@ -18,7 +18,7 @@ image: /images/services/tarpan.jpg
 ## About the Service
 Tarpan is a vital Vedic ritual that translates literally to "satisfying" or "pleasing." It involves offering water mixed with black sesame seeds, barley, flowers, and sandalwood paste to Gods, Sages, and the souls of ancestors. The ritual is performed to satisfy the thirst and hunger of the departed spirits who reside in *Pitru Loka* (the realm of ancestors).
 
-Moksha Gaya organizes authentic Tarpan rituals on the sacred banks of the Falgu River in Gaya. Our verified pandits guide you in reciting the precise Vedic mantras, ensuring your offerings reach your ancestors directly.
+Moksha Dham Gayaji organizes authentic Tarpan rituals on the sacred banks of the Falgu River in Gaya. Our verified pandits guide you in reciting the precise Vedic mantras, ensuring your offerings reach your ancestors directly.
 
 ---
 
@@ -64,7 +64,7 @@ A: Tarpan is traditionally performed during **Pitru Paksha** (daily for 16 days)
 ---
 
 ## Testimonial Section
-> "Performing Tarpan by the Falgu River was a deeply moving experience. The pandit guided me through the names of my ancestors, and I felt a sense of connection and duty fulfilled. Excellent arrangements by Moksha Gaya."  
+> "Performing Tarpan by the Falgu River was a deeply moving experience. The pandit guided me through the names of my ancestors, and I felt a sense of connection and duty fulfilled. Excellent arrangements by Moksha Dham Gayaji."  
 > — **Sanjay Verma, Patna**
 
 ---

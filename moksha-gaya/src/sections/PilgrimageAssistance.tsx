@@ -21,8 +21,8 @@ export default function PilgrimageAssistance() {
       emoji: "🏨"
     },
     {
-      title: "AC Sedans & SUVs",
-      desc: "Choose from a private fleet of well-maintained AC Sedan cars (for small families) and spacious AC SUVs (for large groups).",
+      title: "Transport Facility Provided",
+      desc: "Well-maintained comfortable vehicles are provided for all local transfers, catering to both individual families and larger groups.",
       emoji: "🚗"
     },
     {

@@ -75,7 +75,7 @@ export default function WhyChooseUs() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="font-serif text-4xl font-bold text-[#2c1a04] mb-4">
-            Why Devotees Trust Moksha Gaya
+            Why Devotees Trust Moksha Dham Gayaji
           </h2>
           <div className="w-20 h-1 bg-[#b17a20] mx-auto mb-6" />
           <p className="text-base text-[#5c4a37]">

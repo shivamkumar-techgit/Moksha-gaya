@@ -55,11 +55,11 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         q: "Is pickup available from Gaya Airport or Patna Airport?",
-        a: "Yes. We arrange private, air-conditioned vehicle pickup and drop-off from Gaya Airport (GAY) or Patna Airport (PAT, located about 100 km away) as part of our Complete Pilgrimage Assistance."
+        a: "Yes. Private transport facility is provided for pickup and drop-off from Gaya Airport (GAY) or Patna Airport (PAT, located about 100 km away) as part of our Complete Pilgrimage Assistance."
       },
       {
         q: "How do I reach Gaya and where do I stay?",
-        a: "Gaya has its own railway station and airport. It is also well-connected to Patna airport (about 100 km away). We assist you in booking quality/standard hotels and arrange comfortable AC vehicles for transfers and local sight-seeing."
+        a: "Gaya has its own railway station and airport. It is also well-connected to Patna airport (about 100 km away). We assist you in booking quality/standard hotels and ensure transport facility is provided for transfers and local sight-seeing."
       },
       {
         q: "Can elderly family members perform these rituals comfortably?",
@@ -70,8 +70,8 @@ export const faqCategories: FAQCategory[] = [
         a: "Yes, we can include an optional guided Bodhgaya sightseeing tour in your itinerary. This covers the Mahabodhi Temple, the sacred Bodhi Tree, the Great Buddha Statue, and various international monasteries."
       },
       {
-        q: "What kind of AC vehicles do you provide?",
-        a: "We maintain a private fleet of well-ventilated, clean AC Sedans (like Swift Dzire) for small groups of 2-3 people, and spacious AC SUVs (like Toyota Innova or Ertiga) for larger family groups."
+        q: "Is transport facility provided for the rituals?",
+        a: "Yes, comfortable private transport is provided for all local transfers between your lodging, the temples, and ritual sites, catering to both small families and larger groups."
       }
     ]
   },
@@ -91,7 +91,7 @@ export const faqCategories: FAQCategory[] = [
         a: "No. Pricing transparency is our core value. All items listed in your package (such as pandit fees, puja materials, local transport, temple entry coordinates) are included in the package cost. Any optional dakshina is entirely at your discretion."
       },
       {
-        q: "How do I confirm a booking with Moksha Gaya?",
+        q: "How do I confirm a booking with Moksha Dham Gayaji?",
         a: "You submit an enquiry form with dates and gotra. A coordinator reviews your details, provides a transparent quote, and once confirmed, you pay a small booking advance. We arrange the pandit, materials, and transport in advance."
       }
     ]

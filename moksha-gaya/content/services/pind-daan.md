@@ -18,7 +18,7 @@ image: /images/services/pind-daan.jpg
 ## About the Service
 Pind Daan is one of the most significant Hindu rituals performed for the departed souls of ancestors. According to ancient scriptures, performing Pind Daan in the holy city of Gaya, Bihar, helps the souls of ancestors break free from the cycle of birth and rebirth, attaining *Moksha* (salvation). 
 
-Moksha Gaya provides comprehensive, professionally managed services to ensure that this sacred duty is performed with the utmost devotion, scriptural accuracy, and convenience. We connect you with verified, experienced priests (Pandits) and guide you through every step of the ritual.
+Moksha Dham Gayaji provides comprehensive, professionally managed services to ensure that this sacred duty is performed with the utmost devotion, scriptural accuracy, and convenience. We connect you with verified, experienced priests (Pandits) and guide you through every step of the ritual.
 
 ---
 
@@ -64,7 +64,7 @@ A: In Hindu tradition, the eldest son usually performs the rituals. However, oth
 ---
 
 ## Testimonial Section
-> "Our family was very anxious about traveling to Gaya for Pind Daan. Moksha Gaya made the process incredibly smooth. The Pandit was knowledgeable, and the coordinator guided us at every temple. We felt a deep sense of peace."  
+> "Our family was very anxious about traveling to Gaya for Pind Daan. Moksha Dham Gayaji made the process incredibly smooth. The Pandit was knowledgeable, and the coordinator guided us at every temple. We felt a deep sense of peace."  
 > — **Rajesh Sharma, Delhi**
 
 ---
