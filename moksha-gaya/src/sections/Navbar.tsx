@@ -97,7 +97,7 @@ export default function Navbar() {
             {/* Logo Image inside circle */}
             <div className="w-7 h-7 lg:w-9 lg:h-9 rounded-full overflow-hidden bg-white border border-[#efe9de] flex items-center justify-center relative z-10 group-hover:scale-105 transition-transform duration-300">
               <img 
-                src="/images/hero/moksha_gayalogo2.png" 
+                src="/images/hero/moksha_dham_gayaji_logo.png" 
                 alt="Moksha Dham Gayaji Logo" 
                 className="w-full h-full object-cover scale-110 animate-slow-spin-reverse"
               />

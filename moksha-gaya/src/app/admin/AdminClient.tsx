@@ -154,7 +154,7 @@ export default function AdminPanel() {
         >
           <div className="text-center mb-8">
             <div className="w-14 h-14 rounded-full overflow-hidden bg-stone-100 border border-[#b17a20]/30 flex items-center justify-center mx-auto mb-4">
-              <img src="/images/hero/moksha_gayalogo2.png" alt="Moksha Dham Gayaji Logo" className="w-full h-full object-cover scale-110" />
+              <img src="/images/hero/moksha_dham_gayaji_logo.png" alt="Moksha Dham Gayaji Logo" className="w-full h-full object-cover scale-110" />
             </div>
             <h1 className="font-serif text-2xl font-bold text-[#2c1a04] tracking-wider uppercase">Admin Portal</h1>
             <p className="text-xs text-[#7c6954] mt-1">Spiritual lead console and automation dashboard</p>
@@ -211,7 +211,7 @@ export default function AdminPanel() {
           <div>
             <div className="flex items-center gap-2.5">
               <div className="w-8 h-8 rounded-full overflow-hidden bg-white border border-[#b17a20]/30 flex items-center justify-center shrink-0">
-                <img src="/images/hero/moksha_gayalogo2.png" alt="Logo" className="w-full h-full object-cover scale-110" />
+                <img src="/images/hero/moksha_dham_gayaji_logo.png" alt="Logo" className="w-full h-full object-cover scale-110" />
               </div>
               <h1 className="font-serif text-2xl font-bold text-[#2c1a04]">Moksha Dham Gayaji Admin</h1>
             </div>
