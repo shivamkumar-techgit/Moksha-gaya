@@ -383,8 +383,8 @@ const GALLERY_MEDIA: MediaItem[] = [
     id: 40,
     type: "photo",
     category: "puja",
-    src: "/images/rituals/pinddan-image2.jpg",
-    thumbnail: "/images/rituals/pinddan-image2.jpg",
+    src: "/images/rituals/shraddh_karma.png",
+    thumbnail: "/images/rituals/shraddh_karma.png",
     title: "Vedic Priest Gotra Chanting",
     description: "Family lineage Gotra recitations to establish direct connection with ancestors."
   },
@@ -777,7 +777,7 @@ export default function Gallery() {
 
                 <div className="mt-8 pt-6 border-t border-[#efe9de]/50 flex justify-between items-center text-xs text-[#7c6954]">
                   <span>Item {selectedItemIndex + 1} of {filteredMedia.length}</span>
-                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#b17a20]">Moksha Dham Gayaji</span>
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#b17a20]">Gaya Rituals</span>
                 </div>
               </div>
             </motion.div>

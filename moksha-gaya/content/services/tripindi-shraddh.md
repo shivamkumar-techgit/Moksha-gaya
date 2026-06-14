@@ -18,7 +18,7 @@ image: /images/services/tripindi-shraddh.jpg
 ## About the Service
 Tripindi Shraddh is a unique, powerful ceremony performed to satisfy ancestors from three different lineages: the father's side (*Pitru Kula*), the mother's side (*Matru Kula*), and the spouse's side (*Sasural Kula*). It is particularly recommended when regular annual Shraddh rituals have been missed or neglected for three consecutive years, leading to the dissatisfaction of ancestral souls.
 
-Moksha Dham Gayaji organizes authentic Tripindi Shraddh rituals in Gaya. Our pandits perform the ceremony using three distinct Pinds made of specific grains to appease the different energies of the ancestors.
+Gaya Rituals organizes authentic Tripindi Shraddh rituals in Gaya. Our pandits perform the ceremony using three distinct Pinds made of specific grains to appease the different energies of the ancestors.
 
 ---
 
@@ -66,7 +66,7 @@ A: Yes, it is highly beneficial for husband and wife to perform Tripindi Shraddh
 ---
 
 ## Testimonial Section
-> "We were facing multiple delays in my daughter's wedding and business blockages. Our family astrologer recommended Tripindi Shraddh in Gaya. Moksha Dham Gayaji made the process very respectful and smooth. Within a few months, things began to resolve."  
+> "We were facing multiple delays in my daughter's wedding and business blockages. Our family astrologer recommended Tripindi Shraddh in Gaya. Gaya Rituals made the process very respectful and smooth. Within a few months, things began to resolve."  
 > — **Ramesh Pathak, Lucknow**
 
 ---

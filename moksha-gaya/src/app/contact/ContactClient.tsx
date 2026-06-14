@@ -80,14 +80,14 @@ export default function ContactPage() {
     {
       title: "Email Address",
       value: (
-        <a href="mailto:mokshagaya@gmail.com" className="hover:text-[#2c1a04] hover:underline transition-all block">mokshagaya@gmail.com</a>
+        <a href="mailto:info@gayarituals.com" className="hover:text-[#2c1a04] hover:underline transition-all block">info@gayarituals.com</a>
       ),
       desc: "For NRIs, corporate queries, or documentation uploads.",
       icon: "📧"
     },
     {
       title: "Main Office",
-      value: "Nawagarhi, {Anpurna Niwas - Pd. Sidhnath ji Dubhaliya}, Gaya ji, Bihar - 823001",
+      value: "Nawagarhi, Anpurna Niwas Gaya ji, Bihar - 823001",
       desc: "Our primary physical coordination office in Gaya.",
       icon: "📍"
     }
@@ -267,7 +267,7 @@ export default function ContactPage() {
         >
           <div className="mb-4 pl-2">
             <h3 className="font-serif text-xl font-bold text-[#2c1a04] mb-1">Our Location in Gaya</h3>
-            <p className="text-xs text-[#7c6954]">{"Office: Nawagarhi, {Anpurna Niwas - Pd. Sidhnath ji Dubhaliya}, Gaya ji, Bihar - 823001"}</p>
+            <p className="text-xs text-[#7c6954]">{"Office: Nawagarhi, Anpurna Niwas Gaya ji, Bihar - 823001"}</p>
           </div>
           <div className="relative w-full h-[400px] rounded-xl overflow-hidden border border-[#efe9de]">
             <iframe 

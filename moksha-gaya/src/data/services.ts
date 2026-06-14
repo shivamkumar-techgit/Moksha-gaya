@@ -19,7 +19,7 @@ export const services: Service[] = [
     slug: "shraddh-karma",
     desc: "Traditional annual ceremonies performed with absolute Vedic discipline to express gratitude and pay homage to ancestors.",
     icon: "🕯️",
-    image: "/images/rituals/pinddan-image2.jpg"
+    image: "/images/rituals/shraddh_karma.png"
   },
   {
     title: "Tarpan Ritual",

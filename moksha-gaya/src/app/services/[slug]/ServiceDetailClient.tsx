@@ -114,16 +114,16 @@ export default function ServiceDetailClient({
 
   return (
     <div className="bg-[#faf8f5] min-h-screen pb-24">
-      {/* Immersive Dark Banner Hero */}
-      <section className="relative h-[55vh] min-h-[420px] flex items-end overflow-hidden bg-[#1c1917] text-white">
+      {/* Immersive Light Banner Hero */}
+      <section className="relative h-[55vh] min-h-[420px] flex items-end overflow-hidden bg-[#faf8f5] text-[#2c1a04] border-b border-[#efe9de]">
         {/* Blurred Image Background */}
         <div className="absolute inset-0 z-0">
           <img 
             src={image} 
             alt={metadata.title} 
-            className="w-full h-full object-cover opacity-35 filter sepia-[0.15] scale-105"
+            className="w-full h-full object-cover opacity-20 filter sepia-[0.15] scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#faf8f5] via-[#1c1917]/75 to-[#1c1917]/40 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#faf8f5] via-[#faf8f5]/85 to-[#f3ebd8]/55 z-10" />
         </div>
 
         {/* Ambient Moving Orbs */}
@@ -135,7 +135,7 @@ export default function ServiceDetailClient({
         <motion.div 
           animate={{ rotate: 360 }}
           transition={{ ease: "linear", duration: 180, repeat: Infinity }}
-          className="absolute -right-24 -bottom-24 w-96 h-96 opacity-15 pointer-events-none text-[#b17a20] z-10"
+          className="absolute -right-24 -bottom-24 w-96 h-96 opacity-5 pointer-events-none text-[#b17a20] z-10"
         >
           <MandalaSVG />
         </motion.div>
@@ -154,12 +154,12 @@ export default function ServiceDetailClient({
         {/* Hero Content */}
         <div className="container mx-auto px-6 max-w-6xl pb-12 relative z-20">
           {/* Breadcrumb */}
-          <div className="text-xs text-[#a39785] mb-6 flex items-center gap-2">
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+          <div className="text-xs text-[#7c6954] mb-6 flex items-center gap-2">
+            <Link href="/" className="hover:text-[#b17a20] transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/services" className="hover:text-white transition-colors">Services</Link>
+            <Link href="/services" className="hover:text-[#b17a20] transition-colors">Services</Link>
             <span>/</span>
-            <span className="text-white font-medium">{metadata.service_name || metadata.title}</span>
+            <span className="text-[#2c1a04] font-medium">{metadata.service_name || metadata.title}</span>
           </div>
 
           <div className="max-w-3xl">
@@ -174,7 +174,7 @@ export default function ServiceDetailClient({
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight"
+              className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#2c1a04] mb-4 leading-tight"
             >
               {metadata.title}
             </motion.h1>
@@ -182,7 +182,7 @@ export default function ServiceDetailClient({
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-sm md:text-base text-[#d6cdb8] max-w-2xl leading-relaxed"
+              className="text-sm md:text-base text-[#5c4a37] max-w-2xl leading-relaxed"
             >
               {metadata.short_description}
             </motion.p>
@@ -356,13 +356,13 @@ export default function ServiceDetailClient({
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     key={idx} 
-                    className="bg-[#1c1917] text-[#d6cdb8] rounded-2xl p-8 md:p-10 shadow-xl border border-[#b17a20]/30 relative overflow-hidden"
+                    className="bg-white text-[#2c1a04] rounded-2xl p-8 md:p-10 shadow-lg border border-[#efe9de] relative overflow-hidden"
                   >
                     <div className="absolute top-0 right-0 w-32 h-32 opacity-5 text-[#b17a20] pointer-events-none">
                       <MandalaSVG />
                     </div>
                     <span className="text-5xl text-[#b17a20] font-serif block mb-2 leading-none opacity-50">“</span>
-                    <div className="font-serif italic text-base md:text-lg text-white mb-6 leading-relaxed relative z-10">
+                    <div className="font-serif italic text-base md:text-lg text-[#2c1a04] mb-6 leading-relaxed relative z-10">
                       {sec.bodyLines.map((line, lIdx) => (
                         <p key={lIdx}>{renderTextWithMarkdown(line.replace(/^>\s+/, ""))}</p>
                       ))}
@@ -485,7 +485,7 @@ export default function ServiceDetailClient({
             {/* Promises Box */}
             <div className="bg-[#faf8f5] rounded-2xl border border-[#efe9de] p-8">
               <h4 className="font-serif text-base font-bold text-[#2c1a04] mb-4 pb-2 border-b border-[#efe9de]">
-                Moksha Dham Gayaji Promise
+                Gaya Rituals Promise
               </h4>
               <ul className="space-y-4 text-xs text-[#5c4a37]">
                 <li className="flex items-start gap-3">

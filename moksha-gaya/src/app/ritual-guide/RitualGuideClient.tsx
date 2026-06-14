@@ -247,21 +247,21 @@ export default function RitualEncyclopediaPage() {
             </AnimatePresence>
 
             {/* Contextual Lead Enquiry Form */}
-            <div id="enquiry-section" className="bg-[#2c1a04] text-[#d6cdb8] rounded-3xl border border-[#b17a20]/30 p-8 md:p-10 shadow-lg relative overflow-hidden">
-              <div className="absolute -top-12 -left-12 w-48 h-48 bg-[#b17a20]/10 rounded-full blur-3xl" />
+            <div id="enquiry-section" className="bg-white text-[#2c1a04] rounded-3xl border border-[#efe9de] p-8 md:p-10 shadow-lg relative overflow-hidden">
+              <div className="absolute -top-12 -left-12 w-48 h-48 bg-[#b17a20]/5 rounded-full blur-3xl" />
               
-              <h2 className="font-serif text-2xl font-bold text-white mb-2">
+              <h2 className="font-serif text-2xl font-bold text-[#2c1a04] mb-2">
                 Enquire About {currentGuide.category}
               </h2>
-              <p className="text-xs text-[#a39785] mb-8 leading-relaxed">
+              <p className="text-xs text-[#5c4a37] mb-8 leading-relaxed">
                 Connect with our local Gayawal Acharyas to coordinate gotra-specific rituals. Fill out this quick form, and we will contact you shortly.
               </p>
 
               {isBooked ? (
-                <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-6 text-center text-emerald-400 space-y-3">
+                <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-6 text-center text-emerald-600 space-y-3">
                   <CheckCircle2 className="w-10 h-10 mx-auto" />
-                  <h3 className="font-bold text-white">Pranam, Submission Received!</h3>
-                  <p className="text-xs">
+                  <h3 className="font-bold text-[#2c1a04]">Pranam, Submission Received!</h3>
+                  <p className="text-xs text-[#5c4a37]">
                     Your request for {currentGuide.title} has been logged. Reference ID: <span className="font-bold">{refId}</span>.
                     <br />A Vedic coordinator will contact you shortly.
                   </p>
@@ -279,8 +279,8 @@ export default function RitualEncyclopediaPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Name */}
                     <div>
-                      <label className="block text-[10px] font-bold text-white uppercase tracking-wider mb-2">
-                        Devotee Name <span className="text-rose-400">*</span>
+                      <label className="block text-[10px] font-bold text-[#2c1a04] uppercase tracking-wider mb-2">
+                        Devotee Name <span className="text-rose-600">*</span>
                       </label>
                       <input
                         type="text"
@@ -288,14 +288,14 @@ export default function RitualEncyclopediaPage() {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="Enter your name"
-                        className="w-full px-4 py-3 bg-[#1c1917] border border-[#efe9de]/20 focus:border-[#b17a20] rounded-lg text-sm text-white focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 bg-[#faf8f5] border border-[#efe9de] focus:border-[#b17a20] rounded-lg text-sm text-[#2c1a04] focus:outline-none transition-colors"
                       />
                     </div>
 
                     {/* Phone */}
                     <div>
-                      <label className="block text-[10px] font-bold text-white uppercase tracking-wider mb-2">
-                        Mobile Number <span className="text-rose-400">*</span>
+                      <label className="block text-[10px] font-bold text-[#2c1a04] uppercase tracking-wider mb-2">
+                        Mobile Number <span className="text-rose-600">*</span>
                       </label>
                       <input
                         type="tel"
@@ -303,7 +303,7 @@ export default function RitualEncyclopediaPage() {
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="Enter mobile number"
-                        className="w-full px-4 py-3 bg-[#1c1917] border border-[#efe9de]/20 focus:border-[#b17a20] rounded-lg text-sm text-white focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 bg-[#faf8f5] border border-[#efe9de] focus:border-[#b17a20] rounded-lg text-sm text-[#2c1a04] focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -311,7 +311,7 @@ export default function RitualEncyclopediaPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Email */}
                     <div>
-                      <label className="block text-[10px] font-bold text-white uppercase tracking-wider mb-2">
+                      <label className="block text-[10px] font-bold text-[#2c1a04] uppercase tracking-wider mb-2">
                         Email Address (Optional)
                       </label>
                       <input
@@ -319,27 +319,27 @@ export default function RitualEncyclopediaPage() {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="Enter email address"
-                        className="w-full px-4 py-3 bg-[#1c1917] border border-[#efe9de]/20 focus:border-[#b17a20] rounded-lg text-sm text-white focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 bg-[#faf8f5] border border-[#efe9de] focus:border-[#b17a20] rounded-lg text-sm text-[#2c1a04] focus:outline-none transition-colors"
                       />
                     </div>
 
                     {/* Date */}
                     <div>
-                      <label className="block text-[10px] font-bold text-white uppercase tracking-wider mb-2">
+                      <label className="block text-[10px] font-bold text-[#2c1a04] uppercase tracking-wider mb-2">
                         Tentative Date
                       </label>
                       <input
                         type="date"
                         value={formData.date}
                         onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                        className="w-full px-4 py-3 bg-[#1c1917] border border-[#efe9de]/20 focus:border-[#b17a20] rounded-lg text-sm text-white focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 bg-[#faf8f5] border border-[#efe9de] focus:border-[#b17a20] rounded-lg text-sm text-[#2c1a04] focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-4 bg-[#b17a20] hover:bg-white text-white hover:text-[#2c1a04] text-xs font-bold uppercase tracking-widest rounded-lg shadow-md transition-all duration-300 inline-flex items-center justify-center gap-2"
+                    className="w-full py-4 bg-[#b17a20] hover:bg-[#2c1a04] border border-transparent hover:border-[#b17a20]/30 text-white text-xs font-bold uppercase tracking-widest rounded-lg shadow-md transition-all duration-300 inline-flex items-center justify-center gap-2"
                   >
                     <Send className="w-4 h-4" />
                     Submit Request

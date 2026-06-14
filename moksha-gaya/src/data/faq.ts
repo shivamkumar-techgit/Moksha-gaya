@@ -91,7 +91,7 @@ export const faqCategories: FAQCategory[] = [
         a: "No. Pricing transparency is our core value. All items listed in your package (such as pandit fees, puja materials, local transport, temple entry coordinates) are included in the package cost. Any optional dakshina is entirely at your discretion."
       },
       {
-        q: "How do I confirm a booking with Moksha Dham Gayaji?",
+        q: "How do I confirm a booking with Gaya Rituals?",
         a: "You submit an enquiry form with dates and gotra. A coordinator reviews your details, provides a transparent quote, and once confirmed, you pay a small booking advance. We arrange the pandit, materials, and transport in advance."
       }
     ]

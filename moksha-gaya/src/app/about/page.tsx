@@ -4,7 +4,7 @@ import AboutClient from "./AboutClient";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about the mission, scriptural authenticity, and coordinators at Moksha Dham Gayaji.",
+  description: "Learn about the mission, scriptural authenticity, and coordinators at Gaya Rituals.",
   alternates: {
     canonical: "/about",
   },

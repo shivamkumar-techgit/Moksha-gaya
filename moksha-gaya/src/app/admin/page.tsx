@@ -4,7 +4,7 @@ import AdminClient from "./AdminClient";
 
 export const metadata: Metadata = {
   title: "Admin Panel",
-  description: "Administrative dashboard for Moksha Dham Gayaji leads and communications management.",
+  description: "Administrative dashboard for Gaya Rituals leads and communications management.",
   robots: {
     index: false,
     follow: false,

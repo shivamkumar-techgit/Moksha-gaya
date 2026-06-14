@@ -18,7 +18,7 @@ image: /images/services/shraddh-karma.jpg
 ## About the Service
 Shraddh Karma is a sacred ritual performed in Hindu tradition to express devotion, respect, and gratitude to departed parents and ancestors. The word *Shraddh* is derived from *Shraddha* (faith), representing the sincere offering of prayers, food, and water to satisfy the souls of ancestors. 
 
-Performing Shraddh Karma in the holy land of Gaya carries supreme merit. Moksha Dham Gayaji offers end-to-end management for Shraddh ceremonies, providing verified Vedic pandits, sourcing pure ritual ingredients, and coordinating the entire event at the most spiritually auspicious locations.
+Performing Shraddh Karma in the holy land of Gaya carries supreme merit. Gaya Rituals offers end-to-end management for Shraddh ceremonies, providing verified Vedic pandits, sourcing pure ritual ingredients, and coordinating the entire event at the most spiritually auspicious locations.
 
 ---
 
@@ -61,7 +61,7 @@ A: Yes, women can participate along with their husbands. In cases where there ar
 ---
 
 ## Testimonial Section
-> "We performed my father's annual Shraddh in Gaya through Moksha Dham Gayaji. They handled all the details, from booking the pandit to preparing the food for Brahmanas. It allowed us to focus completely on the spiritual aspect of the ritual."  
+> "We performed my father's annual Shraddh in Gaya through Gaya Rituals. They handled all the details, from booking the pandit to preparing the food for Brahmanas. It allowed us to focus completely on the spiritual aspect of the ritual."  
 > — **Suresh Kumar, Mumbai**
 
 ---

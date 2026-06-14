@@ -40,6 +40,6 @@ export const sacredPlaces: SacredPlace[] = [
     slug: "ramshila",
     desc: "A historical hill where Lord Rama offered Pind Daan for his father, King Dasharatha. Performing rituals here brings supreme blessings.",
     icon: "🛕",
-    image: "/images/gallery/local-gaya1.jpg"
+    image: "/images/gallery/ramshila.png"
   }
 ];

@@ -156,26 +156,26 @@ export default function RitualGuideDetailPage({ slug }: { slug: string }) {
             </div>
 
             {/* Contextual Lead Enquiry Form */}
-            <div id="enquiry-form" className="bg-[#2c1a04] text-[#d6cdb8] rounded-3xl border border-[#b17a20]/30 p-8 md:p-10 shadow-lg relative overflow-hidden">
-              <div className="absolute -top-12 -left-12 w-48 h-48 bg-[#b17a20]/10 rounded-full blur-3xl" />
+            <div id="enquiry-form" className="bg-white text-[#2c1a04] rounded-3xl border border-[#efe9de] p-8 md:p-10 shadow-lg relative overflow-hidden">
+              <div className="absolute -top-12 -left-12 w-48 h-48 bg-[#b17a20]/5 rounded-full blur-3xl" />
               
-              <h2 className="font-serif text-2xl font-bold text-white mb-2">
+              <h2 className="font-serif text-2xl font-bold text-[#2c1a04] mb-2">
                 Enquire About {currentGuide.category}
               </h2>
-              <p className="text-xs text-[#a39785] mb-8 leading-relaxed">
+              <p className="text-xs text-[#5c4a37] mb-8 leading-relaxed">
                 Connect with our local Gayawal Acharyas to coordinate gotra-specific rituals. Fill out this quick form, and we will contact you shortly.
               </p>
 
               {submitSuccess ? (
-                <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-6 text-center text-emerald-400 space-y-3">
+                <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-6 text-center text-emerald-600 space-y-3">
                   <CheckCircle2 className="w-10 h-10 mx-auto" />
-                  <h3 className="font-bold text-white">Pranam, Submission Received!</h3>
+                  <h3 className="font-bold text-[#2c1a04]">Pranam, Submission Received!</h3>
                   <p className="text-xs">Your inquiry has been successfully registered. Our Vedic coordinator will reach out to you within 2 hours.</p>
                 </div>
               ) : (
                 <form onSubmit={handleFormSubmit} className="space-y-6">
                   {errorMessage && (
-                    <div className="bg-rose-500/10 border border-rose-500/30 text-rose-400 rounded-xl p-4 text-xs">
+                    <div className="bg-rose-500/10 border border-rose-500/30 text-rose-600 rounded-xl p-4 text-xs">
                       {errorMessage}
                     </div>
                   )}
@@ -183,9 +183,9 @@ export default function RitualGuideDetailPage({ slug }: { slug: string }) {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Name */}
                     <div>
-                      <label className="block text-[10px] font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                      <label className="block text-[10px] font-bold text-[#2c1a04] uppercase tracking-wider mb-2 flex items-center gap-1.5">
                         <User className="w-3.5 h-3.5 text-[#b17a20]" />
-                        Devotee Name <span className="text-rose-400">*</span>
+                        Devotee Name <span className="text-rose-600">*</span>
                       </label>
                       <input
                         type="text"
@@ -193,15 +193,15 @@ export default function RitualGuideDetailPage({ slug }: { slug: string }) {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="Enter your name"
-                        className="w-full px-4 py-3 bg-[#1c1917] border border-[#efe9de]/20 focus:border-[#b17a20] rounded-lg text-sm text-white focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 bg-[#faf8f5] border border-[#efe9de] focus:border-[#b17a20] rounded-lg text-sm text-[#2c1a04] focus:outline-none transition-colors"
                       />
                     </div>
 
                     {/* Phone */}
                     <div>
-                      <label className="block text-[10px] font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                      <label className="block text-[10px] font-bold text-[#2c1a04] uppercase tracking-wider mb-2 flex items-center gap-1.5">
                         <Phone className="w-3.5 h-3.5 text-[#b17a20]" />
-                        Mobile Number <span className="text-rose-400">*</span>
+                        Mobile Number <span className="text-rose-600">*</span>
                       </label>
                       <input
                         type="tel"
@@ -209,7 +209,7 @@ export default function RitualGuideDetailPage({ slug }: { slug: string }) {
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="Enter mobile number"
-                        className="w-full px-4 py-3 bg-[#1c1917] border border-[#efe9de]/20 focus:border-[#b17a20] rounded-lg text-sm text-white focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 bg-[#faf8f5] border border-[#efe9de] focus:border-[#b17a20] rounded-lg text-sm text-[#2c1a04] focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -217,7 +217,7 @@ export default function RitualGuideDetailPage({ slug }: { slug: string }) {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Email */}
                     <div>
-                      <label className="block text-[10px] font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                      <label className="block text-[10px] font-bold text-[#2c1a04] uppercase tracking-wider mb-2 flex items-center gap-1.5">
                         <Mail className="w-3.5 h-3.5 text-[#b17a20]" />
                         Email Address (Optional)
                       </label>
@@ -226,13 +226,13 @@ export default function RitualGuideDetailPage({ slug }: { slug: string }) {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="Enter email address"
-                        className="w-full px-4 py-3 bg-[#1c1917] border border-[#efe9de]/20 focus:border-[#b17a20] rounded-lg text-sm text-white focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 bg-[#faf8f5] border border-[#efe9de] focus:border-[#b17a20] rounded-lg text-sm text-[#2c1a04] focus:outline-none transition-colors"
                       />
                     </div>
 
                     {/* Date */}
                     <div>
-                      <label className="block text-[10px] font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                      <label className="block text-[10px] font-bold text-[#2c1a04] uppercase tracking-wider mb-2 flex items-center gap-1.5">
                         <Calendar className="w-3.5 h-3.5 text-[#b17a20]" />
                         Tentative Ritual Date
                       </label>
@@ -240,7 +240,7 @@ export default function RitualGuideDetailPage({ slug }: { slug: string }) {
                         type="date"
                         value={formData.date}
                         onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                        className="w-full px-4 py-3 bg-[#1c1917] border border-[#efe9de]/20 focus:border-[#b17a20] rounded-lg text-sm text-white focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 bg-[#faf8f5] border border-[#efe9de] focus:border-[#b17a20] rounded-lg text-sm text-[#2c1a04] focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -248,7 +248,7 @@ export default function RitualGuideDetailPage({ slug }: { slug: string }) {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-4 bg-[#b17a20] hover:bg-white text-white hover:text-[#2c1a04] text-xs font-bold uppercase tracking-widest rounded-lg shadow-md transition-all duration-300 disabled:opacity-50"
+                    className="w-full py-4 bg-[#b17a20] hover:bg-[#2c1a04] border border-transparent hover:border-[#b17a20]/30 text-white text-xs font-bold uppercase tracking-widest rounded-lg shadow-md transition-all duration-300 disabled:opacity-50"
                   >
                     {isSubmitting ? "Submitting Request..." : `Enquire for ${currentGuide.category} Now`}
                   </button>

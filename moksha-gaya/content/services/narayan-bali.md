@@ -18,7 +18,7 @@ image: /images/services/narayan-bali.jpg
 ## About the Service
 Narayan Bali is a highly specialized and powerful Vedic ritual performed to liberate souls who died prematurely, unnaturally, or under tragic circumstances (such as accidents, suicides, water, fire, or sudden illness). If these souls do not receive proper transit rites, they may remain trapped in the earthly realm, causing *Pitru Dosha* (ancestral afflictions) in the family.
 
-Moksha Dham Gayaji organizes Narayan Bali rituals in accordance with the Garuda Purana scriptures. The ceremony is performed by specially trained Vedic pandits in Gaya, focusing on seeking forgiveness from Lord Vishnu to free the departed souls.
+Gaya Rituals organizes Narayan Bali rituals in accordance with the Garuda Purana scriptures. The ceremony is performed by specially trained Vedic pandits in Gaya, focusing on seeking forgiveness from Lord Vishnu to free the departed souls.
 
 ---
 
@@ -70,7 +70,7 @@ A: It is performed by the head of the family, a son, or a close male relative. I
 ---
 
 ## Testimonial Section
-> "Our family was facing continuous setbacks in business and health. A pandit recommended Narayan Bali in Gaya. Moksha Dham Gayaji handled the entire two-day ceremony beautifully. The pandits explained every step, and we felt a profound shift in energy afterward."  
+> "Our family was facing continuous setbacks in business and health. A pandit recommended Narayan Bali in Gaya. Gaya Rituals handled the entire two-day ceremony beautifully. The pandits explained every step, and we felt a profound shift in energy afterward."  
 > — **Anand Verma, Bangalore**
 
 ---

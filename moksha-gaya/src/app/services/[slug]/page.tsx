@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
 
   return {
     title: metadata.title || slug.replace(/-/g, " "),
-    description: metadata.excerpt || `Authentic Vedic ${metadata.title || slug.replace(/-/g, " ")} ritual services in Gaya coordinated by Moksha Dham Gayaji.`,
+    description: metadata.excerpt || `Authentic Vedic ${metadata.title || slug.replace(/-/g, " ")} ritual services in Gaya coordinated by Gaya Rituals.`,
     alternates: {
       canonical: `/services/${slug}`,
     },

@@ -4,7 +4,7 @@ import ContactClient from "./ContactClient";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with Moksha Dham Gayaji. Reach out via phone, email, or visit our office in Gaya for ritual inquiries.",
+  description: "Get in touch with Gaya Rituals. Reach out via phone, email, or visit our office in Gaya for ritual inquiries.",
   alternates: {
     canonical: "/contact",
   },

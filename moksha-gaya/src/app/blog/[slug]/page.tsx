@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
 
   return {
     title: metadata.title || slug.replace(/-/g, " "),
-    description: metadata.excerpt || `Read our guide on ${metadata.title || slug.replace(/-/g, " ")} on Moksha Dham Gayaji.`,
+    description: metadata.excerpt || `Read our guide on ${metadata.title || slug.replace(/-/g, " ")} on Gaya Rituals.`,
     alternates: {
       canonical: `/blog/${slug}`,
     },

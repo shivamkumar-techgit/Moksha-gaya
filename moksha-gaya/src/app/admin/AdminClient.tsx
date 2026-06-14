@@ -29,7 +29,7 @@ export default function AdminPanel() {
   // Load data
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const logged = sessionStorage.getItem("moksha_gaya_logged_in") === "true";
+      const logged = sessionStorage.getItem("gaya_rituals_logged_in") === "true";
       if (logged) {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setIsLoggedIn(true);
@@ -42,9 +42,9 @@ export default function AdminPanel() {
   // Handle Login
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (username === "admin" && password === "moksha2026") {
+    if (username === "admin" && password === "gaya2026") {
       if (typeof window !== "undefined") {
-        sessionStorage.setItem("moksha_gaya_logged_in", "true");
+        sessionStorage.setItem("gaya_rituals_logged_in", "true");
       }
       setIsLoggedIn(true);
       setLeads(getLeads());
@@ -58,7 +58,7 @@ export default function AdminPanel() {
   // Handle Logout
   const handleLogout = () => {
     if (typeof window !== "undefined") {
-      sessionStorage.removeItem("moksha_gaya_logged_in");
+      sessionStorage.removeItem("gaya_rituals_logged_in");
     }
     setIsLoggedIn(false);
   };
@@ -143,18 +143,18 @@ export default function AdminPanel() {
 
   if (!isLoggedIn) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#1c1917] px-6 py-20 relative">
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at center, rgba(177, 122, 32, 0.1), transparent)" }} />
+      <div className="min-h-screen flex items-center justify-center bg-[#faf8f5] px-6 py-20 relative">
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at center, rgba(177, 122, 32, 0.05), transparent)" }} />
         
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="w-full max-w-md bg-white border border-[#efe9de]/30 rounded-2xl p-8 md:p-10 shadow-2xl relative z-10"
+          className="w-full max-w-md bg-white border border-[#efe9de] rounded-2xl p-8 md:p-10 shadow-xl relative z-10"
         >
           <div className="text-center mb-8">
             <div className="w-14 h-14 rounded-full overflow-hidden bg-stone-100 border border-[#b17a20]/30 flex items-center justify-center mx-auto mb-4">
-              <img src="/images/hero/moksha_dham_gayaji_logo.png" alt="Moksha Dham Gayaji Logo" className="w-full h-full object-cover scale-110" />
+              <img src="/images/hero/gaya_rituals_logo.png" alt="Gaya Rituals Logo" className="w-full h-full object-cover scale-110" />
             </div>
             <h1 className="font-serif text-2xl font-bold text-[#2c1a04] tracking-wider uppercase">Admin Portal</h1>
             <p className="text-xs text-[#7c6954] mt-1">Spiritual lead console and automation dashboard</p>
@@ -211,9 +211,9 @@ export default function AdminPanel() {
           <div>
             <div className="flex items-center gap-2.5">
               <div className="w-8 h-8 rounded-full overflow-hidden bg-white border border-[#b17a20]/30 flex items-center justify-center shrink-0">
-                <img src="/images/hero/moksha_dham_gayaji_logo.png" alt="Logo" className="w-full h-full object-cover scale-110" />
+                <img src="/images/hero/gaya_rituals_logo.png" alt="Gaya Rituals Logo" className="w-full h-full object-cover scale-110" />
               </div>
-              <h1 className="font-serif text-2xl font-bold text-[#2c1a04]">Moksha Dham Gayaji Admin</h1>
+              <h1 className="font-serif text-2xl font-bold text-[#2c1a04]">Gaya Rituals Admin</h1>
             </div>
             <p className="text-xs text-[#7c6954] mt-1">Lead Manager &amp; WhatsApp Automation Logs</p>
           </div>

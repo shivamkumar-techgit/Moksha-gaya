@@ -21,12 +21,12 @@ export interface WhatsAppLog {
   timestamp: string;
 }
 
-const LEADS_STORAGE_KEY = "moksha_gaya_leads";
-const WHATSAPP_STORAGE_KEY = "moksha_gaya_whatsapp_logs";
+const LEADS_STORAGE_KEY = "gaya_rituals_leads";
+const WHATSAPP_STORAGE_KEY = "gaya_rituals_whatsapp_logs";
 
 const MOCK_LEADS: Lead[] = [
   {
-    id: "MG1001",
+    id: "GR1001",
     name: "Rajesh Sharma",
     phone: "9876543210",
     email: "rajesh.sharma@gmail.com",
@@ -41,7 +41,7 @@ const MOCK_LEADS: Lead[] = [
     createdAt: "2026-06-04T09:15:00.000Z"
   },
   {
-    id: "MG1002",
+    id: "GR1002",
     name: "Amit Verma",
     phone: "7782091234",
     email: "amit.verma@yahoo.com",
@@ -56,7 +56,7 @@ const MOCK_LEADS: Lead[] = [
     createdAt: "2026-06-04T12:00:00.000Z"
   },
   {
-    id: "MG1003",
+    id: "GR1003",
     name: "Suresh Kumar",
     phone: "9123456789",
     email: "suresh.k@outlook.com",
@@ -100,13 +100,13 @@ function saveWhatsAppLog(log: WhatsAppLog) {
 export function saveLead(leadData: Omit<Lead, "id" | "status" | "notes" | "createdAt">): Lead {
   const leads = getLeads();
   
-  // Calculate next Reference ID (e.g. MG1004)
+  // Calculate next Reference ID (e.g. GR1004)
   const nextIdNum = leads.reduce((max, lead) => {
-    const num = parseInt(lead.id.replace("MG", ""), 10);
+    const num = parseInt(lead.id.replace("GR", ""), 10);
     return num > max ? num : max;
   }, 1000) + 1;
   
-  const refId = `MG${nextIdNum}`;
+  const refId = `GR${nextIdNum}`;
   
   const newLead: Lead = {
     ...leadData,
@@ -124,7 +124,7 @@ export function saveLead(leadData: Omit<Lead, "id" | "status" | "notes" | "creat
   // Trigger simulated WhatsApp Notifications
   
   // 1. User Notification
-  const userMsg = `Pranam. Thank you for contacting Moksha Dham Gayaji. Our coordinator will contact you shortly. Reference ID: ${refId}`;
+  const userMsg = `Pranam. Thank you for contacting Gaya Rituals. Our coordinator will contact you shortly. Reference ID: ${refId}`;
   saveWhatsAppLog({
     id: `WA_U_${Date.now()}`,
     refId,
@@ -168,7 +168,7 @@ export function cleanPhone(phone: string): string {
 
 export function getEnquiryWhatsAppUrl(refId: string, name: string, ritual: string): string {
   const adminPhone = "917070719993";
-  const text = `Pranam, I have submitted an enquiry on Moksha Dham Gayaji.\n\n*Reference ID:* ${refId}\n*Name:* ${name}\n*Service:* ${ritual}\n\nPlease confirm my details.`;
+  const text = `Pranam, I have submitted an enquiry on Gaya Rituals.\n\n*Reference ID:* ${refId}\n*Name:* ${name}\n*Service:* ${ritual}\n\nPlease confirm my details.`;
   
   if (typeof window !== "undefined" && typeof navigator !== "undefined") {
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -185,19 +185,19 @@ export function getStatusWhatsAppUrl(lead: Lead): string {
   
   switch(lead.status) {
     case "Pending":
-      text = `Pranam ${lead.name}, this is Moksha Dham Gayaji. We received your enquiry (Ref: ${lead.id}) for ${lead.ritual}. Let us know a convenient time to connect and explain the procedure.`;
+      text = `Pranam ${lead.name}, this is Gaya Rituals. We received your enquiry (Ref: ${lead.id}) for ${lead.ritual}. Let us know a convenient time to connect and explain the procedure.`;
       break;
     case "Called":
-      text = `Pranam ${lead.name}, this is Moksha Dham Gayaji. Following up on our call regarding your enquiry (Ref: ${lead.id}). Let us know if you have any questions.`;
+      text = `Pranam ${lead.name}, this is Gaya Rituals. Following up on our call regarding your enquiry (Ref: ${lead.id}). Let us know if you have any questions.`;
       break;
     case "Confirmed":
-      text = `Pranam ${lead.name}, this is Moksha Dham Gayaji. We are pleased to confirm your ritual booking for ${lead.ritual} on ${lead.date}. Reference ID: ${lead.id}. Our coordinator will assist you in Gaya.`;
+      text = `Pranam ${lead.name}, this is Gaya Rituals. We are pleased to confirm your ritual booking for ${lead.ritual} on ${lead.date}. Reference ID: ${lead.id}. Our coordinator will assist you in Gaya.`;
       break;
     case "Completed":
-      text = `Pranam ${lead.name}, this is Moksha Dham Gayaji. The ancestral rites for ${lead.ritual} (Ref: ${lead.id}) have been successfully completed. May your ancestors find eternal peace (Moksha).`;
+      text = `Pranam ${lead.name}, this is Gaya Rituals. The ancestral rites for ${lead.ritual} (Ref: ${lead.id}) have been successfully completed. May your ancestors find eternal peace.`;
       break;
     case "Cancelled":
-      text = `Pranam ${lead.name}, this is Moksha Dham Gayaji. Your enquiry (Ref: ${lead.id}) has been marked as cancelled/postponed. Please contact us if you wish to reschedule.`;
+      text = `Pranam ${lead.name}, this is Gaya Rituals. Your enquiry (Ref: ${lead.id}) has been marked as cancelled/postponed. Please contact us if you wish to reschedule.`;
       break;
   }
   

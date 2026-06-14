@@ -26,8 +26,8 @@ export default function AboutPage() {
   return (
     <div className="bg-[#faf8f5] overflow-hidden">
       {/* Hero Banner */}
-      <section className="relative py-24 bg-[#1c1917] text-[#d6cdb8] overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at top right, rgba(255, 234, 204, 0.1), transparent)" }} />
+      <section className="relative py-24 bg-gradient-to-b from-[#faf8f5]/60 to-[#f3ebd8]/80 border-b border-[#efe9de] text-[#2c1a04] overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at top right, rgba(177, 122, 32, 0.05), transparent)" }} />
         <div className="container mx-auto px-6 max-w-4xl text-center relative z-10">
           <motion.span 
             initial={{ opacity: 0, y: -10 }}
@@ -41,7 +41,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#2c1a04] mb-6 leading-tight"
           >
             Preserving Sacred Vedic Traditions
           </motion.h1>
@@ -49,9 +49,9 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-base md:text-lg text-[#a39785] max-w-2xl mx-auto leading-relaxed"
+            className="text-base md:text-lg text-[#5c4a37] max-w-2xl mx-auto leading-relaxed"
           >
-            Moksha Dham Gayaji is dedicated to helping families fulfill their sacred duties towards their ancestors in Gaya with authenticity, respect, and seamless professional coordination.
+            Gaya Rituals is dedicated to helping families fulfill their sacred duties towards their ancestors in Gaya with authenticity, respect, and seamless professional coordination.
           </motion.p>
         </div>
       </section>

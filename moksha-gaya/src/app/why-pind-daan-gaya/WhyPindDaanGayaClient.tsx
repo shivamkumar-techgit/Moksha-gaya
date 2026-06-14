@@ -65,8 +65,8 @@ export default function WhyPindDaanGayaPage() {
   return (
     <div className="bg-[#faf8f5] overflow-hidden min-h-screen">
       {/* Hero Header Banner */}
-      <section className="relative py-24 bg-[#1c1917] text-[#d6cdb8] overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at top right, rgba(255, 234, 204, 0.1), transparent)" }} />
+      <section className="relative py-24 bg-gradient-to-b from-[#faf8f5]/60 to-[#f3ebd8]/80 border-b border-[#efe9de] text-[#2c1a04] overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at top right, rgba(177, 122, 32, 0.05), transparent)" }} />
         <div className="container mx-auto px-6 max-w-4xl text-center relative z-10">
           <motion.span 
             initial={{ opacity: 0, y: -10 }}
@@ -80,7 +80,7 @@ export default function WhyPindDaanGayaPage() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#2c1a04] mb-6 leading-tight"
           >
             Why Perform Pind Daan in Gaya?
           </motion.h1>
@@ -88,7 +88,7 @@ export default function WhyPindDaanGayaPage() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-base md:text-lg text-[#a39785] max-w-2xl mx-auto leading-relaxed"
+            className="text-base md:text-lg text-[#5c4a37] max-w-2xl mx-auto leading-relaxed"
           >
             Understand the immense scriptural power of Gaya Ji, the holy land blessed by Lord Vishnu, where ancestral souls find final liberation (Moksha).
           </motion.p>
@@ -128,18 +128,18 @@ export default function WhyPindDaanGayaPage() {
 
           {/* Right Highlights Panel */}
           <div className="lg:col-span-5 space-y-8 lg:sticky lg:top-24">
-            <div className="bg-[#2c1a04] text-[#d6cdb8] p-8 rounded-2xl border border-[#b17a20]/30 shadow-lg relative overflow-hidden">
+            <div className="bg-white text-[#2c1a04] p-8 rounded-2xl border border-[#efe9de] shadow-lg relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-xl" />
-              <h3 className="font-serif text-xl font-bold text-white mb-6 flex items-center gap-2">
+              <h3 className="font-serif text-xl font-bold text-[#2c1a04] mb-6 flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-[#b17a20]" />
                 The Holy Gaya Trinity
               </h3>
               
               <div className="space-y-6">
                 {sacredSpots.map((spot, idx) => (
-                  <div key={idx} className="border-b border-[#efe9de]/10 pb-4 last:border-0 last:pb-0">
-                    <h4 className="text-sm font-bold text-white mb-1.5">{spot.name}</h4>
-                    <p className="text-xs text-[#a39785] leading-relaxed mb-1">{spot.desc}</p>
+                  <div key={idx} className="border-b border-[#efe9de] pb-4 last:border-0 last:pb-0">
+                    <h4 className="text-sm font-bold text-[#2c1a04] mb-1.5">{spot.name}</h4>
+                    <p className="text-xs text-[#5c4a37] leading-relaxed mb-1">{spot.desc}</p>
                     <span className="text-[10px] text-[#b17a20] font-semibold block">{spot.history}</span>
                   </div>
                 ))}
@@ -190,16 +190,16 @@ export default function WhyPindDaanGayaPage() {
 
       {/* CTA Booking Banner */}
       <section className="py-24 container mx-auto px-6 max-w-4xl text-center">
-        <div className="bg-[#1c1917] text-[#d6cdb8] p-12 rounded-3xl border border-[#b17a20]/30 shadow-2xl relative overflow-hidden">
-          <div className="absolute -top-12 -left-12 w-48 h-48 bg-[#b17a20]/10 rounded-full blur-3xl" />
+        <div className="bg-white text-[#2c1a04] p-12 rounded-3xl border border-[#efe9de] shadow-xl relative overflow-hidden">
+          <div className="absolute -top-12 -left-12 w-48 h-48 bg-[#b17a20]/5 rounded-full blur-3xl" />
           <div className="absolute -bottom-12 -right-12 w-48 h-48 bg-amber-500/5 rounded-full blur-3xl" />
           
           <Sparkles className="w-8 h-8 text-[#b17a20] mx-auto mb-6 animate-pulse" />
           
-          <h2 className="font-serif text-3xl font-bold text-white mb-4">
+          <h2 className="font-serif text-3xl font-bold text-[#2c1a04] mb-4">
             Perform Rites with Verified Gayawal Pandits
           </h2>
-          <p className="text-sm text-[#a39785] max-w-xl mx-auto mb-8 leading-relaxed">
+          <p className="text-sm text-[#5c4a37] max-w-xl mx-auto mb-8 leading-relaxed">
             Ensure your offerings are made in strict compliance with the Gotra requirements and Vedic scriptures. Talk to our coordinators to schedule in-person or remote video rituals.
           </p>
           
@@ -212,7 +212,7 @@ export default function WhyPindDaanGayaPage() {
             </Link>
             <Link 
               href="/contact" 
-              className="px-8 py-3.5 bg-transparent hover:bg-white/10 text-white border border-[#d6cdb8]/30 text-xs font-bold uppercase tracking-widest rounded-full transition-all duration-300"
+              className="px-8 py-3.5 bg-transparent hover:bg-[#faf8f5] text-[#2c1a04] border border-[#efe9de] hover:border-[#b17a20]/30 text-xs font-bold uppercase tracking-widest rounded-full transition-all duration-300"
             >
               Request Free Consultation
             </Link>

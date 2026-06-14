@@ -56,34 +56,33 @@ export default function CTA() {
   return (
     <section 
       id="book" 
-      className="py-24 text-white relative overflow-hidden"
-      style={{ backgroundImage: "radial-gradient(circle at center, #3a2205, #1a0e02)" }}
+      className="py-24 text-[#2c1a04] relative overflow-hidden bg-gradient-to-b from-[#faf8f5]/85 to-[#f3ebd8]/95 border-t border-[#efe9de] z-10"
     >
       {/* Background patterns */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{
-        backgroundImage: `radial-gradient(circle, #ffffff 1px, transparent 1px)`,
+      <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{
+        backgroundImage: `radial-gradient(circle, #b17a20 1px, transparent 1px)`,
         backgroundSize: "32px 32px"
       }} />
-      <div className="absolute -bottom-48 -right-48 w-96 h-96 rounded-full bg-amber-500/10 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-48 -right-48 w-96 h-96 rounded-full bg-amber-500/5 blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-6 max-w-4xl relative z-10 text-center">
         {/* Decorative Lotus Icon / Symbol Placeholder */}
-        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/10 text-amber-400 mb-6 backdrop-blur-md border border-white/10">
+        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f8f1e5] text-[#b17a20] mb-6 border border-[#b17a20]/25 shadow-xs">
           <span className="text-3xl">🕉️</span>
         </div>
 
         {/* Heading */}
-        <h2 className="font-serif text-4xl md:text-5xl font-bold tracking-tight mb-6 leading-tight">
+        <h2 className="font-serif text-4xl md:text-5xl font-bold tracking-tight mb-6 leading-tight text-[#2c1a04]">
           Begin Your Sacred Journey Today
         </h2>
 
         {/* Supporting text */}
-        <p className="text-lg text-amber-100/80 mb-12 max-w-2xl mx-auto font-sans leading-relaxed">
+        <p className="text-base md:text-lg text-[#5c4a37] mb-12 max-w-2xl mx-auto font-sans leading-relaxed">
           Connect with our experienced coordinators and receive personal, scriptural guidance for Pind Daan, Shraddh, or other sacred family rituals in Gaya.
         </p>
 
         {/* Interactive Booking Enquiry Form (Inline) */}
-        <div className="bg-white rounded-2xl p-8 md:p-10 text-left max-w-2xl mx-auto shadow-2xl border border-white/10 text-zinc-950">
+        <div className="bg-white rounded-2xl p-8 md:p-10 text-left max-w-2xl mx-auto shadow-xl border border-[#efe9de] text-[#2c1a04]">
           {submitted ? (
             <div className="text-center py-8">
               <div className="w-16 h-16 rounded-full bg-[#f8f1e5] border border-[#b17a20]/30 text-[#b17a20] text-3xl flex items-center justify-center mx-auto mb-6">

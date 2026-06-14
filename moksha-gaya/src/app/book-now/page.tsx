@@ -4,7 +4,7 @@ import BookNowClient from "./BookNowClient";
 
 export const metadata: Metadata = {
   title: "Book Rites & Rituals",
-  description: "Book your Pind Daan, Shraddh Karma, Tarpan, or Narayan Bali rituals online with Moksha Dham Gayaji.",
+  description: "Book your Pind Daan, Shraddh Karma, Tarpan, or Narayan Bali rituals online with Gaya Rituals.",
   alternates: {
     canonical: "/book-now",
   },
