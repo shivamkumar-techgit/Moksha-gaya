@@ -8,7 +8,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import InteractiveBackdrop from "@/components/InteractiveBackdrop";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://gayarituals.com"),
+  metadataBase: new URL("https://gayarituals.com"),
   title: {
     default: "Gaya Rituals - Authentic Ancestral Rituals in Gaya",
     template: "%s | Gaya Rituals",
