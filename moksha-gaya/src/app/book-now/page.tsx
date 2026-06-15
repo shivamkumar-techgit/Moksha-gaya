@@ -1,6 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import BookNowClient from "./BookNowClient";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Book Rites & Rituals",
@@ -11,5 +12,15 @@ export const metadata: Metadata = {
 };
 
 export default function BookNowPage() {
-  return <BookNowClient />;
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", item: "/" },
+          { name: "Book Now", item: "/book-now" },
+        ]}
+      />
+      <BookNowClient />
+    </>
+  );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import WhyPindDaanGayaClient from "./WhyPindDaanGayaClient";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Why Perform Pind Daan in Gaya?",
@@ -11,5 +12,15 @@ export const metadata: Metadata = {
 };
 
 export default function WhyPindDaanGayaPage() {
-  return <WhyPindDaanGayaClient />;
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", item: "/" },
+          { name: "Why Perform Pind Daan in Gaya?", item: "/why-pind-daan-gaya" },
+        ]}
+      />
+      <WhyPindDaanGayaClient />
+    </>
+  );
 }

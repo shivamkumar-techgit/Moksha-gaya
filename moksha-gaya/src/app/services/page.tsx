@@ -1,6 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import ServicesClient from "./ServicesClient";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Vedic Ritual Services",
@@ -11,5 +12,15 @@ export const metadata: Metadata = {
 };
 
 export default function ServicesPage() {
-  return <ServicesClient />;
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", item: "/" },
+          { name: "Services", item: "/services" },
+        ]}
+      />
+      <ServicesClient />
+    </>
+  );
 }

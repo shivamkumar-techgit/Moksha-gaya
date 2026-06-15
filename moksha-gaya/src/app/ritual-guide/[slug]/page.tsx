@@ -3,6 +3,7 @@ import React from "react";
 import { Metadata } from "next";
 import { ritualGuides } from "@/data/ritualGuides";
 import RitualGuideDetailClient from "./RitualGuideDetailClient";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 interface RitualGuidePageProps {
   params: Promise<{ slug: string }>;
@@ -45,5 +46,18 @@ export default async function RitualGuideDetailPage({ params }: RitualGuidePageP
     notFound();
   }
 
-  return <RitualGuideDetailClient slug={slug} />;
+  const pageTitle = currentGuide.title;
+
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", item: "/" },
+          { name: "Ritual Guide", item: "/ritual-guide" },
+          { name: pageTitle, item: `/ritual-guide/${slug}` },
+        ]}
+      />
+      <RitualGuideDetailClient slug={slug} />
+    </>
+  );
 }

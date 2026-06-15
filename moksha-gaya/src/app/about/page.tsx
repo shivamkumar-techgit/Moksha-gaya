@@ -1,6 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import AboutClient from "./AboutClient";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -11,5 +12,15 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  return <AboutClient />;
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", item: "/" },
+          { name: "About Us", item: "/about" },
+        ]}
+      />
+      <AboutClient />
+    </>
+  );
 }

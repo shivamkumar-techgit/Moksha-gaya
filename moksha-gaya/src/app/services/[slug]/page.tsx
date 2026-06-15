@@ -5,6 +5,7 @@ import React from "react";
 import { Metadata } from "next";
 import ServiceDetailClient from "./ServiceDetailClient";
 import { services } from "@/data/services";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 interface ServicePageProps {
   params: Promise<{ slug: string }>;
@@ -114,13 +115,24 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
       image: s.image,
     }));
 
+  const pageTitle = metadata.title || serviceObj?.title || slug.replace(/-/g, " ");
+
   return (
-    <ServiceDetailClient
-      slug={slug}
-      metadata={metadata}
-      sections={parsedSections}
-      image={image}
-      otherItems={otherItems}
-    />
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", item: "/" },
+          { name: "Services", item: "/services" },
+          { name: pageTitle, item: `/services/${slug}` },
+        ]}
+      />
+      <ServiceDetailClient
+        slug={slug}
+        metadata={metadata}
+        sections={parsedSections}
+        image={image}
+        otherItems={otherItems}
+      />
+    </>
   );
 }

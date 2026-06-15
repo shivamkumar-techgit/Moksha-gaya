@@ -1,6 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import SacredPlacesClient from "./SacredPlacesClient";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Sacred Places (Vedis) in Gaya",
@@ -11,5 +12,15 @@ export const metadata: Metadata = {
 };
 
 export default function SacredPlacesPage() {
-  return <SacredPlacesClient />;
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", item: "/" },
+          { name: "Sacred Places", item: "/sacred-places" },
+        ]}
+      />
+      <SacredPlacesClient />
+    </>
+  );
 }

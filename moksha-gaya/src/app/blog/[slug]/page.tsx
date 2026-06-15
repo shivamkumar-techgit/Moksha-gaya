@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import React from "react";
 import { Metadata } from "next";
 import BlogDetailClient from "./BlogDetailClient";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 interface BlogPageProps {
   params: Promise<{ slug: string }>;
@@ -119,12 +120,23 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
     });
   }
 
+  const pageTitle = metadata.title || slug.replace(/-/g, " ");
+
   return (
-    <BlogDetailClient
-      slug={slug}
-      metadata={metadata}
-      sections={parsedSections}
-      otherItems={otherItems}
-    />
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", item: "/" },
+          { name: "Blog", item: "/blog" },
+          { name: pageTitle, item: `/blog/${slug}` },
+        ]}
+      />
+      <BlogDetailClient
+        slug={slug}
+        metadata={metadata}
+        sections={parsedSections}
+        otherItems={otherItems}
+      />
+    </>
   );
 }

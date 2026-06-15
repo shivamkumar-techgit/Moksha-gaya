@@ -5,6 +5,7 @@ import React from "react";
 import { Metadata } from "next";
 import SacredPlaceClient from "./SacredPlaceClient";
 import { sacredPlaces } from "@/data/sacredPlaces";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 interface SacredPlacePageProps {
   params: Promise<{ slug: string }>;
@@ -114,13 +115,24 @@ export default async function SacredPlaceDetailPage({ params }: SacredPlacePageP
       image: p.image,
     }));
 
+  const pageTitle = metadata.title || placeObj?.name || slug.replace(/-/g, " ");
+
   return (
-    <SacredPlaceClient
-      slug={slug}
-      metadata={metadata}
-      sections={parsedSections}
-      image={image}
-      otherItems={otherItems}
-    />
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", item: "/" },
+          { name: "Sacred Places", item: "/sacred-places" },
+          { name: pageTitle, item: `/sacred-places/${slug}` },
+        ]}
+      />
+      <SacredPlaceClient
+        slug={slug}
+        metadata={metadata}
+        sections={parsedSections}
+        image={image}
+        otherItems={otherItems}
+      />
+    </>
   );
 }

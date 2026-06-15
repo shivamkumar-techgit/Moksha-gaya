@@ -10,10 +10,23 @@ import Gallery from "@/sections/Gallery";
 import Testimonials from "@/sections/Testimonials";
 import FAQ from "@/sections/FAQ";
 import CTA from "@/sections/CTA";
+import { LocalBusinessSchema, OrganizationSchema, FAQSchema } from "@/components/JsonLd";
+import { faqCategories } from "@/data/faq";
 
 export default function HomePage() {
+  const homeFaqs = faqCategories.flatMap(category => 
+    category.items.map(item => ({
+      q: item.q,
+      a: item.a
+    }))
+  );
+
   return (
     <>
+      <OrganizationSchema />
+      <LocalBusinessSchema />
+      <FAQSchema faqs={homeFaqs} />
+      
       <Hero />
       <TrustStats />
       <WhyChooseUs />

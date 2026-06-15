@@ -3,6 +3,7 @@ import path from "path";
 import React from "react";
 import { Metadata } from "next";
 import BlogClient from "./BlogClient";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Ancestral Rituals Blog & Guides",
@@ -67,5 +68,15 @@ export default async function BlogPage() {
   // Sort posts by date (newest first) if needed
   posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  return <BlogClient posts={posts} />;
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", item: "/" },
+          { name: "Blog", item: "/blog" },
+        ]}
+      />
+      <BlogClient posts={posts} />
+    </>
+  );
 }
