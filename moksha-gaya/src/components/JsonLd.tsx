@@ -126,3 +126,102 @@ export function BreadcrumbSchema({ items }: { items: BreadcrumbItem[] }) {
     />
   );
 }
+
+export interface ArticleSchemaProps {
+  headline: string;
+  image: string;
+  datePublished?: string;
+  description: string;
+  url: string;
+}
+
+export function ArticleSchema({ headline, image, datePublished, description, url }: ArticleSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": url.startsWith("http") ? url : `https://gayarituals.com${url}`
+    },
+    "headline": headline,
+    "image": image.startsWith("http") ? image : `https://gayarituals.com${image}`,
+    "datePublished": datePublished || new Date().toISOString().split("T")[0],
+    "author": {
+      "@type": "Organization",
+      "name": "Gaya Rituals",
+      "url": "https://gayarituals.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Gaya Rituals",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://gayarituals.com/images/hero/gaya_rituals_logo.png"
+      }
+    },
+    "description": description
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export interface ServiceSchemaProps {
+  name: string;
+  description: string;
+  image?: string;
+  url: string;
+}
+
+export function ServiceSchema({ name, description, image, url }: ServiceSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": name,
+    "description": description,
+    "provider": {
+      "@type": "LocalBusiness",
+      "@id": "https://gayarituals.com/#localbusiness",
+      "name": "Gaya Rituals",
+      "image": "https://gayarituals.com/images/hero/gaya_rituals_logo.png",
+      "url": "https://gayarituals.com",
+      "telephone": "+917070719993",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nawagarhi, Anpurna Niwas Gaya ji",
+        "addressLocality": "Gaya",
+        "addressRegion": "Bihar",
+        "postalCode": "823001",
+        "addressCountry": "IN"
+      }
+    },
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Gaya"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Bihar"
+      },
+      {
+        "@type": "Country",
+        "name": "India"
+      }
+    ],
+    "serviceType": "Religious & Spiritual Rituals",
+    "url": url.startsWith("http") ? url : `https://gayarituals.com${url}`,
+    ...(image ? { "image": image.startsWith("http") ? image : `https://gayarituals.com${image}` } : {})
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

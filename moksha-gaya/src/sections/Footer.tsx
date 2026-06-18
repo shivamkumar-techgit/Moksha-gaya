@@ -21,7 +21,8 @@ export default function Footer() {
 
   const bottomLinks = [
     { name: "Blog", href: "/blog" },
-    { name: "Sacred Places", href: "/sacred-places" },
+    { name: "Sacred Places", href: "/places" },
+    { name: "Leave a Review", href: "/leave-a-review" },
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Terms & Conditions", href: "/terms-and-conditions" }
   ];

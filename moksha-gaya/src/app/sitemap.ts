@@ -11,11 +11,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/about",
     "/contact",
     "/services",
-    "/sacred-places",
+    "/places",
     "/ritual-guide",
     "/blog",
     "/why-pind-daan-gaya",
     "/book-now",
+    "/pind-daan-in-gaya",
+    "/gaya-pind-daan",
+    "/online-pind-daan-gaya",
+    "/gaya-shraddha",
+    "/best-pandit-for-pind-daan-in-gaya",
+    "/gaya-pind-daan-packages",
+    "/gaya-pind-daan-cost",
+    "/narayan-bali-puja-gaya",
+    "/tripindi-shraddha-gaya",
+    "/pitru-paksha-gaya",
+    "/pitra-dosh-puja-gaya",
+    "/book-pind-daan-gaya",
+    "/leave-a-review",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -49,7 +62,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   };
 
   const serviceRoutes = getDynamicRoutes("services", "/services", 0.7);
-  const placeRoutes = getDynamicRoutes("sacred-places", "/sacred-places", 0.6);
+  const placeRoutes = getDynamicRoutes("places", "/places", 0.6);
   const guideRoutes = getDynamicRoutes("ritual-guide", "/ritual-guide", 0.7);
   const blogRoutes = getDynamicRoutes("blog", "/blog", 0.6);
 

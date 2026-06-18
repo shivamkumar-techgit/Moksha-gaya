@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import React from "react";
 import { Metadata } from "next";
 import BlogDetailClient from "./BlogDetailClient";
-import { BreadcrumbSchema } from "@/components/JsonLd";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/JsonLd";
 
 interface BlogPageProps {
   params: Promise<{ slug: string }>;
@@ -130,6 +130,13 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
           { name: "Blog", item: "/blog" },
           { name: pageTitle, item: `/blog/${slug}` },
         ]}
+      />
+      <ArticleSchema
+        headline={metadata.title || pageTitle}
+        image={metadata.image || "/images/gallery/ritual-ai2.png"}
+        datePublished={metadata.date}
+        description={metadata.excerpt || ""}
+        url={`/blog/${slug}`}
       />
       <BlogDetailClient
         slug={slug}

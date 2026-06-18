@@ -4,8 +4,9 @@ import WhyPindDaanGayaClient from "./WhyPindDaanGayaClient";
 import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Why Perform Pind Daan in Gaya?",
-  description: "Explore the scriptural importance of performing ancestral rituals in the holy land of Gaya, blessed by Lord Vishnu.",
+  title: "Why Perform Pind Daan in Gaya? Scriptural Benefits | Gaya Rituals",
+  description: "Understand the scriptural significance, benefits, and stories from Garuda and Vayu Puranas explaining why Gaya is the land of salvation.",
+  keywords: ["importance of Pind Daan in Gaya", "why perform Pind Daan", "benefits of Gaya Pind Daan", "Gayasur story"],
   alternates: {
     canonical: "/why-pind-daan-gaya",
   },

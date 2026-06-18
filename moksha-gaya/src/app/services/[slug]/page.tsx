@@ -5,7 +5,7 @@ import React from "react";
 import { Metadata } from "next";
 import ServiceDetailClient from "./ServiceDetailClient";
 import { services } from "@/data/services";
-import { BreadcrumbSchema } from "@/components/JsonLd";
+import { BreadcrumbSchema, ServiceSchema } from "@/components/JsonLd";
 
 interface ServicePageProps {
   params: Promise<{ slug: string }>;
@@ -125,6 +125,12 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           { name: "Services", item: "/services" },
           { name: pageTitle, item: `/services/${slug}` },
         ]}
+      />
+      <ServiceSchema
+        name={metadata.title || pageTitle}
+        description={metadata.excerpt || ""}
+        image={image}
+        url={`/services/${slug}`}
       />
       <ServiceDetailClient
         slug={slug}

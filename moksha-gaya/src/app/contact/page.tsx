@@ -4,8 +4,9 @@ import ContactClient from "./ContactClient";
 import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description: "Get in touch with Gaya Rituals. Reach out via phone, email, or visit our office in Gaya for ritual inquiries.",
+  title: "Contact Us | Pandit Booking & Consultations | Gaya Rituals",
+  description: "Connect with our coordination desk in Gaya. Contact us via phone, WhatsApp, email, or visit our office near Vishnupad Temple.",
+  keywords: ["contact Gaya Rituals", "Gaya Pandit phone number", "book Pind Daan Gaya", "Gaya puja office"],
   alternates: {
     canonical: "/contact",
   },

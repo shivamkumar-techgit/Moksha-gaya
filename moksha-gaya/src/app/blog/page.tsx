@@ -6,8 +6,9 @@ import BlogClient from "./BlogClient";
 import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Ancestral Rituals Blog & Guides",
-  description: "Read helpful guides, scriptural studies, and step-by-step procedures on Pind Daan, Tarpan, Narayan Bali, and Gaya pilgrimage.",
+  title: "Ancestral Rituals Blog, Astrological & Vedic Guides | Gaya Rituals",
+  description: "Read deep-dive scriptural analyses, astrological guides for Pitru Dosha, updates on Pitru Paksha dates, and tips for pilgrimage travel.",
+  keywords: ["ancestral rituals blog", "Gaya pilgrimage blog", "Pitru Dosha tips", "Vedic scriptures guides"],
   alternates: {
     canonical: "/blog",
   },

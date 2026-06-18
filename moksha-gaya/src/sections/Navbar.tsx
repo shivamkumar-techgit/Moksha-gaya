@@ -135,9 +135,9 @@ export default function Navbar() {
             Ritual Services
           </Link>
           <Link
-            href="/sacred-places"
+            href="/places"
             className={`text-sm font-semibold tracking-wide transition-colors whitespace-nowrap ${
-              isActive("/sacred-places") ? "text-[#b17a20]" : "text-[#5c4a37] hover:text-[#b17a20]"
+              isActive("/places") ? "text-[#b17a20]" : "text-[#5c4a37] hover:text-[#b17a20]"
             }`}
           >
             Sacred Places
@@ -288,10 +288,10 @@ export default function Navbar() {
                 Ritual Services
               </Link>
               <Link
-                href="/sacred-places"
+                href="/places"
                 onClick={() => setIsOpen(false)}
                 className={`text-base font-semibold transition-colors ${
-                  pathname === "/sacred-places" ? "text-[#b17a20]" : "text-[#5c4a37] hover:text-[#b17a20]"
+                  pathname === "/places" ? "text-[#b17a20]" : "text-[#5c4a37] hover:text-[#b17a20]"
                 }`}
               >
                 Sacred Places

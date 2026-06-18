@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { testimonials as reviews } from "@/data/testimonials";
 
 export default function Testimonials() {
@@ -60,6 +61,24 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Review Request CTA */}
+        <div className="mt-16 text-center bg-white border border-[#efe9de] rounded-2xl p-8 max-w-2xl mx-auto shadow-xs relative overflow-hidden">
+          <div className="absolute -top-10 -left-10 w-24 h-24 bg-[#b17a20]/5 rounded-full blur-xl animate-pulse" />
+          <h3 className="font-serif text-lg font-bold text-[#2c1a04] mb-3">
+            Have you performed ancestral rituals with Gaya Rituals?
+          </h3>
+          <p className="text-xs text-[#5c4a37] max-w-md mx-auto mb-6 leading-relaxed">
+            Your reviews help other families find verified Vedic guides. Share your experience at the Vishnupad Temple or Falgu River to support others.
+          </p>
+          <Link
+            href="/leave-a-review"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#b17a20] hover:bg-[#2c1a04] text-white text-xs font-bold uppercase tracking-widest rounded-full transition-all duration-300 shadow-xs hover:shadow-md"
+          >
+            Write a Review
+            <span className="text-sm">→</span>
+          </Link>
         </div>
       </div>
     </section>

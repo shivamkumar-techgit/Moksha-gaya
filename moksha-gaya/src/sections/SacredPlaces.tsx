@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { sacredPlaces } from "@/data/sacredPlaces";
+import Link from "next/link";
 
 export default function SacredPlaces() {
   const containerVariants = {
@@ -77,15 +78,15 @@ export default function SacredPlaces() {
               </div>
 
               <div className="px-8 pb-8 pt-0 mt-auto">
-                <a 
-                  href={`/sacred-places/${place.slug}`}
+                <Link 
+                  href={`/places/${place.slug}`}
                   className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-[#b17a20] hover:text-[#2c1a04] transition-colors group/btn"
                 >
                   Explore Significance
                   <svg className="w-4 h-4 ml-1.5 transform group-hover/btn:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}

@@ -4,8 +4,9 @@ import BookNowClient from "./BookNowClient";
 import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Book Rites & Rituals",
-  description: "Book your Pind Daan, Shraddh Karma, Tarpan, or Narayan Bali rituals online with Gaya Rituals.",
+  title: "Book Pind Daan & Shraddh Karma Online | Gaya Rituals",
+  description: "Book your ancestral rituals in Gaya online. Direct registration for in-person and live online video Pind Daan, Narayan Bali, and Tarpan.",
+  keywords: ["book Pind Daan online", "Gaya ritual booking", "Narayan Bali booking", "online Pind Daan Gaya registration"],
   alternates: {
     canonical: "/book-now",
   },

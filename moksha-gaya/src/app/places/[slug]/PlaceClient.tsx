@@ -16,7 +16,7 @@ interface OtherItem {
   image: string;
 }
 
-interface SacredPlaceClientProps {
+interface PlaceClientProps {
   slug: string;
   metadata: Record<string, string>;
   sections: Section[];
@@ -59,16 +59,17 @@ const MandalaSVG = () => (
 function renderTextWithMarkdown(text: string) {
   let html = text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
   html = html.replace(/\*(.*?)\*/g, "<em>$1</em>");
-  html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="/book-now" class="text-[#b17a20] font-bold hover:underline">$1</a>');
+  // Properly parse target URL instead of hardcoding to /book-now
+  html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" class="text-[#b17a20] font-bold hover:underline">$1</a>');
   return <span dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
-export default function SacredPlaceClient({
+export default function PlaceClient({
   metadata,
   sections,
   image,
   otherItems
-}: SacredPlaceClientProps) {
+}: PlaceClientProps) {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", date: "" });
   const [isBooked, setIsBooked] = useState(false);
   const [refId, setRefId] = useState("");
@@ -156,7 +157,7 @@ export default function SacredPlaceClient({
           <div className="text-xs text-[#7c6954] mb-6 flex items-center gap-2">
             <Link href="/" className="hover:text-[#b17a20] transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/sacred-places" className="hover:text-[#b17a20] transition-colors">Sacred Places</Link>
+            <Link href="/places" className="hover:text-[#b17a20] transition-colors">Sacred Places</Link>
             <span>/</span>
             <span className="text-[#2c1a04] font-medium">{metadata.place_name || metadata.title}</span>
           </div>
@@ -198,14 +199,14 @@ export default function SacredPlaceClient({
               if (!sec) return null;
               if (sec.title.toLowerCase() === "hero section") return null;
 
-              const isAbout = sec.title.toLowerCase().includes("about");
-              const isSignificance = sec.title.toLowerCase().includes("significance");
-              const isProcess = sec.title.toLowerCase().includes("rites") || sec.title.toLowerCase().includes("ritual") || sec.title.toLowerCase().includes("process");
-              const isGuidelines = sec.title.toLowerCase().includes("guidelines") || sec.title.toLowerCase().includes("visitor");
+              const isHistory = sec.title.toLowerCase().includes("history");
+              const isImportance = sec.title.toLowerCase().includes("importance");
+              const isProcess = sec.title.toLowerCase().includes("ritual") || sec.title.toLowerCase().includes("rites") || sec.title.toLowerCase().includes("process");
+              const isGuide = sec.title.toLowerCase().includes("guide") || sec.title.toLowerCase().includes("guidelines");
               const isTestimonial = sec.title.toLowerCase().includes("testimonial");
 
-              // 1. About / Spiritual Significance Block
-              if (isAbout || isSignificance) {
+              // 1. History & Importance styled card block
+              if (isHistory || isImportance) {
                 return (
                   <motion.div 
                     initial={{ opacity: 0, y: 20 }}
@@ -227,7 +228,7 @@ export default function SacredPlaceClient({
                 );
               }
 
-              // 2. Timeline Process / Rites Block
+              // 2. Step-by-Step Rituals / Processes
               if (isProcess) {
                 return (
                   <motion.div 
@@ -265,8 +266,8 @@ export default function SacredPlaceClient({
                 );
               }
 
-              // 3. Guidelines Block
-              if (isGuidelines) {
+              // 3. Visitor Guides & Checklists
+              if (isGuide) {
                 return (
                   <motion.div 
                     initial={{ opacity: 0, y: 20 }}
@@ -295,7 +296,7 @@ export default function SacredPlaceClient({
                 );
               }
 
-              // 4. Testimonial Block
+              // 4. Testimonials Block
               if (isTestimonial) {
                 return (
                   <motion.div 
@@ -320,7 +321,50 @@ export default function SacredPlaceClient({
                 );
               }
 
-              // Default standard block fallback
+              const isLinks = sec.title.toLowerCase().includes("links");
+
+              // 5. Internal Links Custom Block
+              if (isLinks) {
+                return (
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    key={idx} 
+                    className="bg-[#faf8f5]/40 rounded-2xl border border-[#efe9de] p-8 md:p-10 shadow-xs relative overflow-hidden"
+                  >
+                    <div className="absolute top-0 left-0 w-1.5 h-full bg-[#b17a20]" />
+                    <h2 className="font-serif text-2xl font-bold text-[#2c1a04] mb-6">
+                      {sec.title}
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {sec.bodyLines.map((line, lIdx) => {
+                        const isBullet = line.startsWith("*") || line.startsWith("-") || line.startsWith("+");
+                        const cleanLine = line.replace(/^[\*\-\+]\s+/, "");
+                        
+                        if (!isBullet) {
+                          return (
+                            <p key={lIdx} className="text-sm md:text-base text-[#5c4a37] leading-relaxed col-span-1 md:col-span-2 mb-2">
+                              {renderTextWithMarkdown(cleanLine)}
+                            </p>
+                          );
+                        }
+                        
+                        return (
+                          <div key={lIdx} className="flex items-start gap-3 p-4 rounded-xl border border-[#efe9de] bg-white hover:border-[#b17a20]/30 transition-all duration-300">
+                            <span className="text-[#b17a20] text-sm mt-0.5">📿</span>
+                            <p className="text-xs text-[#5c4a37] leading-relaxed">
+                              {renderTextWithMarkdown(cleanLine)}
+                            </p>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </motion.div>
+                );
+              }
+
+              // Default Fallback Section Block
               return (
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
@@ -457,7 +501,7 @@ export default function SacredPlaceClient({
                 {otherItems.map((item, index) => (
                   <Link 
                     key={index} 
-                    href={`/sacred-places/${item.slug}`}
+                    href={`/places/${item.slug}`}
                     className="flex items-center gap-3 p-3 bg-white hover:bg-[#faf8f5] border border-[#efe9de] rounded-xl transition-all group"
                   >
                     <div className="w-12 h-12 rounded-lg overflow-hidden bg-stone-100 shrink-0">

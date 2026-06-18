@@ -3,17 +3,17 @@ import path from "path";
 import { notFound } from "next/navigation";
 import React from "react";
 import { Metadata } from "next";
-import SacredPlaceClient from "./SacredPlaceClient";
+import PlaceClient from "./PlaceClient";
 import { sacredPlaces } from "@/data/sacredPlaces";
 import { BreadcrumbSchema } from "@/components/JsonLd";
 
-interface SacredPlacePageProps {
+interface PlacePageProps {
   params: Promise<{ slug: string }>;
 }
 
-export async function generateMetadata({ params }: SacredPlacePageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: PlacePageProps): Promise<Metadata> {
   const { slug } = await params;
-  const filePath = path.join(process.cwd(), "content", "sacred-places", `${slug}.md`);
+  const filePath = path.join(process.cwd(), "content", "places", `${slug}.md`);
 
   if (!fs.existsSync(filePath)) {
     return {
@@ -28,13 +28,13 @@ export async function generateMetadata({ params }: SacredPlacePageProps): Promis
 
   return {
     title: metadata.title || slug.replace(/-/g, " "),
-    description: metadata.excerpt || `Explore the significance and history of ${metadata.title || slug.replace(/-/g, " ")} in the holy dham of Gaya.`,
+    description: metadata.short_description || `Explore the significance and history of ${metadata.title || slug.replace(/-/g, " ")} in the holy dham of Gaya.`,
     alternates: {
-      canonical: `/sacred-places/${slug}`,
+      canonical: `/places/${slug}`,
     },
     openGraph: {
       title: metadata.title || slug.replace(/-/g, " "),
-      description: metadata.excerpt,
+      description: metadata.short_description,
       images: [
         {
           url: image,
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: SacredPlacePageProps): Promis
 }
 
 export async function generateStaticParams() {
-  const dirPath = path.join(process.cwd(), "content", "sacred-places");
+  const dirPath = path.join(process.cwd(), "content", "places");
   if (!fs.existsSync(dirPath)) return [];
   const files = fs.readdirSync(dirPath);
   return files
@@ -75,9 +75,9 @@ function parseMarkdown(fileContent: string) {
   return { metadata, content };
 }
 
-export default async function SacredPlaceDetailPage({ params }: SacredPlacePageProps) {
+export default async function PlaceDetailPage({ params }: PlacePageProps) {
   const { slug } = await params;
-  const filePath = path.join(process.cwd(), "content", "sacred-places", `${slug}.md`);
+  const filePath = path.join(process.cwd(), "content", "places", `${slug}.md`);
 
   if (!fs.existsSync(filePath)) {
     notFound();
@@ -122,11 +122,11 @@ export default async function SacredPlaceDetailPage({ params }: SacredPlacePageP
       <BreadcrumbSchema
         items={[
           { name: "Home", item: "/" },
-          { name: "Sacred Places", item: "/sacred-places" },
-          { name: pageTitle, item: `/sacred-places/${slug}` },
+          { name: "Sacred Places", item: "/places" },
+          { name: pageTitle, item: `/places/${slug}` },
         ]}
       />
-      <SacredPlaceClient
+      <PlaceClient
         slug={slug}
         metadata={metadata}
         sections={parsedSections}
