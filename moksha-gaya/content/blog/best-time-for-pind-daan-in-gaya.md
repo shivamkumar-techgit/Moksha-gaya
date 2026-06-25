@@ -4,7 +4,7 @@ excerpt: "Discover the most auspicious periods of the year to perform Pind Daan 
 date: "June 18, 2026"
 category: "Guides"
 readTime: "9 min read"
-image: "/images/gallery/ritual_offering_pinda.jpg"
+image: "/images/rituals/pinddan-image4.jpg"
 ---
 
 ## Introduction to Timing in Vedic Rites
@@ -45,7 +45,14 @@ Amavasya is the monthly new moon day, occurring 12 times a year. In the Hindu tr
 ### 2. Solar and Lunar Eclipses
 Eclipses (*Surya Grahan* and *Chandra Grahan*) are powerful cosmic events. The spiritual merit of any mantra chanting, charity, or ancestral offerings performed during an eclipse is believed to multiply a thousand-fold. Performing Pind Daan during these times helps resolve severe cases of *Pitru Dosha* (ancestral curses).
 
-### 3. Solar Transits (Sankranti)
+### 3. Ekadashi (Eleventh Lunar Day)
+The **Ekadashi** is the eleventh day (Tithi) of both the bright (*Shukla*) and dark (*Krishna*) fortnight of every lunar month — occurring approximately twice a month. While Ekadashi is primarily associated with fasting for Lord Vishnu's devotees, certain Ekadashis hold special relevance for ancestral rites:
+
+*   **Indira Ekadashi (during Pitru Paksha):** This is the most important Ekadashi for ancestral salvation. Falling within the Pitru Paksha fortnight itself, the *Indira Ekadashi* is specifically dedicated to liberating ancestors trapped in lower realms. Fasting and performing Tarpan on this day is believed to release souls who are stuck due to severe karmic debts.
+*   **Parama Ekadashi and Aja Ekadashi:** These Ekadashis are also considered particularly beneficial for ancestral peace. Performing water tarpan and lighting sesame oil lamps (*til ke diye*) in front of the family deity on these days is a gentle form of ancestral worship.
+*   **Year-Round Ekadashi Tarpan:** For devotees who cannot travel to Gaya, performing simple water tarpan at home on every Ekadashi is a valid and beneficial practice that keeps the ancestral connection alive throughout the year.
+
+### 4. Solar Transits (Sankranti)
 The days when the Sun moves from one zodiac sign to another (*Sankranti*) are considered highly sacred for purificatory baths and Shradh.
 *   **Makar Sankranti (January):** The transition of the Sun into the northern hemisphere (*Uttarayan*) is highly auspicious.
 *   **Transit into Sagittarius (Dhanu) & Pisces (Meen):** These periods are astrologically aligned with ancestral worship.
@@ -112,11 +119,34 @@ A: Astrologically, Sundays, Mondays, and Wednesdays are considered neutral or fa
 
 ---
 
+## Year-Round Rituals: Gaya is Open All 365 Days
+
+A common misconception is that Pind Daan can only be performed during Pitru Paksha. This is not true. The temples of Gaya — including the Vishnupad Temple and Akshay Vat — are **open and active throughout the year**. Rituals can be performed on any day.
+
+Here is a quick month-by-month window guide:
+
+| Month | Auspicious Events | Recommended? |
+|-------|-------------------|-------------|
+| January | Makar Sankranti, Mauni Amavasya | ✅ Highly Auspicious |
+| February | Magh Amavasya | ✅ Good |
+| March | Falgun Amavasya | ✅ Good |
+| April | Chaitra Amavasya | ⚠️ Hot, plan early morning |
+| May | Vaishakh Amavasya | ⚠️ Peak summer heat |
+| June | Jyeshtha Amavasya | ⚠️ Avoid midday |
+| July | Ashadha Amavasya | ✅ Monsoon Tarpan |
+| August | Shravan Amavasya | ✅ Good |
+| September | Bhadrapada Amavasya + Pitru Paksha starts | ✅✅ Peak Season |
+| October | Ashwin Mahalaya Amavasya | ✅✅ Most Auspicious |
+| November | Kartik Amavasya (Diwali) | ✅ Very Auspicious |
+| December | Margashirsha Amavasya | ✅ Pleasant weather |
+
+---
+
 ## Conclusion and Booking Support
 
-Choosing the right time to perform Pind Daan ensures a comfortable and spiritually satisfying pilgrimage. Whether you plan to visit during the sacred fortnight of Pitru Paksha or during a quiet winter Amavasya, early planning is key.
+Choosing the right time to perform Pind Daan ensures a comfortable and spiritually satisfying pilgrimage. Whether you plan to visit during the sacred fortnight of Pitru Paksha, on a powerful Ekadashi, or during a quiet winter Amavasya, early planning is key.
 
 Need help finding the correct Shradh Tithi or booking a slot in Gaya?
 Our team of expert coordinators can analyze your ancestral dates and match you with verified Pandits.
 
-[Inquire Auspicious Dates](file:///c:/Users/PREDATOR/OneDrive/Desktop/Moksha_Gaya/Book%20Now) | [Contact a Coordinator](file:///c:/Users/PREDATOR/OneDrive/Desktop/Moksha_Gaya/Contact%20Us)
+[Book Your Ritual Now](/book-pind-daan-gaya) | [Contact a Coordinator](/contact) | [Read the Complete Pind Daan Guide](/blog/pind-daan-in-gaya-complete-guide)

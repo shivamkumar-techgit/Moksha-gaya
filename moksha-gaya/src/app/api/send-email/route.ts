@@ -28,7 +28,7 @@ function getHtmlWrapper(title: string, bodyContent: string): string {
           <!-- Footer -->
           <div style="background-color: #faf8f5; padding: 25px 30px; text-align: center; border-top: 1px solid #efe9de; font-size: 11px; color: #7c6954;">
             <p style="margin: 0 0 8px 0;">Gaya Rituals • Nawagarhi, Anpurna Niwas Gaya ji, Bihar - 823001</p>
-            <p style="margin: 0;">Support: +91 7070719993, +91 9905852715, +91 7277948658 | <a href="mailto:info@gayarituals.com" style="color: #b17a20; text-decoration: none; font-weight: bold;">info@gayarituals.com</a></p>
+            <p style="margin: 0;">Support: +91 7070719993, +91 9905852715, +91 7277948658 | <a href="mailto:mokshagaya@gmail.com" style="color: #b17a20; text-decoration: none; font-weight: bold;">mokshagaya@gmail.com</a></p>
           </div>
         </div>
       </body>
@@ -206,7 +206,7 @@ export async function POST(req: Request) {
       adminHtml = getHtmlWrapper("New Lead Received - Gaya Rituals", adminHtmlBody);
     }
 
-    const adminRecipient = process.env.ADMIN_EMAIL || "info@gayarituals.com";
+    const adminRecipient = process.env.ADMIN_EMAIL || "mokshagaya@gmail.com";
 
     // 1. Resend Config
     const resendApiKey = process.env.RESEND_API_KEY;
@@ -227,7 +227,7 @@ export async function POST(req: Request) {
       // Send to Admin (only for new enquiries)
       if (!isStatusChange) {
         await resend.emails.send({
-          from: "Gaya Rituals <enquiry@gayarituals.com>", // Note: Resend requires domain verification to send from custom domain. 
+          from: "Gaya Rituals <mokshagaya@gmail.com>", // Note: Resend requires domain verification to send from custom domain. 
           to: adminRecipient,
           subject: `New Lead Received: ${name} [${leadId}]`,
           html: adminHtml,
@@ -238,7 +238,7 @@ export async function POST(req: Request) {
       // Send to Devotee (if email exists)
       if (email) {
         await resend.emails.send({
-          from: "Gaya Rituals <info@gayarituals.com>",
+          from: "Gaya Rituals <mokshagaya@gmail.com>",
           to: email,
           subject: devoteeSubject,
           html: devoteeHtml,

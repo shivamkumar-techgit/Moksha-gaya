@@ -86,15 +86,15 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
   // Clean content and split into sections
   const cleanContent = content.replace(/---/g, ""); // Remove dividers
   const rawSections = cleanContent.split(/\n## /);
-  
+
   const parsedSections = rawSections
     .map((sec) => {
       const lines = sec.split("\n").map(l => l.trim()).filter(Boolean);
       if (lines.length === 0) return null;
-      
+
       const title = lines[0].replace(/^##\s+/, "");
       const bodyLines = lines.slice(1);
-      
+
       return { title, bodyLines };
     })
     .filter((x): x is { title: string; bodyLines: string[] } => x !== null);
@@ -102,7 +102,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
   // Read all other blog posts to recommend 3 related posts
   const blogDirPath = path.join(process.cwd(), "content", "blog");
   const otherItems: Array<{ title: string; slug: string; image: string; category: string }> = [];
-  
+
   if (fs.existsSync(blogDirPath)) {
     const files = fs.readdirSync(blogDirPath);
     files.forEach((file) => {

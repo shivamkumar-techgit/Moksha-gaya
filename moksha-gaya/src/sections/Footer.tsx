@@ -144,8 +144,8 @@ export default function Footer() {
                 <span className="text-[#b17a20] mt-0.5">📧</span>
                 <div>
                   <p className="text-[#2c1a04] font-semibold">Email Address</p>
-                  <a href="mailto:info@gayarituals.com" className="block text-xs hover:text-[#b17a20] hover:underline transition-colors">
-                    info@gayarituals.com
+                  <a href="mailto:mokshagaya@gmail.com" className="block text-xs hover:text-[#b17a20] hover:underline transition-colors">
+                    mokshagaya@gmail.com
                   </a>
                 </div>
               </li>

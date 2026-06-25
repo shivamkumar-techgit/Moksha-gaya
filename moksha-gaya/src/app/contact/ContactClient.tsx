@@ -80,7 +80,7 @@ export default function ContactPage() {
     {
       title: "Email Address",
       value: (
-        <a href="mailto:info@gayarituals.com" className="hover:text-[#2c1a04] hover:underline transition-all block">info@gayarituals.com</a>
+        <a href="mailto:mokshagaya@gmail.com" className="hover:text-[#2c1a04] hover:underline transition-all block">mokshagaya@gmail.com</a>
       ),
       desc: "For NRIs, corporate queries, or documentation uploads.",
       icon: "📧"

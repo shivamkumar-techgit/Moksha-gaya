@@ -89,6 +89,52 @@ To maintain the sanctity of the temple, all visitors must adhere to the followin
 
 ---
 
+## Temple Timings and Visitor Guide
+
+Planning your visit to Vishnupad Temple requires knowing the exact schedule to avoid crowds and ensure you get a peaceful ritual slot.
+
+### Daily Temple Timings
+
+| Session | Time | Activity |
+|---------|------|----------|
+| **Morning Opening** | 6:00 AM | Temple gates open; mangal aarti performed |
+| **Morning Ritual Slot** | 6:00 AM – 12:00 PM | Best time for Pind Daan — cooler, less crowded |
+| **Afternoon Break** | 12:00 PM – 2:00 PM | Inner sanctum partially restricted in summer |
+| **Afternoon Ritual Slot** | 2:00 PM – 6:00 PM | Moderate crowd; suitable for offering pindas |
+| **Evening Aarti** | 6:00 PM – 7:00 PM | Grand Aarti ceremony — must-see for pilgrims |
+| **Temple Closes** | 9:00 PM | All visitors must exit by 9 PM |
+
+> **Best Ritual Slot:** 6:00 AM – 9:00 AM. You avoid peak summer heat, get the shortest queues, and receive the most focused attention from Gayawal Pandas who start fresh in the morning.
+
+### Crowd Forecast by Season
+
+| Period | Crowd Level | Recommended? |
+|--------|-------------|-------------|
+| **Pitru Paksha (Sep–Oct)** | 🔴 Extremely High (10–15 lakh visitors) | ✅ Most Auspicious |
+| **Amavasya days (monthly)** | 🟠 High | ✅ Very Auspicious |
+| **Winter months (Nov–Feb)** | 🟡 Moderate | ✅ Best Weather |
+| **Summer (Apr–Jun)** | 🟢 Low | ⚠️ Very Hot |
+| **Monsoon (Jul–Aug)** | 🟡 Moderate | ✅ Falgu fills with water |
+
+### What to Carry for the Visit
+- **White traditional clothing** (dhoti/kurta for men, plain saree for women)
+- **Ancestor details** — names, Gotra, approximate year of death
+- **Small amount of cash** for dakshina, tipping, and minor local expenses
+- **Water bottle** — especially important in summer months
+- **Light footwear** easy to remove — the entire compound is barefoot
+- **Mobile phone with low brightness** — out of respect for the sanctum
+
+### Getting to Vishnupad Temple
+
+| Mode | Details |
+|------|---------|
+| **From Gaya Railway Station** | 4 km, ~15 min by auto-rickshaw (₹50–80) |
+| **From Gaya Airport** | 11 km, ~25 min by cab (₹200–300) |
+| **From Bodhgaya** | 13 km, ~30 min by cab (₹250–350) |
+| **Parking** | Available 500m from the temple; no vehicles allowed in the inner lanes |
+
+---
+
 ## Frequently Asked Questions (FAQs)
 
 ### Q: Can women perform the footprint offering at Vishnupad Temple?
@@ -107,6 +153,6 @@ A: Yes. Vishnupad Temple is open daily from 6:00 AM to 9:00 PM. The best time to
 Visiting the Vishnupad Temple is a profound spiritual experience. By placing the sacred Pindas on Lord Vishnu's footprint, you perform the ultimate act of gratitude and duty towards your lineage.
 
 Need a verified Gayawal Panda and complete coordination for your ritual at Vishnupad Temple?
-Our local team of coordinators manages everything—including VIP entry, gotra checks, clean lodging, and puja materials—ensuring a smooth and respectful pilgrimage.
+Our local team of coordinators manages everything — including VIP entry, gotra checks, clean lodging, and puja materials — ensuring a smooth and respectful pilgrimage.
 
-[Book Your Vishnupad Ritual](file:///c:/Users/PREDATOR/OneDrive/Desktop/Moksha_Gaya/Book%20Now) | [Speak to a Temple Coordinator](file:///c:/Users/PREDATOR/OneDrive/Desktop/Moksha_Gaya/Contact%20Us)
+[Book Your Vishnupad Ritual](/book-pind-daan-gaya) | [Speak to a Temple Coordinator](/contact) | [Read the Full Pind Daan Guide](/blog/pind-daan-in-gaya-complete-guide)
