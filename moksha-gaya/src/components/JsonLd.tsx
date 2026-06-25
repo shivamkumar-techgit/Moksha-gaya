@@ -55,6 +55,15 @@ export function OrganizationSchema() {
     "name": "Gaya Rituals",
     "url": "https://gayarituals.com",
     "logo": "https://gayarituals.com/images/hero/gaya_rituals_logo.png",
+    "telephone": "+917070719993",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Nawagarhi, Anpurna Niwas Gaya ji",
+      "addressLocality": "Gaya",
+      "addressRegion": "Bihar",
+      "postalCode": "823001",
+      "addressCountry": "IN"
+    },
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-7070719993",
@@ -63,7 +72,9 @@ export function OrganizationSchema() {
       "availableLanguage": ["en", "hi"]
     },
     "sameAs": [
-      "https://gayarituals.com"
+      "https://www.facebook.com/gayarituals",
+      "https://www.youtube.com/@gayarituals",
+      "https://www.linkedin.com/company/gayarituals"
     ]
   };
 
