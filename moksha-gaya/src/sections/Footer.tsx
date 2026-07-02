@@ -11,7 +11,7 @@ export default function Footer() {
   ];
 
   const serviceLinks = [
-    { name: "Pind Daan", href: "/services/pind-daan" },
+    { name: "Pind Daan in Gaya", href: "/pind-daan-in-gaya" },
     { name: "Shraddh Karma", href: "/services/shraddh-karma" },
     { name: "Tarpan", href: "/services/tarpan" },
     { name: "Narayan Bali", href: "/services/narayan-bali" },

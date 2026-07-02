@@ -28,6 +28,11 @@ const nextConfig: NextConfig = {
         destination: "/book-pind-daan-gaya",
         permanent: true,
       },
+      {
+        source: "/services/pind-daan",
+        destination: "/pind-daan-in-gaya",
+        permanent: true,
+      },
     ];
   },
 };

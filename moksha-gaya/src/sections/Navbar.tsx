@@ -23,6 +23,12 @@ export default function Navbar() {
 
   const guideLinks = [
     { 
+      name: "Pind Daan in Gaya", 
+      href: "/pind-daan-in-gaya", 
+      desc: "Authentic ancestral salvation rites", 
+      icon: Compass 
+    },
+    { 
       name: "Why Perform Pind Daan in Gaya?", 
       href: "/why-pind-daan-gaya", 
       desc: "Scriptural significance & holy spots", 
