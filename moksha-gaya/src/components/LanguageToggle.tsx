@@ -152,7 +152,7 @@ export default function LanguageToggle() {
       {/* Floating Language Toggle Button (Bottom Left) */}
       <button
         onClick={toggleLanguage}
-        className="fixed bottom-6 left-6 z-50 flex items-center gap-3 pl-3 pr-4 py-2.5 rounded-full bg-[#2c1a04]/95 backdrop-blur-md border border-[#b17a20]/40 text-white shadow-xl hover:shadow-2xl hover:border-[#b17a20] hover:scale-105 active:scale-98 transition-all duration-300 group cursor-pointer"
+        className="fixed bottom-6 left-6 z-50 flex items-center gap-3 p-2.5 sm:pl-3 sm:pr-4 sm:py-2.5 rounded-full bg-[#2c1a04]/95 backdrop-blur-md border border-[#b17a20]/40 text-white shadow-xl hover:shadow-2xl hover:border-[#b17a20] hover:scale-105 active:scale-98 transition-all duration-300 group cursor-pointer"
         aria-label="Toggle Language / भाषा बदलें"
       >
         {/* Icon Circle Wrapper */}
@@ -165,7 +165,7 @@ export default function LanguageToggle() {
         </div>
 
         {/* Label Text */}
-        <div className="flex flex-col text-left">
+        <div className="hidden sm:flex flex-col text-left">
           <span className="text-[9px] font-bold text-[#b17a20] uppercase tracking-widest leading-none mb-1">
             Language / भाषा
           </span>

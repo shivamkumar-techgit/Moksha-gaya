@@ -6,7 +6,7 @@ export default function WhatsAppButton() {
       href="https://wa.me/917070719993?text=Pranam%2C%20I%20would%20like%20to%20enquire%20about%20performing%20rituals%20in%20Gaya."
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-3 pl-3 pr-5 py-2.5 rounded-full bg-[#2c1a04]/95 backdrop-blur-md border border-[#b17a20]/40 text-white shadow-xl hover:shadow-2xl hover:border-[#b17a20] hover:scale-105 active:scale-98 transition-all duration-300 group"
+      className="fixed bottom-6 right-6 z-50 flex items-center gap-3 p-2.5 sm:pl-3 sm:pr-5 sm:py-2.5 rounded-full bg-[#2c1a04]/95 backdrop-blur-md border border-[#b17a20]/40 text-white shadow-xl hover:shadow-2xl hover:border-[#b17a20] hover:scale-105 active:scale-98 transition-all duration-300 group"
       aria-label="Chat on WhatsApp"
     >
       {/* Icon Circle Wrapper */}
@@ -25,7 +25,7 @@ export default function WhatsAppButton() {
       </div>
       
       {/* Label Text */}
-      <div className="flex flex-col text-left">
+      <div className="hidden sm:flex flex-col text-left">
         <span className="text-[9px] font-bold text-[#b17a20] uppercase tracking-widest leading-none mb-1">Live Support</span>
         <span className="text-xs font-semibold tracking-wide text-white group-hover:text-[#b17a20] transition-colors leading-none">Chat on WhatsApp</span>
       </div>
