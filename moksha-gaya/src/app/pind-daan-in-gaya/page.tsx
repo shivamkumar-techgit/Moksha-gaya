@@ -4,8 +4,8 @@ import PindDaanInGayaClient from "./PindDaanInGayaClient";
 import { LocalBusinessSchema, OrganizationSchema, BreadcrumbSchema, FAQSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Pind Daan in Gaya | Authentic Pind Daan Rituals in Gaya",
-  description: "Book authentic Pind Daan in Gaya with experienced Vedic priests. Complete ritual assistance at Vishnupad Temple, Falgu River and Akshay Vat.",
+  title: "Authentic Pind Daan in Gaya - Complete Ritual Packages | Gaya Rituals",
+  description: "Performing Pind Daan in Gaya is a sacred duty to ensure the liberation and peace (Moksha) of your ancestors. Our team provides completely transparent, authentic, and step-by-step guidance for families visiting Gaya Ji.",
   keywords: ["Pind Daan in Gaya", "Gaya Pind Daan", "Pind Daan packages Gaya", "Gaya Pitru Paksha", "perform Pind Daan in Gaya"],
   alternates: {
     canonical: "/pind-daan-in-gaya",

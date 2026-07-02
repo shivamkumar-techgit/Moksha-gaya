@@ -90,7 +90,7 @@ export default function PindDaanInGayaClient() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-serif text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#2c1a04] mb-6 leading-tight"
           >
-            Pind Daan in Gaya
+            Authentic Pind Daan in Gaya - Complete Ritual Packages
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 15 }}
@@ -98,7 +98,7 @@ export default function PindDaanInGayaClient() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-base md:text-lg text-[#5c4a37] max-w-3xl mx-auto leading-relaxed"
           >
-            A comprehensive guide to performing ancestral salvation rites at the sacred locations of Gaya, Bihar. Connect with verified local Gayawal Vedic Pandits and secure eternal peace for your departed forefathers.
+            Performing Pind Daan in Gaya is a sacred duty to ensure the liberation and peace (Moksha) of your ancestors. Our team provides completely transparent, authentic, and step-by-step guidance for families visiting Gaya Ji.
           </motion.p>
           
           <motion.div 
@@ -111,13 +111,13 @@ export default function PindDaanInGayaClient() {
               href="/book-now" 
               className="px-8 py-4 bg-[#b17a20] hover:bg-[#2c1a04] border border-transparent hover:border-[#b17a20]/30 text-white text-xs font-bold uppercase tracking-widest rounded-full shadow-lg transition-all duration-300"
             >
-              Book Pind Daan Ritual
+              Book a Ritual
             </Link>
             <a 
-              href="#what-is-it" 
+              href="#overview" 
               className="px-8 py-4 bg-transparent hover:bg-[#2c1a04] text-[#2c1a04] hover:text-white border border-[#2c1a04] hover:border-transparent text-xs font-bold uppercase tracking-widest rounded-full transition-all duration-300"
             >
-              Read Full Guide
+              Learn More
             </a>
           </motion.div>
         </div>
@@ -139,6 +139,60 @@ export default function PindDaanInGayaClient() {
 
       {/* Main Content Area */}
       <div className="container mx-auto px-6 max-w-5xl py-20 space-y-28">
+
+        {/* Section 0: Services Overview */}
+        <section id="overview" className="bg-white p-8 md:p-12 rounded-3xl border border-[#efe9de] shadow-lg text-left grid grid-cols-1 lg:grid-cols-12 gap-12 items-start scroll-mt-24">
+          <div className="lg:col-span-7 space-y-6">
+            <div className="inline-flex items-center gap-2 text-[#b17a20] font-bold text-xs uppercase tracking-widest">
+              <Sparkles className="w-4 h-4" />
+              Service Overview
+            </div>
+            <h2 className="font-serif text-3xl font-bold text-[#2c1a04]">
+              Why Choose Us for Pind Daan in Gaya?
+            </h2>
+            <div className="w-16 h-1 bg-[#b17a20]" />
+            <p className="text-sm text-[#5c4a37] leading-relaxed">
+              We handle all logistical and spiritual requirements so your family can focus purely on the rituals. Whether you are visiting during Pitru Paksha or any auspicious tithi throughout the year, we customize the package to fit your traditions.
+            </p>
+            <div className="pt-4">
+              <Link 
+                href="/book-now" 
+                className="inline-block px-8 py-3.5 bg-[#b17a20] hover:bg-[#2c1a04] text-white text-xs font-bold uppercase tracking-widest rounded-full transition-all duration-300 shadow-md"
+              >
+                Book a Ritual
+              </Link>
+            </div>
+          </div>
+          
+          <div className="lg:col-span-5 space-y-6 bg-[#faf8f5]/65 p-6 rounded-2xl border border-[#efe9de]">
+            <h3 className="font-serif text-lg font-bold text-[#2c1a04]">
+              Our Gaya Pind Daan Services Include:
+            </h3>
+            <div className="space-y-4">
+              <div className="flex gap-3">
+                <div className="w-8 h-8 rounded-full bg-[#f3ebd8] text-[#b17a20] flex items-center justify-center font-bold text-xs shrink-0">1</div>
+                <div>
+                  <h4 className="text-xs font-bold text-[#2c1a04]">Vedic Pandits</h4>
+                  <p className="text-[11px] text-[#5c4a37] mt-0.5">Experienced Teerth Purohits to perform your rituals with complete Vedic accuracy.</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="w-8 h-8 rounded-full bg-[#f3ebd8] text-[#b17a20] flex items-center justify-center font-bold text-xs shrink-0">2</div>
+                <div>
+                  <h4 className="text-xs font-bold text-[#2c1a04]">Samagri Arrangement</h4>
+                  <p className="text-[11px] text-[#5c4a37] mt-0.5">All necessary puja items (barley flour, sesame seeds, honey, etc.) are provided.</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="w-8 h-8 rounded-full bg-[#f3ebd8] text-[#b17a20] flex items-center justify-center font-bold text-xs shrink-0">3</div>
+                <div>
+                  <h4 className="text-xs font-bold text-[#2c1a04]">Holy Site Coordination</h4>
+                  <p className="text-[11px] text-[#5c4a37] mt-0.5">Complete setup and smooth execution at the Phalgu River, Vishnupad Temple, and Akshay Vat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Section 1: What is Pind Daan? */}
         <section id="what-is-it" className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start scroll-mt-20">
