@@ -15,6 +15,14 @@ export const metadata: Metadata = {
 export default function GayaPindDaanPage() {
   const faqs = [
     {
+      q: "What pooja is done in Gaya?",
+      a: "The primary pooja performed in Gaya is Pind Daan (also known as Gaya Shradh). This sacred ancestral ritual is performed to offer peace and salvation (Moksha) to the departed souls of ancestors."
+    },
+    {
+      q: "What rituals are performed in Gaya?",
+      a: "The main rituals performed in Gaya include Snana (holy bath), Sankalpa, Pinda Daan (offering rice balls), and Tarpan (offering sacred water) at major holy sites like the Vishnupad Temple and the Phalgu River."
+    },
+    {
       q: "What is the cost of performing Pind Daan in Gaya?",
       a: "The cost of performing Pind Daan varies depending on the number of Vedis (locations) and Brahmins fed. Standard packages start from ₹5,500 and go up to ₹21,000 for multi-day premium packages which include VIP assistance, transport, and lodging."
     },

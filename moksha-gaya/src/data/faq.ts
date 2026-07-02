@@ -13,6 +13,14 @@ export const faqCategories: FAQCategory[] = [
     name: "Ritual Questions",
     items: [
       {
+        q: "What pooja is done in Gaya?",
+        a: "The primary pooja performed in Gaya is Pind Daan (also known as Gaya Shradh). This sacred ancestral ritual is performed to offer peace and salvation (Moksha) to the departed souls of ancestors."
+      },
+      {
+        q: "What rituals are performed in Gaya?",
+        a: "The main rituals performed in Gaya include Snana (holy bath), Sankalpa, Pinda Daan (offering rice balls), and Tarpan (offering sacred water) at major holy sites like the Vishnupad Temple and the Phalgu River."
+      },
+      {
         q: "What is Pind Daan and why is it performed?",
         a: "Pind Daan is a sacred Hindu ritual where rice/barley flour balls (Pinds) are offered to the departed souls of ancestors. According to scriptures, it helps the soul find release from the earthly realm and merge with the Divine, achieving salvation (Moksha)."
       },

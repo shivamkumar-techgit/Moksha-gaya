@@ -15,6 +15,14 @@ export const metadata: Metadata = {
 export default function PindDaanInGayaPage() {
   const faqs = [
     {
+      q: "What pooja is done in Gaya?",
+      a: "The primary pooja performed in Gaya is Pind Daan (also known as Gaya Shradh). This sacred ancestral ritual is performed to offer peace and salvation (Moksha) to the departed souls of ancestors."
+    },
+    {
+      q: "What rituals are performed in Gaya?",
+      a: "The main rituals performed in Gaya include Snana (holy bath), Sankalpa, Pinda Daan (offering rice balls), and Tarpan (offering sacred water) at major holy sites like the Vishnupad Temple and the Phalgu River."
+    },
+    {
       q: "Why is Gaya considered the best place for performing Pind Daan?",
       a: "According to the Garuda Purana and Vayu Purana, Gaya is blessed by Lord Vishnu as the body of Gayasur. Performing Pind Daan here satisfies the ancestors permanently and helps them achieve salvation (Moksha) instantly."
     },

@@ -15,6 +15,14 @@ export const metadata: Metadata = {
 export default function GayaShraddhaPage() {
   const faqs = [
     {
+      q: "What pooja is done in Gaya?",
+      a: "The primary pooja performed in Gaya is Pind Daan (also known as Gaya Shradh). This sacred ancestral ritual is performed to offer peace and salvation (Moksha) to the departed souls of ancestors."
+    },
+    {
+      q: "What rituals are performed in Gaya?",
+      a: "The main rituals performed in Gaya include Snana (holy bath), Sankalpa, Pinda Daan (offering rice balls), and Tarpan (offering sacred water) at major holy sites like the Vishnupad Temple and the Phalgu River."
+    },
+    {
       q: "What is the difference between normal Shraddha and Gaya Shraddha?",
       a: "A standard Shraddha is done annually at home or local temples on the death anniversary (Tithi) of the ancestors. Gaya Shraddha is a one-time sacred pilgrimage ritual that gives permanent satisfaction to ancestors, resolving ancestral blocks and helping them attain final salvation."
     },
